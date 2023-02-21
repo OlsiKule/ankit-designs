@@ -21,3 +21,28 @@ h1, h2, h3 {
   line-height: 1.15;
   margin-top: 0;
 }
+
+.header__logo {
+  min-height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__logo .animation {
+  animation-name: infiniteupdown;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  transition: all 0.3s;
+}
+@keyframes infiniteupdown {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(207px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
