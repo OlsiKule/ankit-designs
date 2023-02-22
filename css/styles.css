@@ -28,21 +28,51 @@ h1, h2, h3 {
   justify-content: center;
   align-items: center;
 }
-.header__logo .animation {
+
+.animation {
   animation-name: infiniteupdown;
-  animation-duration: 5s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease;
   transition: all 0.3s;
 }
+
 @keyframes infiniteupdown {
   0% {
-    transform: translateX(0px);
+    transform: translateY(0px);
   }
   50% {
-    transform: translateX(207px);
+    transform: translateY(15px);
   }
   100% {
-    transform: translateX(0px);
+    transform: translateY(0px);
   }
+}
+.header.open .header__toggle > span :first-child {
+  transform: rotate(45deg);
+}
+.header.open .header__toggle > span :nth-child(2) {
+  opacity: 0;
+}
+.header.open .header__toggle > span :last-child {
+  transform: rotate(-45deg);
+}
+.header .overlay {
+  position: fixed;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(hsl(233deg, 26%, 24%), transparent);
+}
+.header nav {
+  position: relative;
+  background-color: white;
+  padding-top: 1.0625rem;
+  padding-bottom: 1.0625rem;
+}
+.header .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
