@@ -25,14 +25,22 @@
     }
 
     .overlay {
-
-        position: fixed;
-        top: 0px;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        // background-image: linear-gradient(hsl(233, 26%, 24%), transparent);
-        // background-color: $backgroundColor;
+        /* CSS code for navbar */
+        position: fixed; 
+        top: 0; 
+        width: 100%; 
+        background-color: transparent;
+        transform: translateY(-100%); /* Hide navbar initially by translating it up */
+        
+        transition: transform 0.5s ease-in-out; 
+        box-shadow: 0 10px 5px -5px #f2e7db;;
+    }
+    
+    .overlay.active {
+        // background-color:  hsl(32, 86%, 95%); 
+        background-color: rgb(203, 165, 241);
+        padding: 20px;
+        transform: translateY(0%); /* Show navbar by translating it down */
     }
 
 

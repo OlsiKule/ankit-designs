@@ -1,20 +1,14 @@
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
-
-// Get the navbar
-const navbar = document.getElementById("container");
-
-// Get the offset position of the navbar
-const sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+// JavaScript code to toggle navbar visibility
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector('.overlay').classList.add('active');
   } else {
-    navbar.classList.remove("sticky");
+    document.querySelector('.overlay').classList.remove('active');
   }
-} 
+  prevScrollpos = currentScrollPos;
+}
 
 
 // hamburger menu
@@ -24,8 +18,8 @@ const header = document.querySelector(".header");
 const overlay = document.querySelector(".overlay");
 const fadeElems = document.querySelectorAll(".has-fade")
 
-btnHamburger.addEventListener("click", function(){
-    console.log("click hamburger");
+// btnHamburger.addEventListener("click", function(){
+    // console.log("click hamburger"));
 
 
     // if(header.classList.contains("open")){ //Close hamburger menu 
@@ -45,4 +39,4 @@ btnHamburger.addEventListener("click", function(){
     //          element.classList.add("fade-in")
     //     })
     // }
-})  
+// })  
