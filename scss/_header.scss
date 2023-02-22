@@ -1,0 +1,56 @@
+.header {
+    // logo
+    img{
+
+        height: 80px;
+        width: 185px;
+    }
+// Hamburger Open Styles
+    &.open {
+
+        .header__toggle{
+            >span :first-child{
+                transform: rotate(45deg);
+            }
+
+            >span :nth-child(2){
+                opacity: 0;
+            }
+
+            >span :last-child{
+                transform: rotate(-45deg);
+            }
+        }
+
+    }
+
+    .overlay {
+
+        position: fixed;
+        top: 0px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        // background-image: linear-gradient(hsl(233, 26%, 24%), transparent);
+        // background-color: $backgroundColor;
+    }
+
+
+    nav{
+
+        position: relative;
+        // background-color: $backgroundColor;
+        // background-color: white;
+        padding-top: 1.0625rem;
+        padding-bottom: 1.0625rem;
+
+    }
+
+    .sticky {
+
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+}
