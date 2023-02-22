@@ -62,7 +62,7 @@ h1, h2, h3 {
 .header.open .header__toggle > span :last-child {
   transform: rotate(-45deg);
 }
-.header .overlay {
+.header .navbar {
   /* CSS code for navbar */
   position: fixed;
   top: 0;
@@ -72,7 +72,7 @@ h1, h2, h3 {
   transition: transform 0.5s ease-in-out;
   box-shadow: 0 10px 5px -5px #f2e7db;
 }
-.header .overlay.active {
+.header .navbar.active {
   background-color: rgb(203, 165, 241);
   padding: 20px;
   transform: translateY(0%); /* Show navbar by translating it down */
@@ -86,4 +86,8 @@ h1, h2, h3 {
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.social {
+  height: 50vh;
 }

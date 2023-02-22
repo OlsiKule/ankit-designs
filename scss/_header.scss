@@ -24,7 +24,7 @@
 
     }
 
-    .overlay {
+    .navbar {
         /* CSS code for navbar */
         position: fixed; 
         top: 0; 
@@ -36,7 +36,7 @@
         box-shadow: 0 10px 5px -5px #f2e7db;;
     }
     
-    .overlay.active {
+    .navbar.active {
         // background-color:  hsl(32, 86%, 95%); 
         background-color: rgb(203, 165, 241);
         padding: 20px;

@@ -1,14 +1,27 @@
 // JavaScript code to toggle navbar visibility
-let prevScrollpos = window.pageYOffset;
+// let prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+//   let currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     document.querySelector('.overlay').classList.add('active');
+//   } else {
+//     document.querySelector('.overlay').classList.remove('active');
+//   }
+//   prevScrollpos = currentScrollPos;
+// }
+
+// JavaScript code to toggle navbar sticky class
 window.onscroll = function() {
-  let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.querySelector('.overlay').classList.add('active');
-  } else {
-    document.querySelector('.overlay').classList.remove('active');
+    let navbar = document.querySelector('.navbar');
+    let roadmap = document.querySelector('.roadmap');
+    let contentTop = roadmap.offsetTop + 50; // Adjust offset as needed
+  
+    if (window.pageYOffset > contentTop) {
+      navbar.classList.add('active');
+    } else {
+      navbar.classList.remove('active');
+    }
   }
-  prevScrollpos = currentScrollPos;
-}
 
 
 // hamburger menu
