@@ -60,7 +60,7 @@ h1, h2, h3 {
   margin: 7px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: rebeccapurple;
+  background-color: hsl(192deg, 17%, 11%);
 }
 .header__toggle > span :first-child {
   transform: rotate(45deg);
@@ -71,19 +71,27 @@ h1, h2, h3 {
 .header__toggle > span :last-child {
   transform: rotate(-45deg);
 }
+.header__menu {
+  position: fixed;
+  left: -100%;
+}
 .header .navbar {
   position: fixed;
   top: 0;
+  padding: 0 8.25rem 0 11rem;
   width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: transparent;
   transition: transform 0.7s ease-in-out;
-  padding: 20px;
 }
 .header .navbar.hide {
   transform: translateY(-100%);
 }
 .header .navbar.active {
-  padding: 20px;
+  padding: 0 8.25rem 0 11rem;
   background-color: hsl(32deg, 86%, 95%);
   box-shadow: 0 10px 5px -5px #f2e7db;
 }

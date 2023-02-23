@@ -5,6 +5,13 @@
         height: 5rem;
         width: 11.5625rem;
     }
+
+    // &__container {
+    //     // padding: 25px;
+    //     // margin: 25px;
+    // }
+
+
 // Hamburger Menu
     &__toggle {
 
@@ -15,7 +22,7 @@
             margin: 7px auto;
             -webkit-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
-            background-color: rebeccapurple;
+            background-color: $black;
 
             :first-child{
                 transform: rotate(45deg);
@@ -29,6 +36,13 @@
                 transform: rotate(-45deg);
             }
         }
+    }
+
+
+// add the rest of the declarations once finished with navbar styling 
+    &__menu {
+        position: fixed;
+        left: -100%;
     }
 
 // Open : this could be used for the menu items 
@@ -46,25 +60,28 @@
     // }
 
 
-// CSS code for navbar 
+    // CSS code for navbar 
     .navbar {
         position: fixed; 
         top: 0; 
+        padding: 0 8.25rem 0 11rem;
         width: 100%; 
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         background-color: transparent;
         transition: transform 0.7s ease-in-out; 
-        padding: 20px;
         
         &.hide {
             transform: translateY(-100%);
-            
         }
     }
     
     
     .navbar.active {
         
-        padding: 20px;
+        padding: 0 8.25rem 0 11rem;
         background-color: $backgroundColor;
         box-shadow: 0 10px 5px -5px #f2e7db;
     }
