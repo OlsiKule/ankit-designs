@@ -75,7 +75,7 @@ h1, h2, h3 {
 .header .navbar.active {
   background-color: rgb(203, 165, 241);
   padding: 20px;
-  transform: translateY(0%); /* Show navbar by translating it down */
+  transform: translateY(-100%); /* Show navbar by translating it down */
 }
 .header nav {
   position: relative;

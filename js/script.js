@@ -3,12 +3,39 @@
 // window.onscroll = function() {
 //   let currentScrollPos = window.pageYOffset;
 //   if (prevScrollpos > currentScrollPos) {
-//     document.querySelector('.overlay').classList.add('active');
+//     document.querySelector('.navbar').classList.add('upScroll');
 //   } else {
-//     document.querySelector('.overlay').classList.remove('active');
+//     document.querySelector('.navbar').classList.remove('upScroll');
 //   }
 //   prevScrollpos = currentScrollPos;
 // }
+
+// Get the navbar element
+const navbar = document.querySelector('.navbar');
+
+// Initialize the previous scroll position to the current scroll position
+let prevScrollPos = window.pageYOffset;
+
+// Add a scroll event listener to the window object
+window.addEventListener('scroll', () => {
+  // Get the current scroll position
+  const currentScrollPos = window.pageYOffset;
+
+  // Check if the user is scrolling up
+  if (prevScrollPos > currentScrollPos) {
+    // Add the "hide" class to the navbar element
+    navbar.classList.remove('hide');
+  } else {
+    // Remove the "hide" class from the navbar element
+    navbar.classList.add('hide');
+  }
+
+  // Update the previous scroll position to the current scroll position
+  prevScrollPos = currentScrollPos;
+});
+
+
+
 
 // JavaScript code to toggle navbar sticky class
 window.onscroll = function() {
