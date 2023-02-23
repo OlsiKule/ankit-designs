@@ -5,24 +5,45 @@
         height: 5rem;
         width: 11.5625rem;
     }
-// Hamburger Open Styles
-    &.open {
+// Hamburger Menu
+    &__toggle {
 
-        .header__toggle{
-            >span :first-child{
+        >span {
+            display: block;
+            width: 30px;
+            height: 3px;
+            margin: 7px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: rebeccapurple;
+
+            :first-child{
                 transform: rotate(45deg);
-            }
+             }
 
-            >span :nth-child(2){
+             :nth-child(2){
                 opacity: 0;
             }
 
-            >span :last-child{
+            :last-child{
                 transform: rotate(-45deg);
             }
         }
-
     }
+
+// Open : this could be used for the menu items 
+
+    // &.open {
+
+    //     .header__menu{
+    //         >span 
+
+    //         >span 
+
+    //         >span 
+    //     }
+
+    // }
 
     .navbar {
         /* CSS code for navbar */
@@ -49,14 +70,12 @@
 
 
     nav{
-
         position: relative;
         padding-top: 1.0625rem;
         padding-bottom: 1.0625rem;
     }
 
     &.sticky {
-
         position: fixed;
         top: 0;
         width: 100%;

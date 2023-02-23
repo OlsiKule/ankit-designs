@@ -53,13 +53,22 @@ h1, h2, h3 {
   height: 5rem;
   width: 11.5625rem;
 }
-.header.open .header__toggle > span :first-child {
+.header__toggle > span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 7px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: rebeccapurple;
+}
+.header__toggle > span :first-child {
   transform: rotate(45deg);
 }
-.header.open .header__toggle > span :nth-child(2) {
+.header__toggle > span :nth-child(2) {
   opacity: 0;
 }
-.header.open .header__toggle > span :last-child {
+.header__toggle > span :last-child {
   transform: rotate(-45deg);
 }
 .header .navbar {
