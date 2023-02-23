@@ -69,14 +69,15 @@ h1, h2, h3 {
   width: 100%;
   background-color: transparent;
   transition: transform 0.7s ease-in-out;
-  box-shadow: 0 10px 5px -5px #f2e7db;
+  padding: 20px;
 }
 .header .navbar.hide {
   transform: translateY(-100%);
 }
 .header .navbar.active {
-  background-color: hsl(32deg, 86%, 95%);
   padding: 20px;
+  background-color: hsl(32deg, 86%, 95%);
+  box-shadow: 0 10px 5px -5px #f2e7db;
 }
 .header nav {
   position: relative;
@@ -90,5 +91,5 @@ h1, h2, h3 {
 }
 
 .social {
-  height: 50vh;
+  height: 250vh;
 }
