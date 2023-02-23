@@ -10,6 +10,9 @@
 //   prevScrollpos = currentScrollPos;
 // }
 
+
+
+
 // Get the navbar element
 const navbar = document.querySelector('.navbar');
 
@@ -49,6 +52,32 @@ window.onscroll = function() {
       navbar.classList.remove('active');
     }
   }
+
+
+// ChatGPT suggestion
+
+// const navbar = document.querySelector('.navbar');
+// const roadmap = document.querySelector('.roadmap');
+// const contentTop = roadmap.offsetTop + 50;
+
+// window.addEventListener('scroll', () => {
+//   const currentScrollPos = window.pageYOffset;
+
+//   if (prevScrollPos > currentScrollPos) {
+//     navbar.classList.remove('hide');
+//   } else {
+//     navbar.classList.add('hide');
+//   }
+
+//   if (window.pageYOffset > contentTop) {
+//     navbar.classList.add('active');
+//   } else {
+//     navbar.classList.remove('active');
+//   }
+
+//   prevScrollPos = currentScrollPos;
+// });
+
 
 
 // hamburger menu

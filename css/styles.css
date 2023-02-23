@@ -50,8 +50,8 @@ h1, h2, h3 {
 }
 
 .header img {
-  height: 80px;
-  width: 185px;
+  height: 5rem;
+  width: 11.5625rem;
 }
 .header.open .header__toggle > span :first-child {
   transform: rotate(45deg);
@@ -68,21 +68,22 @@ h1, h2, h3 {
   top: 0;
   width: 100%;
   background-color: transparent;
-  transform: translateY(-100%); /* Hide navbar initially by translating it up */
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.7s ease-in-out;
   box-shadow: 0 10px 5px -5px #f2e7db;
 }
+.header .navbar.hide {
+  transform: translateY(-100%);
+}
 .header .navbar.active {
-  background-color: rgb(203, 165, 241);
+  background-color: hsl(32deg, 86%, 95%);
   padding: 20px;
-  transform: translateY(-100%); /* Show navbar by translating it down */
 }
 .header nav {
   position: relative;
   padding-top: 1.0625rem;
   padding-bottom: 1.0625rem;
 }
-.header .sticky {
+.header.sticky {
   position: fixed;
   top: 0;
   width: 100%;
