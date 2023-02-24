@@ -62,8 +62,11 @@ window.onscroll = function() {
 
 const hamburger = document.querySelector(".header__toggle");
 const menu = document.querySelector(".header__menu");
+// const logo = document.querySelector(".logo"); //hypothetical scenario
 
 hamburger.addEventListener( "click", () => {
-    hamburger.classList.toggle("onOff")
-    menu.classList.toggle("has-fade")
+    hamburger.classList.toggle("onOff");
+    menu.classList.toggle("has-fade");
+    menu.classList.toggle("hide");
+    // logo.classList.toggle("hide")
 })

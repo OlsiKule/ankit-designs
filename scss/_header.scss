@@ -6,6 +6,12 @@
 
         height: 5rem;
         width: 11.5625rem;
+
+        // this is for a hypothetical keeping hamburger scenario
+        // &.hide {
+        //     opacity: 0;
+        // }
+
     }
 
     // &__container {
@@ -46,33 +52,34 @@
     }
 
 
-// add the rest of the declarations once finished with navbar styling 
-
-
     &__menu {
-        
-        // left: -100%;
+        &.hide {
+            opacity: 0;
+        }
 
-        &.has-fade {
+        &.has-fade{
+
             width: 100%;
             height: 100vh;
             position: fixed;
             top: 70px;
             gap: 0;
             flex-direction: column;
+            // background-color: $backgroundColor; // hypothetical scenario
             background-color: #a5c9e7;
             // width: 100%;
             text-align: center;
-
-            li{
-                list-style: none;
-              }
-
-            a{
-                color:green;
-                text-decoration: none;
-              }
         }
+        
+        li{
+            list-style: none;
+            }
+
+        a{
+            color:green;
+            text-decoration: none;
+            }
+        
     }
     
 

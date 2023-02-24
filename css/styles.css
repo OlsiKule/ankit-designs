@@ -34,6 +34,7 @@ body {
   line-height: 1.3;
   overflow-x: hidden;
   background-color: hsl(32deg, 86%, 95%);
+  margin-top: 140px;
 }
 
 h1, h2, h3 {
@@ -71,6 +72,9 @@ h1, h2, h3 {
 .header__toggle.onOff :last-child {
   transform: translateY(-10px) rotate(-45deg);
 }
+.header__menu.hide {
+  opacity: 0;
+}
 .header__menu.has-fade {
   width: 100%;
   height: 100vh;
@@ -81,10 +85,10 @@ h1, h2, h3 {
   background-color: #a5c9e7;
   text-align: center;
 }
-.header__menu.has-fade li {
+.header__menu li {
   list-style: none;
 }
-.header__menu.has-fade a {
+.header__menu a {
   color: green;
   text-decoration: none;
 }
