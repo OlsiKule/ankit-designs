@@ -13,22 +13,18 @@ window.addEventListener('scroll', () => {
   prevScrollPos = currentScrollPos;
 });
 
+// Toggle navbar to sticky
+window.onscroll = function () {
+  let navbar = document.querySelector('.navbar');
+  let roadmap = document.querySelector('.roadmap');
+  let contentTop = roadmap.offsetTop + 50; // Adjust offset as needed
 
-
-
-// Toggle navbar to sticky 
-window.onscroll = function() {
-    let navbar = document.querySelector('.navbar');
-    let roadmap = document.querySelector('.roadmap');
-    let contentTop = roadmap.offsetTop + 50; // Adjust offset as needed
-  
-    if (window.pageYOffset > contentTop) {
-      navbar.classList.add('active');
-    } else {
-      navbar.classList.remove('active');
-    }
+  if (window.pageYOffset > contentTop) {
+    navbar.classList.add('active');
+  } else {
+    navbar.classList.remove('active');
   }
-
+};
 
 // Hamburger menu
 // const btnHamburger = document.querySelector("#btnHamburger");
@@ -40,17 +36,15 @@ window.onscroll = function() {
 // btnHamburger.addEventListener("click", function(){
 //     // console.log("click hamburger");
 
-
-//     if(header.classList.contains("open")){ //Close hamburger menu 
+//     if(header.classList.contains("open")){ //Close hamburger menu
 //         body.classList.remove("noscroll")
 //         header.classList.remove("open");
 //         fadeElems.forEach(function(element){
 //             element.classList.remove("fade-in")
 //             element.classList.add("fade-out")
 //         })
-        
 
-//     }else{ //Open hamburger menu 
+//     }else{ //Open hamburger menu
 //         body.classList.add("noscroll")
 //         header.classList.add("open");
 //         fadeElems.forEach(function(element){
@@ -60,13 +54,14 @@ window.onscroll = function() {
 //     }
 // }) ;
 
-const hamburger = document.querySelector(".header__toggle");
-const menu = document.querySelector(".header__menu");
-// const logo = document.querySelector(".logo"); //hypothetical scenario
+const hamburger = document.querySelector('.header__toggle');
+const menu = document.querySelector('.header__menu');
+const closeMenu = document.querySelector('.closeMenu');
+console.log(closeMenu, 'closeMenu was clicked');
 
-hamburger.addEventListener( "click", () => {
-    hamburger.classList.toggle("onOff");
-    menu.classList.toggle("has-fade");
-    menu.classList.toggle("hide");
-    // logo.classList.toggle("hide")
-})
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('onOff');
+  menu.classList.toggle('has-fade');
+  menu.classList.toggle('hide');
+  closeMenu.classList.toggle('open');
+});
