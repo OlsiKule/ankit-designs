@@ -77,8 +77,8 @@ h1, h2, h3 {
   width: 1.575rem;
   cursor: pointer;
   position: fixed;
-  top: 70px;
-  right: 140px;
+  top: 29px;
+  right: 137px;
 }
 .header__menu.hide {
   opacity: 0;
@@ -91,9 +91,11 @@ h1, h2, h3 {
   top: -20px;
   gap: 0;
   flex-direction: column;
-  background-color: #a5c9e7;
+  background-color: hsl(32deg, 86%, 95%);
   text-align: center;
   padding: 70px;
+  transition: ease-in-out;
+  transition-delay: 0.3s;
 }
 .header__menu__item {
   background-color: red;

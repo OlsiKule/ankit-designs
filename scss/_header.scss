@@ -58,8 +58,8 @@
             width: 1.575rem;
             cursor: pointer;
             position: fixed;
-            top: 70px;
-            right: 140px;
+            top: 29px;
+            right: 137px;
 
             // &.open {
 
@@ -80,9 +80,12 @@
             top: -20px;
             gap: 0;
             flex-direction: column;
-            background-color: #a5c9e7;
+            // background-color: #a5c9e7;
+            background-color: $backgroundColor;
             text-align: center;
             padding: 70px;
+            transition: ease-in-out;
+            transition-delay: 0.3s;
         }
 
        
