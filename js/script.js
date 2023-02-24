@@ -63,5 +63,9 @@ hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('onOff');
   menu.classList.toggle('has-fade');
   menu.classList.toggle('hide');
+});
+
+closeMenu.addEventListener('click', () => {
   closeMenu.classList.toggle('open');
+  menu.classList.toggle('hide');
 });
