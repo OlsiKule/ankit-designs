@@ -110,7 +110,7 @@ h1, h2, h3 {
 .header .navbar {
   position: fixed;
   top: 0;
-  padding: 0 8.25rem 0 11rem;
+  padding: 5rem 8.25rem 5rem 11rem;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -124,6 +124,7 @@ h1, h2, h3 {
 }
 .header .navbar.active {
   padding: 0 8.25rem 0 11rem;
+  transition: transform 0.7s;
   background-color: hsl(32deg, 86%, 95%);
   box-shadow: 0 10px 5px -5px #f2e7db;
 }

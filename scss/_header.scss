@@ -6,11 +6,6 @@
 
         height: 5rem;
         width: 11.5625rem;
-
-        // this is for a hypothetical keeping hamburger scenario
-        // &.hide {
-        //     opacity: 0;
-        // }
     }
 
     // &__container {
@@ -61,10 +56,6 @@
             top: 29px;
             right: 137px;
 
-            // &.open {
-
-            // }
-
         }
 
         &.hide {
@@ -90,42 +81,28 @@
 
        
 
-        &__item{
+        &__item {
             background-color: red;
         }
         
-        li{
+        li {
             list-style: none;
             }
 
-        a{
+        a {
             color:green;
             text-decoration: none;
             }
-        
     }
     
-
-// Open : this could be used for the menu items 
-
-    // &.open {
-
-    //     .header__menu{
-    //         >span 
-
-    //         >span 
-
-    //         >span 
-    //     }
-
-    // }
-
-
     // CSS code for navbar 
     .navbar {
         position: fixed; 
         top: 0; 
-        padding: 0 8.25rem 0 11rem;
+        // padding: 0 8.25rem 0 11rem;
+        // padding: 5rem;
+        padding: 5rem 8.25rem 5rem 11rem;
+
         width: 100%; 
         margin: 0 auto;
         display: flex;
@@ -143,12 +120,15 @@
     .navbar.active {
         
         padding: 0 8.25rem 0 11rem;
+        // padding: 5rem;
+        transition: transform 0.7s; 
+
         background-color: $backgroundColor;
         box-shadow: 0 10px 5px -5px #f2e7db;
     }
 
 
-    nav{
+    nav {
         position: relative;
         padding-top: 1.0625rem;
         padding-bottom: 1.0625rem;
