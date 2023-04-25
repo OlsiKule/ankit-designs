@@ -80,8 +80,8 @@ h1, h2, h3 {
   width: 1.575rem;
   cursor: pointer;
   position: fixed;
-  top: 29px;
-  right: 137px;
+  top: 108px;
+  right: 135px;
 }
 .header__menu.hide {
   opacity: 0;
