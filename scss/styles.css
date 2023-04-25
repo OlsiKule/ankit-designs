@@ -120,7 +120,7 @@ h1, h2, h3 {
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
-  transition: transform 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 .header .navbar.hide {
   transform: translateY(-100%);
