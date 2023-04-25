@@ -110,7 +110,7 @@
         justify-content: space-between;
         align-items: center;
         background-color: transparent;
-        transition: transform 0.7s ease-in-out; 
+        transition: 0.7s ease-in-out; 
         
         &.hide {
             transform: translateY(-100%);
