@@ -80,6 +80,12 @@
             transition-delay: 0.3s;
         }
 
+
+        &.wrapper {
+            display: block;
+            text-align: left;
+        }
+
        
 
         &__item {
@@ -89,6 +95,10 @@
         
         li {
             list-style: none;
+            font-family: "Righteous", cursive;
+            text-transform: uppercase;
+            line-height: 85px;
+            font-size: 80px;
             }
 
         a {
