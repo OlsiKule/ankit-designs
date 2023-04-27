@@ -131,7 +131,7 @@ h1, h2, h3 {
   top: 50%;
   height: 3px;
   width: 100px; /* Adjust as needed */
-  background-color: #b2aba3; /* Adjust as needed */
+  background-color: hsl(25, 93%, 55%); /* Adjust as needed */
   transform: translateY(-50%);
   opacity: 1;
   transition: opacity 1s ease-in-out;
@@ -184,5 +184,5 @@ h1, h2, h3 {
 }
 
 .social {
-  height: 250vh;
+  height: 5vh;
 }
