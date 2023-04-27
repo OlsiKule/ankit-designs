@@ -140,8 +140,6 @@ h1, h2, h3 {
   transform: translateX(90px);
 }
 .header__menu .header__item:hover::before {
-  content: "home!";
-  position: absolute;
   opacity: 1;
 }
 .header__menu a {

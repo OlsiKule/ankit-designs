@@ -122,8 +122,6 @@
                 &:hover {
                 transform: translateX(90px);
                     &::before{
-                        content: "home!";
-                        position: absolute;
                         opacity: 1;
                     }
                 }
