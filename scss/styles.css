@@ -115,7 +115,7 @@ h1, h2, h3 {
 .header__menu__item {
   background-color: red;
 }
-.header__menu li {
+.header__menu .header__item {
   list-style: none;
   font-family: "Righteous", sans-serif;
   text-transform: uppercase;
@@ -124,28 +124,30 @@ h1, h2, h3 {
   position: relative;
   margin-left: -40px;
 }
-.header__menu li::before {
+.header__menu .header__item::before {
   position: absolute;
   content: "";
   left: -100px; /* Adjust as needed */
   top: 50%;
-  height: 5px;
+  height: 3px;
   width: 100px; /* Adjust as needed */
   background-color: #b2aba3; /* Adjust as needed */
   transform: translateY(-50%);
   opacity: 1;
-  transition: opacity 1s ease-out;
+  transition: opacity 1s ease-in-out;
 }
-.header__menu li:hover {
+.header__menu .header__item:hover {
   transform: translateX(90px);
 }
-.header__menu li:hover::before {
+.header__menu .header__item:hover::before {
+  content: "home!";
+  position: absolute;
   opacity: 1;
 }
 .header__menu a {
   color: #b2aba3;
   text-decoration: none;
-  transition: color 0.7s ease-out;
+  transition: color 1s ease-in-out;
 }
 .header__menu a:hover {
   color: black;

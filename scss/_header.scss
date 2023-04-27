@@ -98,7 +98,7 @@
         
         
         
-        li {
+        .header__item {
             list-style: none;
             font-family: "Righteous", sans-serif;
             text-transform: uppercase;
@@ -106,31 +106,33 @@
             transition: transform 0.7s ease-out;
             position: relative;
             margin-left: -40px;
-            &::before{
-                position: absolute;
-                content: "";
-                left: -100px; /* Adjust as needed */
-                top: 50%;
-                height: 5px;
-                width: 100px; /* Adjust as needed */
-                background-color: #b2aba3; /* Adjust as needed */
-                transform: translateY(-50%);
-                opacity: 1;
-                transition: opacity 1s ease-out;
-            }
+                &::before{
+                    position: absolute;
+                    content: "";
+                    left: -100px; /* Adjust as needed */
+                    top: 50%;
+                    height: 3px;
+                    width: 100px; /* Adjust as needed */
+                    background-color: #b2aba3; /* Adjust as needed */
+                    transform: translateY(-50%);
+                    opacity: 1;
+                    transition: opacity 1s ease-in-out;
+                }
 
                 &:hover {
                 transform: translateX(90px);
-                &::before{
-                    opacity: 1;
-                }
+                    &::before{
+                        content: "home!";
+                        position: absolute;
+                        opacity: 1;
+                    }
                 }
             }
 
         a {
             color:#b2aba3;
             text-decoration: none;
-            transition: color 0.7s ease-out;
+            transition: color 1s ease-in-out;
             &:hover{
                 color:black;
                 }
@@ -182,14 +184,7 @@
         top: 0;
         width: 100%;
       }
-
-
-
-    //   .header__item {
-    //     transition: transform 0.7s ease-in-out;
-    //     &:hover {
-    //       transform: translateX(50px);
-    //     }
-    //   }
+  
 
 }
+
