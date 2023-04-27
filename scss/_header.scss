@@ -82,10 +82,11 @@
 
 
         &.wrapper {
-            display: block;
+            display: flex;
             text-align: left;
             margin-top: 8rem;
             overflow: hidden;
+            flex-direction: column;
             
         }
         
@@ -106,6 +107,7 @@
             transition: transform 0.7s ease-out;
             position: relative;
             margin-left: -40px;
+            max-width: 80px;
                 &::before{
                     position: absolute;
                     content: "";
