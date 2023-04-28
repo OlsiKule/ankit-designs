@@ -109,7 +109,7 @@ h1, h2, h3 {
 .header__menu.wrapper {
   display: flex;
   text-align: left;
-  margin-top: 8rem;
+  margin: 2rem;
   overflow: hidden;
   flex-direction: column;
 }
@@ -147,10 +147,16 @@ h1, h2, h3 {
 .header__menu.social {
   height: 10vh;
   margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+.header__menu.social .header__socials {
+  margin-right: 50px;
 }
 .header__menu.social .header__socials i {
-  transform: scale(3);
-  padding: 10px;
+  margin: 0 30px;
+  transform: scale(4);
+  padding: 5px;
 }
 .header__menu a {
   color: hsl(32, 9%, 67%);
