@@ -14,6 +14,15 @@
     //     // margin: 25px;
     // }
 
+    a {
+        color: $backgroundColor-2;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+        &:hover{
+            color:black;
+            }
+        }
+
 
 // Hamburger Menu
     &__toggle {
@@ -75,7 +84,7 @@
             text-align: center;
             padding: 70px;
             transition: ease-in-out;
-            transition-delay: 0.3s;
+            // transition-delay: 0.3s;
         }
 
 
@@ -115,7 +124,7 @@
                     background-color: $backgroundColor-1; /* Adjust as needed */
                     transform: translateY(-50%);
                     opacity: 1;
-                    transition: opacity 1s ease-in-out;
+                    transition: opacity 0.7s ease-in-out;
                 }
 
                 &:hover {
@@ -128,10 +137,9 @@
 
         
      
-            &.social{
+        &.social{
                 height: 10vh;
                 margin-top: 40px;
-
                 display: flex;
                 align-items: center;
 
@@ -142,21 +150,24 @@
                     i{
                         margin: 0 30px;
                         transform: scale(4);
-                        padding: 5px;
                     }
                     
                 }
             }
         
+        &.paparazzi {
+            position: absolute;
+            right: 170px;
+            bottom: 50px;
+            transform: scaleX(-1);
 
-        a {
-            color: $backgroundColor-2;
-            text-decoration: none;
-            transition: color 0.5s ease-in-out;
-            &:hover{
-                color:black;
-                }
+            .photographer {
+                width: 100%;
+                height: 360px;
+                object-fit: cover;
             }
+        }
+
     }
     
     // CSS code for navbar 
