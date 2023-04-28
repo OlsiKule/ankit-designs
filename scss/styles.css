@@ -40,7 +40,7 @@ body {
   line-height: 1.3;
   overflow-x: hidden;
   background-color: hsl(32, 86%, 95%);
-  margin-top: 140px;
+  margin-top: 40px;
 }
 
 h1, h2, h3 {
@@ -81,7 +81,7 @@ h1, h2, h3 {
 .header__toggle.onOff :last-child {
   transform: translateY(-10px) rotate(-45deg);
 }
-.header__menu img {
+.header__menu .closeMenu {
   height: auto;
   width: 1.575rem;
   cursor: pointer;
@@ -107,10 +107,11 @@ h1, h2, h3 {
   transition-delay: 0.3s;
 }
 .header__menu.wrapper {
-  display: block;
+  display: flex;
   text-align: left;
   margin-top: 8rem;
   overflow: hidden;
+  flex-direction: column;
 }
 .header__menu__item {
   background-color: red;
@@ -123,6 +124,7 @@ h1, h2, h3 {
   transition: transform 0.7s ease-out;
   position: relative;
   margin-left: -40px;
+  max-width: 80px;
 }
 .header__menu .header__item::before {
   position: absolute;
@@ -142,10 +144,18 @@ h1, h2, h3 {
 .header__menu .header__item:hover::before {
   opacity: 1;
 }
+.header__menu.social {
+  height: 10vh;
+  margin-top: 40px;
+}
+.header__menu.social .header__socials i {
+  transform: scale(3);
+  padding: 10px;
+}
 .header__menu a {
-  color: #b2aba3;
+  color: hsl(32, 9%, 67%);
   text-decoration: none;
-  transition: color 1s ease-in-out;
+  transition: color 0.5s ease-in-out;
 }
 .header__menu a:hover {
   color: black;

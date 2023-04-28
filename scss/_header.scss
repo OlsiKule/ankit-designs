@@ -49,14 +49,13 @@
 
     &__menu {
 
-        img {
+        .closeMenu {
             height: auto;
             width: 1.575rem;
             cursor: pointer;
             position: fixed;
             top: 108px;
             right: 135px;
-
         }
 
         &.hide {
@@ -72,7 +71,6 @@
             top: -20px;
             gap: 0;
             flex-direction: column;
-            // background-color: #a5c9e7;
             background-color: $backgroundColor;
             text-align: center;
             padding: 70px;
@@ -87,14 +85,12 @@
             margin-top: 8rem;
             overflow: hidden;
             flex-direction: column;
-            
         }
         
         
         
         &__item {
             background-color: red;
-            
         }
         
         
@@ -108,6 +104,7 @@
             position: relative;
             margin-left: -40px;
             max-width: 80px;
+
                 &::before{
                     position: absolute;
                     content: "";
@@ -129,10 +126,27 @@
                 }
             }
 
+        
+     
+            &.social{
+                height: 10vh;
+                margin-top: 40px;
+
+                .header__socials{
+                    
+                    i{
+                        transform: scale(3);
+                        padding: 10px;
+                    }
+                    
+                }
+            }
+        
+
         a {
             color: $backgroundColor-2;
             text-decoration: none;
-            transition: color 1s ease-in-out;
+            transition: color 0.5s ease-in-out;
             &:hover{
                 color:black;
                 }
