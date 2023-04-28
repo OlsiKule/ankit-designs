@@ -216,7 +216,7 @@ h1, h2, h3 {
 }
 .header__menu.star3 {
   position: absolute;
-  left: 420px;
+  right: 550px;
   top: 320px;
 }
 .header__menu.star3 .whitestar {
