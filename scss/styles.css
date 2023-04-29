@@ -139,9 +139,6 @@ h1, h2, h3 {
   overflow: hidden;
   flex-direction: column;
 }
-.header__menu__item {
-  background-color: red;
-}
 .header__menu .header__item {
   list-style: none;
   font-family: "Righteous", sans-serif;
@@ -152,6 +149,9 @@ h1, h2, h3 {
   margin-left: -40px;
   max-width: 80px;
 }
+.header__menu .header__item .dot {
+  display: none;
+}
 .header__menu .header__item::before {
   position: absolute;
   content: "";
@@ -161,14 +161,12 @@ h1, h2, h3 {
   width: 100px; /* Adjust as needed */
   background-color: hsl(25, 93%, 55%); /* Adjust as needed */
   transform: translateY(-50%);
-  opacity: 1;
-  transition: opacity 0.7s ease-in-out;
 }
 .header__menu .header__item:hover {
   transform: translateX(90px);
 }
-.header__menu .header__item:hover::before {
-  opacity: 1;
+.header__menu .header__item:hover .dot {
+  display: inline;
 }
 .header__menu.social {
   height: 10vh;
