@@ -100,13 +100,24 @@
             list-style: none;
             font-family: $font-type-righteous;
             text-transform: uppercase;
-            font-size: $font-xlg-93px;
+            font-size: $font-xxlg-93px;
             transition: transform 0.7s ease-out;
             position: relative;
             margin-left: -40px;
             max-width: 80px;
-
+            line-height: 1.1;
             
+            @include breakpoint-down (large){
+                font-size: $font-xlg-60px;
+            }
+            
+            @include breakpoint-down (medium){
+                font-size: $font-mlg-45px;
+                // max-width: 0px;
+                // margin-left: 0px;
+            }
+
+
 
                 .dot{
                     display: none;
@@ -120,11 +131,22 @@
                     width: 100px; 
                     background-color: $backgroundColor-1; 
                     transform: translateY(-50%);
+                    @include breakpoint-down (medium){
+                        position: absolute;
+                        content: "";
+                        top: 50%;
+                        height: 3px;
+                        width: 100px; 
+                    }
                     
                 }
 
                 &:hover {
                 transform: translateX(90px);
+
+                @include breakpoint-down (medium) {
+                        transform: translateX(40px);
+                    }
                
                 .dot{
                     display: inline;
@@ -147,10 +169,12 @@
                 .header__socials{
 
                     margin-right: 50px;
-                    // padding: 10px;
                     i{
                         margin: 0 30px;
                         transform: scale(4);
+                        @include breakpoint-down (medium) {
+                            transform: scale(3);
+                        }
                     }
                     
                 }

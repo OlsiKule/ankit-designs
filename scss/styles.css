@@ -148,6 +148,17 @@ h1, h2, h3 {
   position: relative;
   margin-left: -40px;
   max-width: 80px;
+  line-height: 1.1;
+}
+@media (max-width: 87.4375em) {
+  .header__menu .header__item {
+    font-size: 3.75rem;
+  }
+}
+@media (max-width: 63.9375em) {
+  .header__menu .header__item {
+    font-size: 2.8125rem;
+  }
 }
 .header__menu .header__item .dot {
   display: none;
@@ -162,8 +173,22 @@ h1, h2, h3 {
   background-color: hsl(25, 93%, 55%);
   transform: translateY(-50%);
 }
+@media (max-width: 63.9375em) {
+  .header__menu .header__item::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    height: 3px;
+    width: 100px;
+  }
+}
 .header__menu .header__item:hover {
   transform: translateX(90px);
+}
+@media (max-width: 63.9375em) {
+  .header__menu .header__item:hover {
+    transform: translateX(40px);
+  }
 }
 .header__menu .header__item:hover .dot {
   display: inline;
@@ -180,6 +205,11 @@ h1, h2, h3 {
 .header__menu.social .header__socials i {
   margin: 0 30px;
   transform: scale(4);
+}
+@media (max-width: 63.9375em) {
+  .header__menu.social .header__socials i {
+    transform: scale(3);
+  }
 }
 .header__menu.paparazzi {
   position: absolute;
