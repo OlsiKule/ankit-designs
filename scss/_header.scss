@@ -19,7 +19,7 @@
         text-decoration: none;
         transition: color 0.3s ease-in-out;
         &:hover{
-            color:black;
+            color:$black;
             }
         }
 
@@ -63,8 +63,8 @@
             width: 1.575rem;
             cursor: pointer;
             position: fixed;
-            top: 108px;
-            right: 135px;
+            top: 6.75rem;
+            right: 8.4375rem;
         }
 
         &.hide {
@@ -98,13 +98,15 @@
         
         .header__item {
             list-style: none;
-            font-family: "Righteous", sans-serif;
+            font-family: $font-type-righteous;
             text-transform: uppercase;
-            font-size: 55px;
+            font-size: $font-xlg-93px;
             transition: transform 0.7s ease-out;
             position: relative;
             margin-left: -40px;
             max-width: 80px;
+
+            
 
                 .dot{
                     display: none;
