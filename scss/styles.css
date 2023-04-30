@@ -149,15 +149,18 @@ h1, h2, h3 {
   margin-left: -40px;
   max-width: 80px;
   line-height: 1.1;
+  transition: all 0.4s linear;
 }
 @media (max-width: 87.4375em) {
   .header__menu .header__item {
     font-size: 3.75rem;
+    transition: all 0.4s linear;
   }
 }
 @media (max-width: 63.9375em) {
   .header__menu .header__item {
     font-size: 2.8125rem;
+    transition: all 0.4s linear;
   }
 }
 .header__menu .header__item .dot {
@@ -217,10 +220,18 @@ h1, h2, h3 {
   bottom: 50px;
   transform: scaleX(-1);
 }
-.header__menu.paparazzi .photographer {
+.header__menu .photographer {
   width: 100%;
   height: 360px;
   object-fit: cover;
+}
+@media (max-width: 63.9375em) {
+  .header__menu .photographer {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transform: scaleX(-1.5);
+  }
 }
 .header__menu.star1 {
   position: absolute;

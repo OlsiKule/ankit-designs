@@ -106,13 +106,18 @@
             margin-left: -40px;
             max-width: 80px;
             line-height: 1.1;
+            transition: all 0.4s linear;
+
             
             @include breakpoint-down (large){
                 font-size: $font-xlg-60px;
+                transition: all 0.4s linear;
+
             }
             
             @include breakpoint-down (medium){
                 font-size: $font-mlg-45px;
+                transition: all 0.4s linear;
                 // max-width: 0px;
                 // margin-left: 0px;
             }
@@ -185,12 +190,19 @@
             right: 170px;
             bottom: 50px;
             transform: scaleX(-1);
+        }
+        
+        .photographer {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
 
-            .photographer {
+            @include breakpoint-down (medium) {
                 width: 100%;
-                height: 360px;
+                height: 260px;
                 object-fit: cover;
-            }
+                transform: scaleX(-1.5);
+        }
         }
 
 
