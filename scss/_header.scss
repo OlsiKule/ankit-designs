@@ -1,6 +1,50 @@
 .header {
         transition: transform 0.7s ease-in-out; 
 
+ // CSS code for navbar 
+    .navbar {
+        position: fixed; 
+        top: 0; 
+        padding: 5rem 8.25rem 5rem 11rem;
+        width: 100%; 
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        transition: 0.7s ease-in-out; 
+        
+        &.hide {
+            transform: translateY(-100%);
+        }
+    }
+    
+    
+    .navbar.active {
+        
+        padding: 0 8.25rem 0 11rem;
+        transition: transform 0.7s; 
+        
+        background-color: $backgroundColor;
+        box-shadow: 0 10px 5px -5px #f2e7db;
+    }
+    
+    
+    nav {
+        position: relative;
+        padding-top: 1.0625rem;
+        padding-bottom: 1.0625rem;
+        // temps
+        transition: transform 0.7s ease-in-out; 
+    }
+
+    &.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+
 
     // logo
     img{
@@ -84,7 +128,6 @@
             text-align: center;
             padding: 70px;
             transition: ease-in-out;
-            // transition-delay: 0.3s;
         }
 
 
@@ -112,14 +155,14 @@
             @include breakpoint-down (large){
                 font-size: $font-xlg-60px;
                 transition: all 0.4s linear;
+                transition: transform 0.7s ease-out;
 
             }
             
             @include breakpoint-down (medium){
                 font-size: $font-mlg-45px;
                 transition: all 0.4s linear;
-                // max-width: 0px;
-                // margin-left: 0px;
+                transition: transform 0.7s ease-out;
             }
 
 
@@ -244,48 +287,7 @@
 
     }
     
-    // CSS code for navbar 
-    .navbar {
-        position: fixed; 
-        top: 0; 
-        padding: 5rem 8.25rem 5rem 11rem;
-        width: 100%; 
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: transparent;
-        transition: 0.7s ease-in-out; 
-        
-        &.hide {
-            transform: translateY(-100%);
-        }
-    }
-    
-    
-    .navbar.active {
-        
-        padding: 0 8.25rem 0 11rem;
-        transition: transform 0.7s; 
-        
-        background-color: $backgroundColor;
-        box-shadow: 0 10px 5px -5px #f2e7db;
-    }
-    
-    
-    nav {
-        position: relative;
-        padding-top: 1.0625rem;
-        padding-bottom: 1.0625rem;
-        // temps
-        transition: transform 0.7s ease-in-out; 
-    }
-
-    &.sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-      }
+   
   
 
 }

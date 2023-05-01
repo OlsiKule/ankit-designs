@@ -78,6 +78,38 @@ h1, h2, h3 {
 .header {
   transition: transform 0.7s ease-in-out;
 }
+.header .navbar {
+  position: fixed;
+  top: 0;
+  padding: 5rem 8.25rem 5rem 11rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  transition: 0.7s ease-in-out;
+}
+.header .navbar.hide {
+  transform: translateY(-100%);
+}
+.header .navbar.active {
+  padding: 0 8.25rem 0 11rem;
+  transition: transform 0.7s;
+  background-color: hsl(32, 86%, 95%);
+  box-shadow: 0 10px 5px -5px #f2e7db;
+}
+.header nav {
+  position: relative;
+  padding-top: 1.0625rem;
+  padding-bottom: 1.0625rem;
+  transition: transform 0.7s ease-in-out;
+}
+.header.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 .header img {
   height: 5rem;
   width: 11.5625rem;
@@ -155,12 +187,14 @@ h1, h2, h3 {
   .header__menu .header__item {
     font-size: 3.75rem;
     transition: all 0.4s linear;
+    transition: transform 0.7s ease-out;
   }
 }
 @media (max-width: 63.9375em) {
   .header__menu .header__item {
     font-size: 2.8125rem;
     transition: all 0.4s linear;
+    transition: transform 0.7s ease-out;
   }
 }
 .header__menu .header__item .dot {
@@ -262,38 +296,6 @@ h1, h2, h3 {
   width: 100%;
   height: 55px;
   object-fit: cover;
-}
-.header .navbar {
-  position: fixed;
-  top: 0;
-  padding: 5rem 8.25rem 5rem 11rem;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: transparent;
-  transition: 0.7s ease-in-out;
-}
-.header .navbar.hide {
-  transform: translateY(-100%);
-}
-.header .navbar.active {
-  padding: 0 8.25rem 0 11rem;
-  transition: transform 0.7s;
-  background-color: hsl(32, 86%, 95%);
-  box-shadow: 0 10px 5px -5px #f2e7db;
-}
-.header nav {
-  position: relative;
-  padding-top: 1.0625rem;
-  padding-bottom: 1.0625rem;
-  transition: transform 0.7s ease-in-out;
-}
-.header.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 .social {
