@@ -247,10 +247,16 @@ h1, h2, h3 {
 }
 .header__menu.paparazzi {
   position: absolute;
-  right: 170px;
-  top: 250px;
+  right: 290px;
+  top: 390px;
   transform: scaleX(-1);
   width: 100%;
+}
+@media (max-width: 87.4375em) {
+  .header__menu.paparazzi {
+    right: 270px;
+    top: 330px;
+  }
 }
 @media (max-width: 63.9375em) {
   .header__menu.paparazzi {
@@ -259,7 +265,7 @@ h1, h2, h3 {
   }
 }
 .header__menu .photographer {
-  width: 40%;
+  width: 30%;
   height: auto;
   object-fit: cover;
 }
