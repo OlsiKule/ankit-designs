@@ -286,13 +286,25 @@ h1, h2, h3 {
 }
 .header__menu.star2 {
   position: absolute;
-  right: 420px;
-  top: 285px;
+  right: 630px;
+  top: 345px;
+}
+@media (max-width: 87.4375em) {
+  .header__menu.star2 {
+    right: 610px;
+    top: 275px;
+  }
+}
+@media (max-width: 63.9375em) {
+  .header__menu.star2 {
+    right: 400px;
+    top: 220px;
+  }
 }
 @media (max-width: 47.875em) {
   .header__menu.star2 {
-    right: 420px;
-    top: 285px;
+    right: 110px;
+    top: 220px;
   }
 }
 .header__menu.star2 .orangestar {

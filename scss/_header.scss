@@ -238,7 +238,7 @@
             @include breakpoint-down (medium) {
                 right: 170px;
                 top: 250px;
-        }
+            }
 
         }
         
@@ -269,21 +269,35 @@
                 object-fit: cover;
             }
         }
-
+        
         &.star2{
             position: absolute;
-            right: 420px;
-            top: 285px;
+            right: 630px;
+            top: 345px;
+            
+            @include breakpoint-down (large) {
+                right: 610px;
+                top: 275px;
+            }
+         
+            @include breakpoint-down (medium) {
+                right: 400px;
+                top: 220px;
+            }
 
             @include breakpoint-down (intermediate) {
-                right: 420px;
-                top: 285px;
+                right: 110px;
+                top: 220px;
             }
+
+
+         
 
             .orangestar{
                 width: 100%;
                 height: 20px;
                 object-fit: cover;
+
             }
         }
 
