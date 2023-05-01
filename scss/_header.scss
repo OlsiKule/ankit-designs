@@ -149,20 +149,20 @@
             margin-left: -40px;
             max-width: 80px;
             line-height: 1.1;
-            transition: all 0.4s linear;
+            // transition: all 0.4s linear;
 
             
             @include breakpoint-down (large){
                 font-size: $font-xlg-60px;
-                transition: all 0.4s linear;
-                transition: transform 0.7s ease-out;
+                // transition: all 0.4s linear;
+                transition: all 0.7s ease-out;
 
             }
             
             @include breakpoint-down (medium){
                 font-size: $font-mlg-45px;
-                transition: all 0.4s linear;
-                transition: transform 0.7s ease-out;
+                // transition: all 0.4s linear;
+                transition: all 0.7s ease-out;
             }
 
 
@@ -170,6 +170,7 @@
                 .dot{
                     display: none;
                 }
+
                 &::before{
                     position: absolute;
                     content: "";
@@ -179,6 +180,7 @@
                     width: 100px; 
                     background-color: $backgroundColor-1; 
                     transform: translateY(-50%);
+
                     @include breakpoint-down (medium){
                         position: absolute;
                         content: "";
