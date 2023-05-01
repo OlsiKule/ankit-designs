@@ -149,7 +149,7 @@
             margin-left: -40px;
             max-width: 80px;
             line-height: 1;
-
+            transition: all 0.7s ease-out;
             
             @include breakpoint-down (large){
                 font-size: $font-xlg-60px;
@@ -238,11 +238,13 @@
             @include breakpoint-down (large) {
                 right: 270px;
                 top: 330px;
+                transition: all 0.7s ease-out;
             }
 
             @include breakpoint-down (medium) {
                 right: 170px;
                 top: 250px;
+                transition: all 0.7s ease-out;
             }
 
         }
@@ -283,20 +285,20 @@
             @include breakpoint-down (large) {
                 right: 610px;
                 top: 275px;
+                transition: all 0.7s ease-out;
             }
          
             @include breakpoint-down (medium) {
                 right: 400px;
                 top: 220px;
+                transition: all 0.7s ease-out;
             }
 
             @include breakpoint-down (intermediate) {
                 right: 110px;
                 top: 220px;
+                transition: all 0.7s ease-out;
             }
-
-
-         
 
             .orangestar{
                 width: 100%;
@@ -308,12 +310,28 @@
 
         &.star3{
             position: absolute;
-            right: 550px;
-            top: 320px;
+            right: 700px;
+            top: 415px;
+
+            @include breakpoint-down (large) {
+                right: 700px;
+                top: 365px;
+                transition: all 0.7s ease-out;
+            }
+         
+            // @include breakpoint-down (medium) {
+            //     right: 400px;
+            //     top: 220px;
+            // }
+
+            // @include breakpoint-down (intermediate) {
+            //     right: 110px;
+            //     top: 220px;
+            // }
 
             .whitestar{
-                width: 100%;
-                height: 55px;
+                width: 110%;
+                height: 70px;
                 object-fit: cover;
             }
         }
