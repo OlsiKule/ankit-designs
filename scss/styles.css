@@ -180,7 +180,7 @@ h1, h2, h3 {
   position: relative;
   margin-left: -40px;
   max-width: 80px;
-  line-height: 1.1;
+  line-height: 1;
 }
 @media (max-width: 87.4375em) {
   .header__menu .header__item {
