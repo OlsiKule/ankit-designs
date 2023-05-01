@@ -6,7 +6,7 @@
 // 640px, 767px, 1024px, 1400px
 $breakpoints-up: ("intermediate": "40em", "medium": "47.9375em", "large": "64em", "xlarge": "87.5em");
 
-// 639px, 766px, 1023px, 1399px
+// 639px - 39.9375em, 766px - 47.875em, 1023px - 63.9375em, 1399px - 87.4375em
 $breakpoints-down: ("small" : "39.9375em", "intermediate": "47.875em", "medium": "63.9375em", "large": "87.4375em");
 
 @mixin breakpoint-up($size) {
