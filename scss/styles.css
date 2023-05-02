@@ -171,6 +171,13 @@ h1, h2, h3 {
   overflow: hidden;
   flex-direction: column;
 }
+@media (max-width: 47.875em) {
+  .header__menu.wrapper {
+    margin-top: 9rem;
+    margin-left: -3rem;
+    transition: all 0.7s ease-out;
+  }
+}
 .header__menu .header__item {
   list-style: none;
   font-family: "Righteous", cursive;

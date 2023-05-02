@@ -138,7 +138,11 @@
             overflow: hidden;
             flex-direction: column;
 
-
+            @include breakpoint-down (intermediate){
+                margin-top: 9rem;
+                margin-left: -3rem;
+                transition: all 0.7s ease-out;
+            }
         }
         
         .header__item {
