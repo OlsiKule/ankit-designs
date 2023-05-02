@@ -286,8 +286,29 @@ h1, h2, h3 {
 }
 .header__menu.star1 {
   position: absolute;
-  right: 960px;
-  bottom: 100px;
+  right: 950px;
+  top: 630px;
+}
+@media (max-width: 87.4375em) {
+  .header__menu.star1 {
+    right: 610px;
+    top: 520px;
+    transition: all 0.7s ease-out;
+  }
+}
+@media (max-width: 63.9375em) {
+  .header__menu.star1 {
+    right: 420px;
+    top: 425px;
+    transition: all 0.7s ease-out;
+  }
+}
+@media (max-width: 47.875em) {
+  .header__menu.star1 {
+    right: 130px;
+    top: 430px;
+    transition: all 0.7s ease-out;
+  }
 }
 .header__menu.star1 .blackstar {
   width: 100%;

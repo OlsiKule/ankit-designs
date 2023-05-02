@@ -268,8 +268,29 @@
 
         &.star1{
             position: absolute;
-            right: 960px;
-            bottom: 100px;
+            right: 950px;
+            top: 630px;
+
+            @include breakpoint-down (large) {
+                right: 610px;
+                top: 520px;
+                transition: all 0.7s ease-out;
+            }
+
+            @include breakpoint-down (medium) {
+                right: 420px;
+                top: 425px;
+                transition: all 0.7s ease-out;
+            }
+        
+            @include breakpoint-down (intermediate) {
+                right: 130px;
+                top: 430px;
+                transition: all 0.7s ease-out;
+            }
+
+
+         
 
             .blackstar{
                 width: 100%;
