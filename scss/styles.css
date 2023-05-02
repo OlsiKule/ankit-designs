@@ -256,6 +256,13 @@ h1, h2, h3 {
     transition: all 0.7s ease-out;
   }
 }
+@media (max-width: 47.875em) {
+  .header__menu.social .header__socials i {
+    transform: scale(2.8);
+    transition: all 0.7s ease-out;
+    margin-right: -18px;
+  }
+}
 .header__menu.paparazzi {
   position: absolute;
   right: 290px;
