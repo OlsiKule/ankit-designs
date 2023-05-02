@@ -137,6 +137,7 @@
             margin: 2rem;
             overflow: hidden;
             flex-direction: column;
+            transition: all 0.7s ease-out;
 
             @include breakpoint-down (intermediate){
                 margin-top: 9rem;

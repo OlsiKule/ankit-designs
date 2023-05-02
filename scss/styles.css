@@ -170,6 +170,7 @@ h1, h2, h3 {
   margin: 2rem;
   overflow: hidden;
   flex-direction: column;
+  transition: all 0.7s ease-out;
 }
 @media (max-width: 47.875em) {
   .header__menu.wrapper {
