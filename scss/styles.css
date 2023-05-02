@@ -235,6 +235,7 @@ h1, h2, h3 {
   align-items: center;
 }
 .header__menu.social .header__socials {
+  transition: all 0.7s ease-out;
   margin-right: 50px;
 }
 .header__menu.social .header__socials i {
@@ -244,6 +245,8 @@ h1, h2, h3 {
 @media (max-width: 63.9375em) {
   .header__menu.social .header__socials i {
     transform: scale(3);
+    margin: 0px 15px;
+    transition: all 0.7s ease-out;
   }
 }
 .header__menu.paparazzi {
