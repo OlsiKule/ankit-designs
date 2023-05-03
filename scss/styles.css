@@ -407,10 +407,16 @@ h1, h2, h3 {
 }
 
 .hero {
-  background-color: hsl(32, 9%, 67%);
+  border: 2px solid rebeccapurple;
+  max-width: 1400px;
+  min-width: 356px;
+  margin: 0 auto;
 }
 .hero .header__logo {
   top: 65%;
   position: absolute;
   right: 10%;
+}
+.hero .container {
+  background-image: url(../images/banner-gradient.png);
 }
