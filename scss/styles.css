@@ -405,3 +405,12 @@ h1, h2, h3 {
 .social {
   height: 5vh;
 }
+
+.hero {
+  background-color: hsl(25, 93%, 55%);
+}
+.hero .header__logo {
+  top: 65%;
+  position: absolute;
+  right: 10%;
+}
