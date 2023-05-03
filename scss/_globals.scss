@@ -50,3 +50,10 @@ h1, h2, h3 {
     //     height: auto;
     // }
 }
+
+.container {
+    border: 2px solid rebeccapurple;
+    max-width: 1400px;
+    min-width: 356px;
+    margin: 0 auto;
+}

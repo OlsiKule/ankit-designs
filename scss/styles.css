@@ -75,6 +75,13 @@ h1, h2, h3 {
   align-items: center;
 }
 
+.container {
+  border: 2px solid rebeccapurple;
+  max-width: 1400px;
+  min-width: 356px;
+  margin: 0 auto;
+}
+
 .header {
   transition: transform 0.7s ease-in-out;
 }
@@ -406,17 +413,11 @@ h1, h2, h3 {
   height: 5vh;
 }
 
-.hero {
-  border: 2px solid rebeccapurple;
-  max-width: 1400px;
-  min-width: 356px;
-  margin: 0 auto;
-}
 .hero .header__logo {
   top: 65%;
   position: absolute;
   right: 10%;
 }
-.hero .container {
+.hero .bgimage {
   background-image: url(../images/banner-gradient.png);
 }
