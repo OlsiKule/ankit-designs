@@ -28,6 +28,13 @@ body {
     background-color: $backgroundColor;
     // the line below is experimental
     margin-top: 40px;
+    
+    background-image: url(../images/banner-gradient.png);
+    background-repeat: no-repeat;
+    background-position: center top 20%;
+    background-size: 100% auto;
+
+
 }
 
 // text

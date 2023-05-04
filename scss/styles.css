@@ -60,6 +60,10 @@ body {
   overflow-x: hidden;
   background-color: hsl(32, 86%, 95%);
   margin-top: 40px;
+  background-image: url(../images/banner-gradient.png);
+  background-repeat: no-repeat;
+  background-position: center top 20%;
+  background-size: 100% auto;
 }
 
 h1, h2, h3 {
@@ -421,13 +425,4 @@ h1, h2, h3 {
   top: 65%;
   position: absolute;
   right: 10%;
-  transform: translate(-50%, -50%);
-}
-.hero .bgimage {
-  background-image: url(../images/banner-gradient.png);
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 1400px;
-  padding: 20px;
-  margin: 0 auto;
 }
