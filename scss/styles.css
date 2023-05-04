@@ -413,11 +413,21 @@ h1, h2, h3 {
   height: 5vh;
 }
 
-.hero .header__logo {
+.hero .hero__image {
+  position: relative;
+  height: 500px;
+}
+.hero .hero__image .hero__anime {
   top: 65%;
   position: absolute;
   right: 10%;
+  transform: translate(-50%, -50%);
 }
 .hero .bgimage {
   background-image: url(../images/banner-gradient.png);
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
 }

@@ -1,16 +1,28 @@
 .hero {
     // background-color: $backgroundColor-grey;
-  
     
-    .header__logo {
-        top: 65%;
-        position: absolute;
-        right: 10%;
+    .hero__image{
+        position: relative;
+        height: 500px;
+
+        
+        .hero__anime {
+            top: 65%;
+            position: absolute;
+            right: 10%;
+
+            transform: translate(-50%, -50%);
+        }
     }
+    
 
     .bgimage {
         background-image: url(../images/banner-gradient.png);
-
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 1400px;
+        padding: 20px;
+        margin: 0 auto;
     }
 
 
