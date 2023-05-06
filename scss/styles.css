@@ -59,11 +59,10 @@ body {
   line-height: 1.3;
   overflow-x: hidden;
   background-color: hsl(32, 86%, 95%);
-  margin-top: 40px;
   background-image: url(../images/banner-gradient.png);
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 100% 150vh;
+  background-size: 100% 180vh;
 }
 
 h1, h2, h3 {
@@ -422,7 +421,7 @@ h1, h2, h3 {
   height: 500px;
 }
 .hero .hero__image .hero__anime {
-  top: 65%;
+  top: 5%;
   position: absolute;
-  right: 10%;
+  right: 20%;
 }

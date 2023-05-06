@@ -27,12 +27,12 @@ body {
     overflow-x: hidden;
     background-color: $backgroundColor;
     // the line below is experimental
-    margin-top: 40px;
+    // margin-top: 40px;
     
     background-image: url(../images/banner-gradient.png);
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 100% 150vh;
+    background-size: 100% 180vh;
 
 
 }
@@ -41,7 +41,6 @@ body {
 h1, h2, h3 {
     font-weight: 300;
     line-height: 1.15;
-    // color: $darkBlue;
     margin-top: 0;
 }
 

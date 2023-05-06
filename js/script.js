@@ -17,8 +17,8 @@ window.addEventListener('scroll', () => {
 // Toggle navbar to sticky
 window.onscroll = function () {
   let navbar = document.querySelector('.navbar');
-  let roadmap = document.querySelector('.roadmap');
-  let contentTop = roadmap.offsetTop + 50; // Adjust offset as needed
+  let hero = document.querySelector('.hero');
+  let contentTop = hero.offsetTop; //+ 50 Adjust offset as needed
 
   if (window.pageYOffset > contentTop) {
     navbar.classList.add('active');
@@ -31,7 +31,7 @@ window.onscroll = function () {
 const hamburger = document.querySelector('.header__toggle');
 const menu = document.querySelector('.header__menu');
 const closeMenu = document.querySelector('.closeMenu');
-console.log(closeMenu, 'closeMenu was clicked');
+// console.log(closeMenu, 'closeMenu was clicked');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('onOff');
