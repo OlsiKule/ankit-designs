@@ -417,11 +417,33 @@ h1, h2, h3 {
 }
 
 .hero .hero__image {
-  position: relative;
-  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.hero .hero__image .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.hero .hero__image .circle.hero__outter {
+  border: 2px solid orange;
+  height: 100px;
+  width: 100px;
+}
+.hero .hero__image .circle.hero__mid {
+  border: 2px solid blue;
+  height: 70px;
+  width: 70px;
+}
+.hero .hero__image .circle.hero__inner {
+  border: 2px solid red;
+  height: 40px;
+  width: 40px;
 }
 .hero .hero__image .hero__anime {
   top: -10%;
-  position: absolute;
   right: 20%;
 }

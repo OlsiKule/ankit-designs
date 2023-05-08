@@ -1,22 +1,91 @@
 .hero {
+    // disabled temporarily
+    // .hero__image{
+    //     // position: relative;
+    //     height: 500px;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+
+    //     .circle {
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //         border-radius: 50%;
+            
+    //         &.outter {
+    //             border: 2px solid orange;
+    //             height: 100px;
+    //             width: 100px;
+    //         }
+            
+    //         &.mid {
+    //             border: 2px solid blue;
+    //             height: 70px;
+    //             width: 70px;
+    //         }
+            
+    //         &.inner {
+    //             border: 2px solid red;
+    //             height: 40px;
+    //             width: 40px;
+    //         }
+    // }
+
+    //     .hero__anime {
+    //         top: -10%;
+    //         // position: absolute;
+    //         right: 20%;
+
+    //     }
+    // }
     
-    .hero__image{
-        position: relative;
-        height: 500px;
-
-
-        .hero__anime {
-            top: -10%;
-            position: absolute;
-            right: 20%;
-
-        }
-    }
-    
-    // disabled tempararily
+    // disabled temporarily
     // .bgimage {
     
     // }
+
+    .hero__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        
+        .circle {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+      
+          &.hero__outter {
+            border: 2px solid orange;
+            height: 100px;
+            width: 100px;
+          }
+      
+          &.hero__mid {
+            border: 2px solid blue;
+            height: 70px;
+            width: 70px;
+          }
+      
+          &.hero__inner {
+            border: 2px solid red;
+            height: 40px;
+            width: 40px;
+          }
+        }
+      
+        .hero__anime {
+        //   display: flex;
+        //   justify-content: center;
+        //   align-items: center;
+         top: -10%;
+            right: 20%;
+        }
+      }
+      
+
 
 
 }
