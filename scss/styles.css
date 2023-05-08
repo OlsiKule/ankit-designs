@@ -416,34 +416,41 @@ h1, h2, h3 {
   height: 5vh;
 }
 
-.hero .hero__image {
+.hero .bgimage {
+  display: flex;
+}
+.hero .bgimage .hero__text {
+  flex: 1;
+}
+.hero .bgimage .hero__image {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex: 1.5;
 }
-.hero .hero__image .circle {
+.hero .bgimage .hero__image .circle {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
 }
-.hero .hero__image .circle.hero__outter {
-  border: 2px solid orange;
-  height: 100px;
-  width: 100px;
+.hero .bgimage .hero__image .circle.hero__outter {
+  border: 0.5px solid orange;
+  height: 1100px;
+  width: 1100px;
 }
-.hero .hero__image .circle.hero__mid {
-  border: 2px solid blue;
-  height: 70px;
-  width: 70px;
+.hero .bgimage .hero__image .circle.hero__mid {
+  border: 1px solid blue;
+  height: 750px;
+  width: 750px;
 }
-.hero .hero__image .circle.hero__inner {
-  border: 2px solid red;
-  height: 40px;
-  width: 40px;
+.hero .bgimage .hero__image .circle.hero__inner {
+  border: 1px solid red;
+  height: 500px;
+  width: 500px;
 }
-.hero .hero__image .hero__anime {
+.hero .bgimage .hero__image .hero__anime {
   top: -10%;
   right: 20%;
 }
