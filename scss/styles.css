@@ -419,14 +419,13 @@ h1, h2, h3 {
   display: flex;
 }
 .hero .bgimage .hero__text {
-  flex: 1;
+  width: 35%;
+  order: 1;
 }
 .hero .bgimage .hero__image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 65%;
+  order: 2;
   height: 100vh;
-  flex: 1.5;
 }
 .hero .bgimage .hero__image .circle {
   display: flex;

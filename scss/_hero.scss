@@ -3,41 +3,39 @@
         display: flex;
 
         .hero__text {
-            flex: 1;
+            width: 35%;
+            order: 1;
           }
-    
    
         .hero__image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            width: 65%;
+            order: 2;
             height: 100vh;
-            flex: 1.5;
         
-        .circle {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 50%;
-      
-          &.hero__outter {
-            border: 0.5px solid orange;
-            height: 1100px;
-            width: 1100px;
-          }
-      
-          &.hero__mid {
-            border: 1px solid blue;
-            height: 750px;
-            width: 750px;
-          }
-      
-          &.hero__inner {
-            border: 1px solid red;
-            height: 500px;
-            width: 500px;
-          }
-        }
+            .circle {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+        
+                &.hero__outter {
+                    border: 0.5px solid orange;
+                    height: 1100px;
+                    width: 1100px;
+                    }
+            
+                &.hero__mid {
+                    border: 1px solid blue;
+                    height: 750px;
+                    width: 750px;
+                    }
+            
+                &.hero__inner {
+                    border: 1px solid red;
+                    height: 500px;
+                    width: 500px;
+                    }
+            }
       
         .hero__anime {
             top: -10%;
