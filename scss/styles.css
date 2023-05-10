@@ -460,6 +460,11 @@ h1, h2, h3 {
   bottom: 200px;
   left: 170px;
 }
+.hero .bgimage .hero__image .circle.hero__outter .whitestar {
+  position: absolute;
+  top: 350px;
+  right: 420px;
+}
 .hero .bgimage .hero__image .circle.hero__outter .blackstar {
   position: absolute;
   left: 320px;
