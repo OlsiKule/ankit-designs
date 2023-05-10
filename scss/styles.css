@@ -5,6 +5,12 @@
   animation-timing-function: ease;
   transition: all 0.3s;
 }
+.animation.delayed {
+  animation-delay: 0.5s; /* add a delay of 0.5s */
+}
+.animation.delayed1 {
+  animation-delay: 0.8s; /* add a delay of 0.8s */
+}
 
 @keyframes infiniteupdown {
   0% {
