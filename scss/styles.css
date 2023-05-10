@@ -77,6 +77,13 @@ h1, h2, h3 {
   margin-top: 0;
 }
 
+h1 {
+  font-family: "Righteous", cursive;
+  text-transform: uppercase;
+  font-size: 5.78125rem;
+  line-height: 1;
+}
+
 .header__logo {
   min-height: 50%;
   display: flex;
