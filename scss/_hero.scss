@@ -1,84 +1,79 @@
 .hero {
     .bgimage {
-        display: flex;
+      display: flex;
+      .hero__text {
+        width: 35%;
+        order: 1;
+      }
 
-        .hero__text {
-            width: 35%;
-            order: 1;
+      .hero__image {
+        width: 65%;
+        order: 2;
+        height: 100vh;
+        position: relative;
+
+        .circle {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          border: 1px solid rgba(255, 165, 0, 0.4);
+          z-index: -1;
+
+          &.hero__outter {
+            height: 1100px;
+            width: 1100px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(30%, -20%);
+
+            .lady {
+              position: absolute;
+              bottom: 5px;
+              right: 100px;
+              width: 26%;
+            }
+
+            .top-ghost {
+              position: absolute;
+              top: 50px;
+              left: 90px;
+            }
+
+            .bottom-ghost {
+              position: absolute;
+              bottom: 200px;
+              left: 170px;
+            }
+
+            .blackstar{
+                position: absolute;
+                left: 320px;
+                bottom: 100px;
+            }
           }
-   
-        .hero__image {
-            width: 65%;
-            order: 2;
-            height: 100vh;
-            position: relative;
 
-   
+          &.hero__mid {
+            height: 750px;
+            width: 750px;
+          }
 
- 
-        
-            .circle {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 50%;
-                border: 1px solid rgba(255, 165, 0, 0.4);
-                z-index: -1;
-        
-                &.hero__outter {
-                    height: 1100px;
-                    width: 1100px;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    transform: translate(30%, -20%);
-
-
-                    .lady{
-                        position: absolute;
-                        bottom: 8px;
-                        right: 150px;
-                        width: 25%;
-                    }
-                    .top-ghost{
-                        position: absolute;
-                        top: 50px;
-                        left: 90px;
-                    }
-        
-                    .bottom-ghost{
-                        position: absolute;
-                        bottom: 200px;
-                        left: 170px;
-                    }
-
-
-                    }
-            
-                &.hero__mid {
-                    height: 750px;
-                    width: 750px;
-                    }
-            
-                &.hero__inner {
-                    height: 500px;
-                    width: 500px;
-                    }
-            }
-      
-        .hero__anime {
-            // top: -10%;
-            // right: 20%;
-            .ghost{
-                // position: absolute;
-                // top: 0;
-                // left: 0;
-                // width: 35%;
-            }
-
-            
+          &.hero__inner {
+            height: 500px;
+            width: 500px;
+          }
         }
       }
 
+    //   .hero__anime {
+    //     // .ghost {
+    //     //   // position: absolute;
+    //     //   // top: 0;
+    //     //   // left: 0;
+    //     //   // width: 35%;
+    //     // }
+    //   }
     }
-}
+  }
+  
