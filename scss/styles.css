@@ -436,6 +436,11 @@ h1 {
   order: 1;
   z-index: 1;
 }
+.hero .bgimage .hero__text .hero__subtitle {
+  font-weight: normal;
+  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
+}
 .hero .bgimage .hero__text .hero__title {
   position: relative;
   display: flex;
