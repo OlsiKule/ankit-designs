@@ -432,8 +432,16 @@ h1 {
   display: flex;
 }
 .hero .bgimage .hero__text {
-  width: 35%;
+  width: auto;
   order: 1;
+  z-index: 1;
+}
+.hero .bgimage .hero__text .hero__title > span:before {
+  content: "";
+  height: 3px;
+  width: 100px;
+  display: inline;
+  background-color: hsl(25, 93%, 55%);
 }
 .hero .bgimage .hero__image {
   width: 65%;

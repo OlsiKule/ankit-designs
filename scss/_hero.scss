@@ -2,8 +2,23 @@
     .bgimage {
       display: flex;
       .hero__text {
-        width: 35%;
+        width: auto;
         order: 1;
+        z-index: 1;
+        .hero__title{
+
+            >span:before{
+                // position: absolute;
+                content: "";
+                // left: 100px; 
+                // top: 50%;
+                height: 3px;
+                width: 100px;
+                display: inline; 
+                background-color: $backgroundColor-orange; 
+                // transform: translateY(-50%);
+            }
+        }
       }
 
       .hero__image {
@@ -76,7 +91,6 @@
             width: 500px;
           }
         }
-      }
 
     //   .hero__anime {
     //     // .ghost {
@@ -86,6 +100,9 @@
     //     //   // width: 35%;
     //     // }
     //   }
+      }
+
+    
     }
   }
   
