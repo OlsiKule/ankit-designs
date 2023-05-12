@@ -451,6 +451,8 @@ h1 {
 .hero .bgimage {
   display: flex;
   position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 40px;
 }
 .hero .bgimage .hero__text {
   width: auto;
@@ -485,7 +487,7 @@ h1 {
 .hero .hero__image {
   width: 65%;
   order: 2;
-  height: 100vh;
+  height: auto;
   position: relative;
 }
 .hero .hero__image .circle {
@@ -546,7 +548,7 @@ h1 {
 .hero .hero__paparazzi {
   position: absolute;
   left: -375px;
-  bottom: 21px;
+  top: 310px;
   width: 108%;
   z-index: -1;
 }

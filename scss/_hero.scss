@@ -1,9 +1,10 @@
 .hero {
     .bgimage {
       display: flex;
-
       position: relative;
-
+      margin-bottom: 20px;
+      padding-bottom: 40px;
+      
       .hero__text {
         width: auto;
         order: 1;
@@ -44,7 +45,7 @@
     .hero__image {
         width: 65%;
         order: 2;
-        height: 100vh;
+        height: auto;
         position: relative;
 
         .circle {
@@ -128,7 +129,7 @@
     .hero__paparazzi{
         position: absolute;
         left: -375px;
-        bottom: 21px;
+        top: 310px;
         width: 108%;
         z-index: -1;
     }   
