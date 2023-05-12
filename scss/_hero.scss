@@ -1,6 +1,9 @@
 .hero {
     .bgimage {
       display: flex;
+
+      position: relative;
+
       .hero__text {
         width: auto;
         order: 1;
@@ -36,9 +39,9 @@
             }
               
         }
-      }
+    }
 
-      .hero__image {
+    .hero__image {
         width: 65%;
         order: 2;
         height: 100vh;
@@ -121,5 +124,13 @@
 
     
     }
+    
+    .paparazzi__hero{
+        position: absolute;
+        left: -375px;
+        bottom: 21px;
+        width: 108%;
+        z-index: -1;
+    }   
   }
   
