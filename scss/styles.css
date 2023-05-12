@@ -80,7 +80,7 @@ h1, h2, h3 {
 h1 {
   font-family: "Righteous", cursive;
   text-transform: uppercase;
-  font-size: 5.78125rem;
+  font-size: 8.381rem;
   line-height: 1;
 }
 
@@ -463,6 +463,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 2rem;
 }
 .hero .bgimage .hero__text .hero__title .second-word {
   margin-left: 110px;
