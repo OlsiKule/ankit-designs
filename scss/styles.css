@@ -468,7 +468,7 @@ h2 {
 .hero .bgimage {
   display: flex;
   position: relative;
-  margin-bottom: 350px;
+  margin-bottom: 240px;
   padding-bottom: 40px;
 }
 .hero .bgimage .hero__text {
@@ -589,4 +589,7 @@ h2 {
   width: 140px;
   background-color: hsl(25, 93%, 55%);
   transform: translateY(-50%);
+}
+.about__title {
+  margin-bottom: 0px;
 }
