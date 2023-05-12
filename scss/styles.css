@@ -458,20 +458,20 @@ h1 {
 }
 .hero .bgimage .hero__text .hero__subtitle {
   font-weight: normal;
-  font-size: 1.35rem;
+  font-size: 1.95rem;
   margin-bottom: 0.5rem;
 }
-.hero .bgimage .hero__text .hero__title {
+.hero .bgimage .hero__title {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 2rem;
 }
-.hero .bgimage .hero__text .hero__title .second-word {
+.hero .bgimage .hero__title .second-word {
   margin-left: 140px;
 }
-.hero .bgimage .hero__text .hero__title .second-word::before {
+.hero .bgimage .hero__title .second-word::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -481,13 +481,13 @@ h1 {
   background-color: hsl(25, 93%, 55%);
   transform: translateY(-50%);
 }
-.hero .bgimage .hero__image {
+.hero .hero__image {
   width: 65%;
   order: 2;
   height: 100vh;
   position: relative;
 }
-.hero .bgimage .hero__image .circle {
+.hero .hero__image .circle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -495,7 +495,7 @@ h1 {
   border: 1px solid rgba(255, 165, 0, 0.4);
   z-index: -1;
 }
-.hero .bgimage .hero__image .circle.hero__outter {
+.hero .hero__image .circle.hero__outter {
   height: 1100px;
   width: 1100px;
   position: absolute;
@@ -503,42 +503,42 @@ h1 {
   right: 0;
   transform: translate(30%, -20%);
 }
-.hero .bgimage .hero__image .circle.hero__outter .lady {
+.hero .hero__image .circle.hero__outter .lady {
   position: absolute;
   bottom: 5px;
   right: 100px;
   width: 26%;
 }
-.hero .bgimage .hero__image .circle.hero__outter .top-ghost {
+.hero .hero__image .circle.hero__outter .top-ghost {
   position: absolute;
   top: 50px;
   left: 90px;
 }
-.hero .bgimage .hero__image .circle.hero__outter .bottom-ghost {
+.hero .hero__image .circle.hero__outter .bottom-ghost {
   position: absolute;
   bottom: 200px;
   left: 170px;
 }
-.hero .bgimage .hero__image .circle.hero__outter .whitestar {
+.hero .hero__image .circle.hero__outter .whitestar {
   position: absolute;
   top: 350px;
   right: 420px;
 }
-.hero .bgimage .hero__image .circle.hero__outter .blackstar {
+.hero .hero__image .circle.hero__outter .blackstar {
   position: absolute;
   left: 320px;
   bottom: 100px;
 }
-.hero .bgimage .hero__image .circle.hero__outter .orangestar {
+.hero .hero__image .circle.hero__outter .orangestar {
   position: absolute;
   top: 290px;
   right: 290px;
 }
-.hero .bgimage .hero__image .circle.hero__mid {
+.hero .hero__image .circle.hero__mid {
   height: 750px;
   width: 750px;
 }
-.hero .bgimage .hero__image .circle.hero__inner {
+.hero .hero__image .circle.hero__inner {
   height: 500px;
   width: 500px;
 }
