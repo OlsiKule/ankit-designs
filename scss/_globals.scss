@@ -48,6 +48,24 @@ h1{
     line-height: 1;
 }
 
+h2{
+    font-family: $font-type-righteous;
+    text-transform: uppercase;
+    font-size: $font-xxlg-93px;
+    line-height: 1;
+}
+
+// orange title of each section
+h5{
+    font-family: $font-type-righteous;
+    text-transform: uppercase;
+    font-size: $font-smlg-31px;
+    line-height: 1;
+    color: $backgroundColor-orange;
+    margin-bottom: 10px;
+}
+
+
 .header__logo {
     min-height: 50%;
     display: flex;
