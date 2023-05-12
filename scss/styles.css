@@ -91,7 +91,7 @@ h2 {
   line-height: 1;
 }
 
-h5 {
+.headline {
   font-family: "Righteous", cursive;
   text-transform: uppercase;
   font-size: 1.95rem;
