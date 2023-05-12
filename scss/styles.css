@@ -107,7 +107,7 @@ h1 {
   background-color: white;
   color: hsl(25, 93%, 55%);
   border: 1px solid hsl(25, 93%, 55%);
-  border-radius: 30px;
+  border-radius: 40px;
   box-shadow: 4px 7px 0px rgb(247, 123, 33);
   transition: all 0.2s ease-in-out;
 }
@@ -543,10 +543,17 @@ h1 {
   height: 500px;
   width: 500px;
 }
-.hero .paparazzi__hero {
+.hero .hero__paparazzi {
   position: absolute;
   left: -375px;
   bottom: 21px;
+  width: 108%;
+  z-index: -1;
+}
+.hero .hero__wave {
+  position: absolute;
+  left: -176px;
+  top: -44px;
   width: 108%;
   z-index: -1;
 }

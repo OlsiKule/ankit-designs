@@ -125,12 +125,22 @@
     
     }
     
-    .paparazzi__hero{
+    .hero__paparazzi{
         position: absolute;
         left: -375px;
         bottom: 21px;
         width: 108%;
         z-index: -1;
     }   
+
+    .hero__wave{
+        position: absolute;
+        left: -176px;
+        top: -44px;
+        width: 108%;
+        z-index: -1;
+    }   
+
+    
   }
   
