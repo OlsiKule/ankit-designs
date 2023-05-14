@@ -22,7 +22,27 @@
             width: 35%;
             order: 1;
             height: auto;
-        // position: relative;
+            position: relative; 
+
+            .whitestar{
+                position: absolute;
+                top: 55px;
+                left: 15px;
+            }
+
+            .blackstar{
+                position: absolute;
+                bottom: 90px;
+                left: -30px;
+            }
+
+            .arrow {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
         }
     }
 }
+
+// Note: Chattie provided an example with both up down movement and grow / shrink animations running See codepen

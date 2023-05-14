@@ -616,4 +616,20 @@ p {
   width: 35%;
   order: 1;
   height: auto;
+  position: relative;
+}
+.about__subsection .about__graphics .whitestar {
+  position: absolute;
+  top: 55px;
+  left: 15px;
+}
+.about__subsection .about__graphics .blackstar {
+  position: absolute;
+  bottom: 90px;
+  left: -30px;
+}
+.about__subsection .about__graphics .arrow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
