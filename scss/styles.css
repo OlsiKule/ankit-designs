@@ -596,6 +596,50 @@ p {
   z-index: -1;
 }
 
+.animation {
+  animation-name: infiniteupdown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  transition: all 0.3s;
+}
+.animation.delayed {
+  animation-delay: 0.5s; /* add a delay of 0.5s */
+}
+.animation.delayed1 {
+  animation-delay: 0.8s; /* add a delay of 0.8s */
+}
+
+@keyframes infiniteupdown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.twinkle {
+  animation-name: infinitebigsmall;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  transition: all 0.3s;
+}
+
+@keyframes infinitebigsmall {
+  0% {
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.7);
+  }
+}
 .about {
   margin-bottom: 60px;
 }
