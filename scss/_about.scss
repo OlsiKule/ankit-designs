@@ -1,20 +1,20 @@
 .about {
 
-    .dash {
-        position: relative;
+    // .dash {
+    //     position: relative;
         
-        // Dash for esh section 
-        &::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 25px;
-            height: 2px;
-            width: 140px;
-            background-color: hsl(25, 93%, 55%);
-            transform: translateY(-50%);
-        }
-    }
+    //     // Dash for each section 
+    //     &::before {
+    //         content: "";
+    //         position: absolute;
+    //         top: 50%;
+    //         left: 25px;
+    //         height: 2px;
+    //         width: 140px;
+    //         background-color: hsl(25, 93%, 55%);
+    //         transform: translateY(-50%);
+    //     }
+    // }
 
     &__title {
         margin-bottom: 0px;

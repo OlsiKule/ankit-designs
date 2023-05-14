@@ -100,6 +100,19 @@ h2 {
   color: hsl(25, 93%, 55%);
   margin-bottom: 10px;
 }
+.headline .dash {
+  position: relative;
+}
+.headline .dash::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  height: 2px;
+  width: 140px;
+  background-color: hsl(25, 93%, 55%);
+  transform: translateY(-50%);
+}
 
 .header__logo {
   min-height: 50%;
@@ -577,19 +590,6 @@ h2 {
   z-index: -1;
 }
 
-.about .dash {
-  position: relative;
-}
-.about .dash::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 25px;
-  height: 2px;
-  width: 140px;
-  background-color: hsl(25, 93%, 55%);
-  transform: translateY(-50%);
-}
 .about__title {
   margin-bottom: 0px;
 }

@@ -64,6 +64,23 @@ h2{
     line-height: 1;
     color: $backgroundColor-orange;
     margin-bottom: 10px;
+
+    .dash {
+        position: relative;
+        
+        // Dash for each section 
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 25px;
+            height: 2px;
+            width: 140px;
+            background-color: hsl(25, 93%, 55%);
+            transform: translateY(-50%);
+        }
+    }
+
 }
 
 
