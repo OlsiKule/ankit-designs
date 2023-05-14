@@ -34,7 +34,7 @@ body {
 
 }
 
-// text
+// Text
 h1, h2, h3 {
     font-weight: 300;
     line-height: 1.15;
@@ -53,6 +53,13 @@ h2{
     text-transform: uppercase;
     font-size: $font-xxlg-93px;
     line-height: 1;
+}
+
+p{
+    font-family: $font-type-raleway;
+    line-height: 1.5;
+    font-size: $font-minilg-24px;
+    // Note: for smaller fants enter them on individual files
 }
 
 // Orange Section H5 Title 
