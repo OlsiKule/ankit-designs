@@ -593,3 +593,17 @@ h2 {
 .about__title {
   margin-bottom: 0px;
 }
+.about__subsection {
+  display: flex;
+}
+.about__subsection .about__text {
+  width: 65%;
+  order: 2;
+  height: auto;
+  padding-right: 10px;
+}
+.about__subsection .about__graphics {
+  width: 35%;
+  order: 1;
+  height: auto;
+}

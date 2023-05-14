@@ -1,22 +1,23 @@
 .about {
 
-    // .dash {
-    //     position: relative;
-        
-    //     // Dash for each section 
-    //     &::before {
-    //         content: "";
-    //         position: absolute;
-    //         top: 50%;
-    //         left: 25px;
-    //         height: 2px;
-    //         width: 140px;
-    //         background-color: hsl(25, 93%, 55%);
-    //         transform: translateY(-50%);
-    //     }
-    // }
-
     &__title {
         margin-bottom: 0px;
+    }
+
+    &__subsection { 
+        display: flex;
+        
+        .about__text {
+            width: 65%;
+            order: 2;
+            height: auto;
+            padding-right: 10px;
+        }
+        .about__graphics {
+            width: 35%;
+            order: 1;
+            height: auto;
+        // position: relative;
+        }
     }
 }
