@@ -598,38 +598,44 @@ p {
 
 .about {
   margin-bottom: 60px;
+  position: relative;
 }
-.about__title {
+.about__content .orangestar {
+  position: absolute;
+  top: 10px;
+  right: 440px;
+}
+.about__content .about__title {
   margin-bottom: 0px;
 }
-.about__subsection {
+.about__content .about__subsection {
   display: flex;
 }
-.about__subsection .about__text {
+.about__content .about__subsection .about__text {
   width: 65%;
   order: 2;
   height: auto;
   padding-right: 100px;
   font-weight: 600;
 }
-.about__subsection .about__graphics {
+.about__content .about__subsection .about__graphics {
   width: 35%;
   order: 1;
   height: auto;
   position: relative;
 }
-.about__subsection .about__graphics .whitestar {
+.about__content .about__subsection .about__graphics .whitestar {
   position: absolute;
   top: 55px;
   left: 15px;
 }
-.about__subsection .about__graphics .blackstar {
+.about__content .about__subsection .about__graphics .blackstar {
   position: absolute;
   bottom: 90px;
   left: -30px;
 }
-.about__subsection .about__graphics .arrow {
+.about__content .about__subsection .about__graphics .arrow {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -20px;
+  right: 160px;
 }

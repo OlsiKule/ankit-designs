@@ -1,50 +1,61 @@
 .about {
     margin-bottom: 60px;
+    position: relative;
+    
+    &__content {
+        .orangestar{
+            position: absolute;
+            top: 10px;
+            right: 440px;
+        }
 
-    &__title {
+        .about__title {
         margin-bottom: 0px;
-    }
+        }
 
-    &__subsection { 
+        .about__subsection { 
         display: flex;
-        
-        .about__text {
-            width: 65%;
-            order: 2;
-            height: auto;
-            padding-right: 100px;
-            font-weight: 600;
+    
+            .about__text {
+                width: 65%;
+                order: 2;
+                height: auto;
+                padding-right: 100px;
+                font-weight: 600;
 
-        }
-
-
-        .about__graphics {
-            width: 35%;
-            order: 1;
-            height: auto;
-            position: relative; 
-            // animation: $animation, $twinkle;
-
-            .whitestar{
-                position: absolute;
-                top: 55px;
-                left: 15px;
             }
 
-            .blackstar{
-                position: absolute;
-                bottom: 90px;
-                left: -30px;
-            }
 
-            .arrow {
-                position: absolute;
-                bottom: -20px;
-                right: 160px;
-              }
+            .about__graphics {
+                width: 35%;
+                order: 1;
+                height: auto;
+                position: relative; 
+                // animation: $animation, $twinkle;
+
+                    .whitestar{
+                        position: absolute;
+                        top: 55px;
+                        left: 15px;
+                    }
+
+                    .blackstar{
+                        position: absolute;
+                        bottom: 90px;
+                        left: -30px;
+                    }
+
+                    .arrow {
+                        position: absolute;
+                        bottom: -20px;
+                        right: 160px;
+                        }
             }
         }
     }
+
+
+    
 }
 
 // Note: Chattie provided an example with both up down movement and grow / shrink animations running See codepen
