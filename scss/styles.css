@@ -639,3 +639,15 @@ p {
   bottom: -20px;
   right: 160px;
 }
+
+.collection__nfts {
+  border: 1px solid yellow;
+}
+.collection__nfts .upper {
+  display: inline-block;
+  border: 1px solid red;
+}
+.collection__nfts .upper .icon {
+  position: absolute;
+  width: 20%;
+}

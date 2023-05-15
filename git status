@@ -1,0 +1,126 @@
+[33m85bf80e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m started collection section
+[33m63cf53d[m updated top orange star
+[33mb1fb1ca[m updates graphics animations and image positioning
+[33m2a2ffcf[m updates graphics animations and image positioning
+[33mb8261b9[m working on animation and twinkle for both starts in about section
+[33m893ba56[m updates to start the day
+[33md4c086b[m updated bottom margin in about section
+[33m96fe8a1[m updated text section
+[33m46924e1[m adjusted text & graphics position
+[33ma547ee9[m placed headline in global section
+[33m71869ef[m updated bottom margin in title
+[33mcd840bd[m updated about section structure w/ added divs
+[33m6c83c09[m updated H5 as headeline
+[33mbe25020[m added H5 as header title
+[33m3366935[m adjusted bottom margin in hero section
+[33mbe1103a[m added about file for styling
+[33md51a967[m added bottom margin & padding to hero section
+[33m4ba3d1a[m set up wave in hero section
+[33md201374[m set up paparazzi in hero section
+[33m3ea8e31[m updated container margins on body
+[33m5de1b69[m updated bottom H1 margin
+[33m45aaa6b[m updated title bottom margin in hero section
+[33m4b51ba4[m updated subtitle in hero section
+[33m4a26fc4[m button final touches
+[33m2ef95d4[m updated second span position & dash b/f word
+[33m6b42a0e[m updated H1 font size and created new variable
+[33m351448d[m updated button in hero section
+[33me4f01f1[m clean up code in hero section
+[33m38054cf[m updated sub-title text in hero section
+[33m3100505[m updated font-type in variables
+[33m5e1dd8b[m completed headline for hero section
+[33mc28bd6d[m minor updates & fixes
+[33m47a9988[m final push for the day
+[33m2dfca05[m started work on H1 for body
+[33ma52ff59[m updated animation to account for delay
+[33ma1dec84[m updated orangestar location
+[33m8e76604[m updated whitestar location
+[33me08a9a1[m updated blackstar location
+[33m6cc049a[m updated location of petit ghosts and lady
+[33mc4a4a9a[m updated circle z-index & inserted banner img
+[33mb1fa467[m updated width & opacity of circles
+[33mcd0820c[m updated width in hero section
+[33m4a55323[m updated container in globals
+[33mfd833a7[m updated circle position and flex relation b/n divs in bgimage
+[33m9365ad6[m intro to circles in html
+[33m443f417[m intro to circles in html
+[33mad241b8[m adjusted navbar gap and main ghost position
+[33md03f069[m updated hero file
+[33m0d4aba6[m final touches on bg img
+[33mbf1971c[m working on bg image
+[33m2afa496[m created container div for all body sections
+[33mab91f81[m created container div for all body sections
+[33m2493a95[m HTML updates
+[33me75e5b8[m updated names of background color in variables
+[33m3ad9ea7[m updated html tags and context
+[33m8481933[m create a hero section for styling
+[33m52a49c5[m updated wrapper transition media query @ intermediate
+[33mdc1f4f4[m updated social icons media query @ intermediate
+[33m11670e3[m updated wrapper on intermediate media query
+[33m0ba991f[m updated media query for social icons
+[33md7da954[m updated media query for black star
+[33m4e607d4[m updated updated paparazzi position to account for the social icons
+[33m7b49d8b[m updated media query to include transition
+[33mdc52f70[m updated media query for paparazzi
+[33m809401b[m updated media query for orange star
+[33m7c6671b[m completed paparazzi media query
+[33me787ee8[m completed paparazzi media query
+[33m4fbc86e[m removed transition: all 0.4s linear; from header item
+[33m7317249[m updated font transition b/n screen sizes
+[33mf41e77d[m placed navbar styles on top in header
+[33mf5f73e4[m adjusted mixins to include intermediate @ 766px
+[33mf4daccb[m updated menu list media query
+[33me2a9260[m updated variables
+[33m2af8a11[m updated font type for menu pg
+[33m54f9510[m updated dot on the rest of menu list
+[33mca06a2e[m updated dot on menu list
+[33mf97ca7b[m twiked star3 positioning to the right
+[33m6d5666f[m updated stars and twinkles
+[33m6bda883[m updated paparazzi on the menu
+[33md453804[m updated menu social icons and wrapper margin
+[33ma497fd5[m[33m ([m[1;31morigin/review[m[33m)[m updated menu social icons
+[33m882c39c[m updated menu to flexbox and adjusted width
+[33ma618982[m updated variables
+[33mca1d30f[m updated menu arrow bg colour
+[33m786bba6[m updated menu transition
+[33m24f419d[m updated menu transition
+[33m4d1a594[m updated menu transition
+[33m51ad2a7[m updated font
+[33m9a68293[m updated font
+[33m6ed620c[m created social icon section
+[33meb334d2[m added div for elements in menu
+[33m67f4e3b[m header toggle position to align with menu bar
+[33m5a3b532[m updated css link in html
+[33ma4f4dde[m smoothed transition on navbar
+[33m99b71d1[m smoothed transition on navbar
+[33m3908c9c[m removed previous commented code
+[33m4388698[m general updates
+[33m65c22f4[m navbar updates
+[33m370f212[m navbar adjustments
+[33ma0d8e54[m  navbar adjustments
+[33md16be67[m  completed closing menu
+[33mf4dc2b4[m  working on closing menu
+[33m00c6ce9[m started work on closing menu
+[33m358529a[m hid menu on landing pg
+[33m3f18950[m completed hamburger menu
+[33m7fc9f22[m navbar width - needs more work
+[33mc3f1d5a[m hamburger menu - span
+[33mbdba124[m hamburger menu - span
+[33m62e9528[m hamburger menu - links & items
+[33mb57fe84[m hamburger menu
+[33m489ce94[m hamburger menu
+[33mfe1c400[m final touches on navbar, starting hamburger menu
+[33m7d52e34[m completed part of sticky navbar with autohide on upscroll
+[33m49f24ac[m added social partial to increae page length
+[33mc7a217d[m added social partial to increae page length
+[33m4c82b67[m navbar adjustment
+[33me2b9168[m navbar adjustment
+[33m7cb59e5[m added variables & header partials
+[33m4c06f82[m adjusted json settings
+[33mcfd04e1[m adjusted json settings
+[33mbc98704[m added animations file
+[33mb20ed6b[m added animations file
+[33m80f9a3e[m added mixins file
+[33m25e608a[m set up sass
+[33m7b6dd74[m set up sass
+[33m1014faa[m first commit
