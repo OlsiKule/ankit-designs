@@ -42,6 +42,25 @@
     transform: scale(0.7);
   }
 }
+.collection__row1 {
+  animation-name: infiniteupdown;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  transition: all 0.3s;
+}
+
+@keyframes infiniteupdown {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(207px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 @font-face {
   font-family: "Righteous";
   src: url("./../Fonts/Righteous/Righteous-Regular.ttf") format("truetype"), url("./../Fonts/Righteous/Righteous-Regular.ttf") format("woff2"), url("./../Fonts/Righteous/Righteous-Regular.ttf") format("woff");
@@ -594,6 +613,50 @@ p {
   top: -44px;
   width: 108%;
   z-index: -1;
+}
+
+.about {
+  margin-bottom: 60px;
+  position: relative;
+}
+.about__content .orangestar {
+  position: absolute;
+  top: 10px;
+  right: 440px;
+}
+.about__content .about__title {
+  margin-bottom: 0px;
+}
+.about__content .about__subsection {
+  display: flex;
+}
+.about__content .about__subsection .about__text {
+  width: 65%;
+  order: 2;
+  height: auto;
+  padding-right: 100px;
+  font-weight: 600;
+}
+.about__content .about__subsection .about__graphics {
+  width: 35%;
+  order: 1;
+  height: auto;
+  position: relative;
+}
+.about__content .about__subsection .about__graphics .whitestar {
+  position: absolute;
+  top: 55px;
+  left: 15px;
+}
+.about__content .about__subsection .about__graphics .blackstar {
+  position: absolute;
+  bottom: 90px;
+  left: -30px;
+}
+.about__content .about__subsection .about__graphics .arrow {
+  position: absolute;
+  bottom: -20px;
+  right: 160px;
 }
 
 .about {

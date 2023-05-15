@@ -52,26 +52,26 @@
 
 
 // // NFT collection animation left-right
-// .collection__row1 {
-//     // height: 5rem;
-//     animation-name: infiniteupdown;
-//     animation-duration: 5s;
-//     animation-iteration-count: infinite;
-//     animation-timing-function: ease;
-//     transition: all 0.3s;
-// }
+.collection__row1 {
+    // height: 5rem;
+    animation-name: infiniteupdown;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    transition: all 0.3s;
+}
 
-// @keyframes infiniteupdown {
-//     0% {
-//         transform: translateX(0px);
-//     }
-//     50% {
-//         transform: translateX(207px);
-//     }
-//     100% {
-//         transform: translateX(0px);
-//     }
-// }
+@keyframes infiniteupdown {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(207px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
 
 
 // .collection__row2 {

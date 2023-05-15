@@ -1,0 +1,19 @@
+.collection {
+    &__nfts{
+        border: 1px solid yellow;
+
+        .upper {
+            // display: inline-block;
+            border: 1px solid red;
+
+            .icon{
+                position: absolute;
+                // left: -375px;
+                // top: 310px;
+                width: 90%;
+                // z-index: -1;
+            } 
+        }
+    }
+     
+}
