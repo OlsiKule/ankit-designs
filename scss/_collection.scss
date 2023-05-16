@@ -1,18 +1,29 @@
 .collection {
-    &__nfts{
-        border: 1px solid yellow;
+    .container{
 
-        .upper {
-            display: inline-block;
+        .collection__nfts{
+            // border: 1px solid yellow;
+            overflow-x: visible;
+            white-space: nowrap;
+            
+            .upper {
+            list-style: none;
             border: 1px solid red;
+            padding: 0;
+            margin: 20px 0;
+            
+                .nft{
+                display: inline-block;
+                // vertical-align: top;
 
-            .icon{
-                position: absolute;
-                // left: -375px;
-                // top: 310px;
-                width: 20%;
-                // z-index: -1;
-            } 
+                .icon {
+                        width: 382px; /* Adjust the width of the images as needed */
+                        border-radius: 40px;
+                        height: 437px;
+                        margin-right: 25px;
+                    }
+                } 
+            }
         }
     }
      

@@ -42,6 +42,25 @@
     transform: scale(0.7);
   }
 }
+.collection__row1 {
+  animation-name: sideways;
+  animation-duration: 7.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transition: all 0.3s;
+}
+
+@keyframes sideways {
+  0% {
+    transform: translateX(-507px);
+  }
+  50% {
+    transform: translateX(-170px);
+  }
+  100% {
+    transform: translateX(-507px);
+  }
+}
 @font-face {
   font-family: "Righteous";
   src: url("./../Fonts/Righteous/Righteous-Regular.ttf") format("truetype"), url("./../Fonts/Righteous/Righteous-Regular.ttf") format("woff2"), url("./../Fonts/Righteous/Righteous-Regular.ttf") format("woff");
@@ -638,4 +657,24 @@ p {
   position: absolute;
   bottom: -20px;
   right: 160px;
+}
+
+.collection .container .collection__nfts {
+  overflow-x: visible;
+  white-space: nowrap;
+}
+.collection .container .collection__nfts .upper {
+  list-style: none;
+  border: 1px solid red;
+  padding: 0;
+  margin: 20px 0;
+}
+.collection .container .collection__nfts .upper .nft {
+  display: inline-block;
+}
+.collection .container .collection__nfts .upper .nft .icon {
+  width: 382px; /* Adjust the width of the images as needed */
+  border-radius: 40px;
+  height: 437px;
+  margin-right: 25px;
 }

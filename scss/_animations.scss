@@ -50,39 +50,40 @@
 
 
 
-// // NFT collection animation left-right
-// .collection__row1 {
-//     // height: 5rem;
-//     animation-name: infiniteupdown;
-//     animation-duration: 5s;
-//     animation-iteration-count: infinite;
-//     animation-timing-function: ease;
-//     transition: all 0.3s;
-// }
+// NFT collection animation left-right
+.collection__row1 {
+    // height: 5rem;
+    animation-name: sideways;
+    animation-duration: 7.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transition: all 0.3s;
+    
+}
 
-// @keyframes infiniteupdown {
-//     0% {
-//         transform: translateX(0px);
-//     }
-//     50% {
-//         transform: translateX(207px);
-//     }
-//     100% {
-//         transform: translateX(0px);
-//     }
-// }
+@keyframes sideways {
+    0% {
+        transform: translateX(-507px);
+    }
+    50% {
+        transform: translateX(-170px);
+    }
+    100% {
+        transform: translateX(-507px);
+    }
+}
 
 
 // .collection__row2 {
 //     // height: 5rem;
-//     animation-name: infiniteupdown;
+//     animation-name: sideways;
 //     animation-duration: 5s;
 //     animation-iteration-count: infinite;
 //     animation-timing-function: ease;
 //     transition: all 0.3s;
 // }
 
-// @keyframes infiniteupdown {
+// @keyframes sideways {
 //     0% {
 //         transform: translateX(0px);
 //     }
