@@ -1,15 +1,22 @@
 .collection {
+    margin-bottom: 130px;
+
     .container{
+
+        .collection__title{
+            h2{
+                margin-bottom: 160px;
+            }
+        }
 
         .collection__nfts{
             overflow-x: visible;
             white-space: nowrap;
             
-            .upper {
+            .lineup {
                 list-style: none;
-                border: 1px solid red;
                 padding: 0;
-                margin: 20px 0;
+                margin: 40px 0;
             
                 .nft{
                 // display: inline-block;

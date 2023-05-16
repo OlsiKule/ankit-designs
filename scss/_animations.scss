@@ -52,7 +52,6 @@
 
 // NFT collection animation left-right
 .collection__row1 {
-    // height: 5rem;
     animation-name: sideways;
     animation-duration: 15s;
     animation-iteration-count: infinite;
@@ -74,26 +73,25 @@
 }
 
 
-// .collection__row2 {
-//     // height: 5rem;
-//     animation-name: sideways;
-//     animation-duration: 5s;
-//     animation-iteration-count: infinite;
-//     animation-timing-function: ease;
-//     transition: all 0.3s;
-// }
+.collection__row2 {
+    animation-name: sidewaysdown;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transition: all 0.3s;
+}
 
-// @keyframes sideways {
-//     0% {
-//         transform: translateX(0px);
-//     }
-//     50% {
-//         transform: translateX(-207px);
-//     }
-//     100% {
-//         transform: translateX(0px);
-//     }
-// }
+@keyframes sidewaysdown {
+    0% {
+        transform: translateX(-180px);
+    }
+    50% {
+        transform: translateX(-1090px);
+    }
+    100% {
+        transform: translateX(-180px);
+    }
+}
 
 
 
