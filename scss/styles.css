@@ -705,3 +705,14 @@ p {
   height: auto;
   object-fit: cover;
 }
+
+.roadmap__phases .roadmap__phase1 {
+  border: 2px solid yellowgreen;
+  display: flex;
+  height: auto;
+}
+.roadmap__phases .roadmap__phase1 .roadmap__content {
+  border: 2px solid royalblue;
+  width: 50%;
+  order: 2;
+}
