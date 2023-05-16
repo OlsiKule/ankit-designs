@@ -2,19 +2,17 @@
     .container{
 
         .collection__nfts{
-            // border: 1px solid yellow;
             overflow-x: visible;
             white-space: nowrap;
             
             .upper {
-            list-style: none;
-            border: 1px solid red;
-            padding: 0;
-            margin: 20px 0;
+                list-style: none;
+                border: 1px solid red;
+                padding: 0;
+                margin: 20px 0;
             
                 .nft{
                 display: inline-block;
-                // vertical-align: top;
 
                 .icon {
                         width: 382px; /* Adjust the width of the images as needed */
