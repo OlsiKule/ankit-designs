@@ -11,10 +11,36 @@
             
             .roadmap__content{
                 border: 2px solid royalblue;
-                width: 50%;
+                width: 35%;
+                padding-right: 5rem;
                 order: 2;
                 // padding-right: 100px;
                 // font-weight: 600;
+
+                .roadmap__pretitle {
+                    font-family: $font-type-raleway;
+                    font-size: $font-midlg-28px;
+                    font-weight: 500;
+                    line-height: 1;
+                    color: $backgroundColor-orange;
+                    margin-bottom: 25px;
+                }
+                
+                .roadmap__title{
+                    font-family: $font-type-righteous;
+                    font-size: $font-xlg-60px;
+                    font-weight: 500;
+                    margin-bottom: 25px;
+                    
+                }
+                
+                .roadmap__text{
+                    font-family: $font-type-raleway;
+                    font-size: $font-sm-14px;
+                    font-weight: 500;
+                    line-height: 1.5;
+
+                }
             }
         }
     }

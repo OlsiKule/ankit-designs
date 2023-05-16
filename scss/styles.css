@@ -713,6 +713,27 @@ p {
 }
 .roadmap__phases .roadmap__phase1 .roadmap__content {
   border: 2px solid royalblue;
-  width: 50%;
+  width: 35%;
+  padding-right: 5rem;
   order: 2;
+}
+.roadmap__phases .roadmap__phase1 .roadmap__content .roadmap__pretitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1;
+  color: hsl(25, 93%, 55%);
+  margin-bottom: 25px;
+}
+.roadmap__phases .roadmap__phase1 .roadmap__content .roadmap__title {
+  font-family: "Righteous", cursive;
+  font-size: 3.75rem;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+.roadmap__phases .roadmap__phase1 .roadmap__content .roadmap__text {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5;
 }
