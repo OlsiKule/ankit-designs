@@ -671,11 +671,13 @@ p {
   margin: 20px 0;
 }
 .collection .container .collection__nfts .upper .nft {
-  display: inline-block;
+  display: inline;
+  width: 100%;
 }
 .collection .container .collection__nfts .upper .nft .icon {
-  width: 382px; /* Adjust the width of the images as needed */
   border-radius: 40px;
-  height: 437px;
-  margin-right: 25px;
+  margin-right: 30px;
+  width: 33%;
+  height: auto;
+  object-fit: cover;
 }
