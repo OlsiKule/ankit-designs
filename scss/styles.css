@@ -711,11 +711,31 @@ p {
   display: flex;
   height: auto;
 }
+.roadmap__phases .roadmap__phase1 .roadmap__graphics {
+  width: 65%;
+  order: 2;
+  display: flex;
+  justify-content: right;
+}
+.roadmap__phases .roadmap__phase1 .roadmap__graphics .roadmap__canvas {
+  border-radius: 90px;
+  width: 560px;
+  height: 570px;
+  background-color: hsl(25, 100%, 90%);
+  position: relative;
+}
+.roadmap__phases .roadmap__phase1 .roadmap__graphics .roadmap__canvas .hands {
+  position: absolute;
+  bottom: -60px;
+  left: 20px;
+}
 .roadmap__phases .roadmap__phase1 .roadmap__content {
-  border: 2px solid royalblue;
   width: 35%;
   padding-right: 5rem;
-  order: 2;
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .roadmap__phases .roadmap__phase1 .roadmap__content .roadmap__pretitle {
   font-family: "Raleway", sans-serif;
