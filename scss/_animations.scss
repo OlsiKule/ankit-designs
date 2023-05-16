@@ -54,7 +54,7 @@
 .collection__row1 {
     // height: 5rem;
     animation-name: sideways;
-    animation-duration: 7.5s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     transition: all 0.3s;
@@ -63,13 +63,13 @@
 
 @keyframes sideways {
     0% {
-        transform: translateX(-507px);
+        transform: translateX(-1080px);
     }
     50% {
-        transform: translateX(-170px);
+      transform: translateX(-190px);
     }
     100% {
-        transform: translateX(-507px);
+      transform: translateX(-1080px);
     }
 }
 
