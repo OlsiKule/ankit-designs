@@ -1,65 +1,93 @@
 .roadmap{
+        
+    &__main {
+        margin-bottom: 160px;
+    }
+    
     &__phases{
         .roadmap__phase1{
             border: 2px solid yellowgreen;
             display: flex;
             height: auto;
+            position: relative;
+
+            .arrow {
+                position: absolute;
+                top: -80px;
+                left: 205px;
+            }
+
+            .whitestar {
+                position: absolute;
+                top: 90px;
+                right: 20px;
+                z-index: 1;
+
+            }
+
+            .blackstar {
+                position: absolute;
+                top: -10px;
+                right: -39px;
+                z-index: 1;
+                scale: 0.8;
+            }
+        }
+        
+        .roadmap__graphics{
+            width: 65%;
+            order: 2;
+            display: flex;
+            justify-content: right;
             
-           .roadmap__graphics{
-                width: 65%;
-                order: 2;
-                display: flex;
-                justify-content: right;
-                
-                .roadmap__canvas{
-                    // border: 2px solid royalblue;
-                    border-radius: 90px;
-                    width: 560px;
-                    height: 570px;
-                    background-color:$backgroundColor-canvas-top;
-                    position: relative;
+            .roadmap__canvas{
+                // border: 2px solid royalblue;
+                border-radius: 90px;
+                width: 560px;
+                height: 570px;
+                background-color:$backgroundColor-canvas-top;
+                position: relative;
 
-                    .hands{
-                        position: absolute;
-                        bottom: -60px;
-                        left: 20px;
-                    }
+                .hands{
+                    position: absolute;
+                    bottom: -60px;
+                    left: 20px;
                 }
+            }
 
-            } 
+        } 
+        
+        .roadmap__content{
+            width: 35%;
+            padding-right: 5rem;
+            order: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .roadmap__pretitle {
+                font-family: $font-type-raleway;
+                font-size: $font-midlg-28px;
+                font-weight: 500;
+                line-height: 1;
+                color: $backgroundColor-orange;
+                margin-bottom: 25px;
+            }
             
-            .roadmap__content{
-                width: 35%;
-                padding-right: 5rem;
-                order: 1;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-
-                .roadmap__pretitle {
-                    font-family: $font-type-raleway;
-                    font-size: $font-midlg-28px;
-                    font-weight: 500;
-                    line-height: 1;
-                    color: $backgroundColor-orange;
-                    margin-bottom: 25px;
-                }
+            .roadmap__title{
+                font-family: $font-type-righteous;
+                font-size: $font-xlg-60px;
+                font-weight: 500;
+                margin-bottom: 25px;
                 
-                .roadmap__title{
-                    font-family: $font-type-righteous;
-                    font-size: $font-xlg-60px;
-                    font-weight: 500;
-                    margin-bottom: 25px;
-                    
-                }
-                
-                .roadmap__text{
-                    font-family: $font-type-raleway;
-                    font-size: $font-sm-14px;
-                    font-weight: 500;
-                    line-height: 1.5;
+            }
+            
+            .roadmap__text{
+                font-family: $font-type-raleway;
+                font-size: $font-sm-14px;
+                font-weight: 500;
+                line-height: 1.5;
 
-                }
             }
         }
     }

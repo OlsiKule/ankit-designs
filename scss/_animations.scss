@@ -33,6 +33,14 @@
         animation-iteration-count: infinite;
         animation-timing-function: ease;
         transition: all 0.3s;
+        
+        &.delayed {
+            animation-delay: 0.5s; 
+          }
+
+        &.delayed1 {
+            animation-delay: 0.8s; 
+          }
     }
 
     @keyframes infinitebigsmall {
