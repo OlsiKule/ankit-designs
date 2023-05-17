@@ -712,6 +712,9 @@ p {
   object-fit: cover;
 }
 
+.roadmap {
+  margin-bottom: 200px;
+}
 .roadmap__main {
   margin-bottom: 160px;
 }
