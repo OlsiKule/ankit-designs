@@ -1,6 +1,106 @@
 .join {
     margin-bottom: 200px;
-
     
+    .join__main {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 1000px;
+
+      .join__circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 1px solid red;
+      }
+      
+      .inner-circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        border: 1px solid;
+
+        .circle1 {
+            width: calc(100% - 84px);
+            height: calc(100% - 84px);
+            border-color: blue;
+          }
+          
+          .circle2 {
+            width: calc(100% - 168px);
+            height: calc(100% - 168px);
+            border-color: green;
+          }
+          
+          .circle3 {
+            width: calc(100% - 120px);
+            height: calc(100% - 120px);
+            border-color: yellow;
+          }
+          
+          .circle4 {
+            width: calc(100% - 30px);
+            height: calc(100% - 30px);
+            border-color: purple;
+          }
+      }
+
+    //   .join__content {
+    //       display: flex;
+    //       justify-content: center;
+    //       flex-direction: column;
+          
+        .join__content{
+            border: 2px dashed green;
+            width: 60%;
+            height: 550px;
+            // width: 35%;
+            // padding-right: 5rem;
+            // order: 1;
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+
+            .join__pretitle {
+                font-family: $font-type-raleway;
+                font-size: $font-midlg-28px;
+                font-weight: 500;
+                line-height: 1;
+                color: $backgroundColor-orange;
+                margin-bottom: 25px;
+            }
+
+            .join__subtitle {
+                text-align: center;
+                padding-right: 180px;
+            }
+            
+            .join__title{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 25px;
+            }
+            
+            .join__text{
+                text-align: center;
+                // font-family: $font-type-raleway;
+                // font-size: $font-minilg-24px;
+                // line-height: 1.5;
+                font-weight: 500;
+            }
+        }
+      
+      
+    }
+   
+      
 
 }
