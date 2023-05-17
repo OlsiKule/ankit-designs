@@ -6,7 +6,6 @@
     
     &__phases{
         .roadmap__phase1{
-            border: 2px solid yellowgreen;
             display: flex;
             height: auto;
             position: relative;
@@ -33,6 +32,8 @@
                 z-index: 1;
                 scale: 0.8;
             }
+
+
             
             .roadmap__graphics{
                 width: 65%;
@@ -109,6 +110,13 @@
                 left: 586px;
                 z-index: 1;
                 scale: 0.8;
+            }
+
+            .wavy {
+                position: absolute;
+                bottom: -25px;
+                right: -209px;
+                z-index: 1;
             }
 
             .roadmap__graphics{
