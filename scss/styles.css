@@ -720,6 +720,7 @@ p {
   display: flex;
   height: auto;
   position: relative;
+  margin-bottom: 150px;
 }
 .roadmap__phases .roadmap__phase1 .arrow {
   position: absolute;
@@ -739,25 +740,25 @@ p {
   z-index: 1;
   scale: 0.8;
 }
-.roadmap__phases .roadmap__graphics {
+.roadmap__phases .roadmap__phase1 .roadmap__graphics {
   width: 65%;
-  order: 2;
+  order: 3;
   display: flex;
   justify-content: right;
 }
-.roadmap__phases .roadmap__graphics .roadmap__canvas {
+.roadmap__phases .roadmap__phase1 .roadmap__graphics .roadmap__canvas {
   border-radius: 90px;
   width: 560px;
   height: 570px;
   background-color: hsl(25, 100%, 90%);
   position: relative;
 }
-.roadmap__phases .roadmap__graphics .roadmap__canvas .hands {
+.roadmap__phases .roadmap__phase1 .roadmap__graphics .roadmap__canvas .hands {
   position: absolute;
-  bottom: -60px;
+  bottom: -45px;
   left: 20px;
 }
-.roadmap__phases .roadmap__content {
+.roadmap__phases .roadmap__phase1 .roadmap__content {
   width: 35%;
   padding-right: 5rem;
   order: 1;
@@ -765,7 +766,7 @@ p {
   flex-direction: column;
   justify-content: center;
 }
-.roadmap__phases .roadmap__content .roadmap__pretitle {
+.roadmap__phases .roadmap__phase1 .roadmap__content .roadmap__pretitle {
   font-family: "Raleway", sans-serif;
   font-size: 1.75rem;
   font-weight: 500;
@@ -773,13 +774,76 @@ p {
   color: hsl(25, 93%, 55%);
   margin-bottom: 25px;
 }
-.roadmap__phases .roadmap__content .roadmap__title {
+.roadmap__phases .roadmap__phase1 .roadmap__content .roadmap__title {
   font-family: "Righteous", cursive;
   font-size: 3.75rem;
   font-weight: 500;
   margin-bottom: 25px;
 }
-.roadmap__phases .roadmap__content .roadmap__text {
+.roadmap__phases .roadmap__phase1 .roadmap__content .roadmap__text {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.roadmap__phases .roadmap__phase2 {
+  display: flex;
+  position: relative;
+}
+.roadmap__phases .roadmap__phase2 .whitestar {
+  position: absolute;
+  top: 90px;
+  left: 461px;
+  z-index: 1;
+}
+.roadmap__phases .roadmap__phase2 .orangestar {
+  position: absolute;
+  top: 2px;
+  left: 586px;
+  z-index: 1;
+  scale: 0.8;
+}
+.roadmap__phases .roadmap__phase2 .roadmap__graphics {
+  width: 65%;
+  order: 1;
+  display: flex;
+  justify-content: left;
+}
+.roadmap__phases .roadmap__phase2 .roadmap__graphics .roadmap__canvas {
+  border-radius: 90px;
+  width: 560px;
+  height: 570px;
+  background-color: hsl(43, 75%, 81%);
+  position: relative;
+}
+.roadmap__phases .roadmap__phase2 .roadmap__graphics .roadmap__canvas .student {
+  position: absolute;
+  bottom: -45px;
+  left: 100px;
+}
+.roadmap__phases .roadmap__phase2 .roadmap__content {
+  width: 35%;
+  padding-right: 5rem;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.roadmap__phases .roadmap__phase2 .roadmap__content .roadmap__pretitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1;
+  color: hsl(25, 93%, 55%);
+  margin-bottom: 25px;
+}
+.roadmap__phases .roadmap__phase2 .roadmap__content .roadmap__title {
+  font-family: "Righteous", cursive;
+  font-size: 3.75rem;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+.roadmap__phases .roadmap__phase2 .roadmap__content .roadmap__text {
   font-family: "Raleway", sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
