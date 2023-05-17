@@ -907,9 +907,13 @@ p {
   border-color: purple;
 }
 .join .join__main .join__content {
+  z-index: 1;
   border: 2px dashed green;
-  width: 60%;
+  width: 70%;
   height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .join .join__main .join__content .join__pretitle {
   font-family: "Raleway", sans-serif;
@@ -931,5 +935,6 @@ p {
 }
 .join .join__main .join__content .join__text {
   text-align: center;
+  margin: 0 auto 40px;
   font-weight: 500;
 }

@@ -58,15 +58,13 @@
     //       flex-direction: column;
           
         .join__content{
+            z-index: 1;
             border: 2px dashed green;
-            width: 60%;
+            width: 70%;
             height: 550px;
-            // width: 35%;
-            // padding-right: 5rem;
-            // order: 1;
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
             .join__pretitle {
                 font-family: $font-type-raleway;
@@ -91,11 +89,10 @@
             
             .join__text{
                 text-align: center;
-                // font-family: $font-type-raleway;
-                // font-size: $font-minilg-24px;
-                // line-height: 1.5;
+                margin: 0 auto 40px;
                 font-weight: 500;
             }
+            
         }
       
       
