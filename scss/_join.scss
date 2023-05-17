@@ -7,50 +7,57 @@
         display: flex;
         position: relative;
         width: 100%;
-        height: 1000px;
 
-      .join__circle {
+        &::before{
+            content: "";
+            display: block;
+            padding-top: 100%;
+        }
+
+        .join__circle {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         border-radius: 50%;
-        border: 1px solid red;
-      }
+        // border: 1px solid red;
+        }
       
-      .inner-circle {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 50%;
-        border: 1px solid;
+        .inner-circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            border: 1px solid ;
 
-        .circle1 {
-            width: calc(100% - 84px);
-            height: calc(100% - 84px);
-            border-color: blue;
-          }
-          
-          .circle2 {
-            width: calc(100% - 168px);
-            height: calc(100% - 168px);
-            border-color: green;
-          }
-          
-          .circle3 {
-            width: calc(100% - 120px);
-            height: calc(100% - 120px);
-            border-color: yellow;
-          }
-          
-          .circle4 {
-            width: calc(100% - 30px);
-            height: calc(100% - 30px);
-            border-color: purple;
-          }
-      }
+            &.circle0 {
+                width: calc(100% + 160px);
+                height: calc(100% + 160px);
+                border-color:  rgba(255, 165, 0, 0.4);
+            }
+     
+            &.circle1 {
+                width: calc(100% - 110px);
+                height: calc(100% - 110px);
+                border-color:  rgba(255, 165, 0, 0.4);
+            }
+            
+            &.circle2 {
+                width: calc(100% - 380px);
+                height: calc(100% - 380px);
+                border-color:  rgba(255, 165, 0, 0.4);
+            }
+            
+            &.circle3 {
+                width: calc(100% - 650px);
+                height: calc(100% - 650px);
+                border-color: rgba(255, 165, 0, 0.2);
+            }
+            
+    
+        }
 
     //   .join__content {
     //       display: flex;

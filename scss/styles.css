@@ -867,7 +867,11 @@ p {
   display: flex;
   position: relative;
   width: 100%;
-  height: 1000px;
+}
+.join .join__main::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
 }
 .join .join__main .join__circle {
   position: absolute;
@@ -876,7 +880,6 @@ p {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 1px solid red;
 }
 .join .join__main .inner-circle {
   position: absolute;
@@ -886,25 +889,25 @@ p {
   border-radius: 50%;
   border: 1px solid;
 }
-.join .join__main .inner-circle .circle1 {
-  width: calc(100% - 84px);
-  height: calc(100% - 84px);
-  border-color: blue;
+.join .join__main .inner-circle.circle0 {
+  width: calc(100% + 160px);
+  height: calc(100% + 160px);
+  border-color: rgba(255, 165, 0, 0.4);
 }
-.join .join__main .inner-circle .circle2 {
-  width: calc(100% - 168px);
-  height: calc(100% - 168px);
-  border-color: green;
+.join .join__main .inner-circle.circle1 {
+  width: calc(100% - 110px);
+  height: calc(100% - 110px);
+  border-color: rgba(255, 165, 0, 0.4);
 }
-.join .join__main .inner-circle .circle3 {
-  width: calc(100% - 120px);
-  height: calc(100% - 120px);
-  border-color: yellow;
+.join .join__main .inner-circle.circle2 {
+  width: calc(100% - 380px);
+  height: calc(100% - 380px);
+  border-color: rgba(255, 165, 0, 0.4);
 }
-.join .join__main .inner-circle .circle4 {
-  width: calc(100% - 30px);
-  height: calc(100% - 30px);
-  border-color: purple;
+.join .join__main .inner-circle.circle3 {
+  width: calc(100% - 650px);
+  height: calc(100% - 650px);
+  border-color: rgba(255, 165, 0, 0.2);
 }
 .join .join__main .join__content {
   z-index: 1;
