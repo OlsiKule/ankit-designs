@@ -1017,15 +1017,15 @@ p {
   width: 48rem;
 }
 .faq .faq__accordion .faq__item {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid hsl(192, 17%, 11%);
 }
 .faq .faq__accordion button {
   position: relative;
   display: block;
   text-align: left;
   width: 100%;
-  padding: 1em 0;
-  color: #7288a2;
+  padding: 1em 1.1em 1em 0em;
+  color: hsl(192, 17%, 11%);
   font-size: 1.15rem;
   font-weight: 400;
   border: none;
@@ -1039,28 +1039,27 @@ p {
   cursor: pointer;
 }
 .faq .faq__accordion button .faq__question {
-  padding: 0em 1.5em 0em 0;
+  padding: 0em 1.3em 0em 0;
   margin-bottom: 0px;
   margin-top: 0px;
 }
 .faq .faq__accordion button .icon {
+  color: hsl(25, 93%, 55%);
   display: inline-block;
   position: absolute;
   top: 25px;
   right: 0;
   width: 22px;
   height: 22px;
-  border: 1px solid;
-  border-radius: 22px;
 }
 .faq .faq__accordion button .icon::before {
   display: block;
   position: absolute;
   content: "";
-  top: 9px;
-  left: 5px;
-  width: 10px;
-  height: 2px;
+  top: 9.7px;
+  left: 4.5px;
+  width: 12px;
+  height: 2.5px;
   background: currentColor;
 }
 .faq .faq__accordion button .icon::after {
@@ -1069,8 +1068,8 @@ p {
   content: "";
   top: 5px;
   left: 9px;
-  width: 2px;
-  height: 10px;
+  width: 2.5px;
+  height: 12px;
   background: currentColor;
 }
 .faq .faq__accordion button[aria-expanded=true] .icon::after {
@@ -1079,14 +1078,13 @@ p {
 .faq .faq__accordion button[aria-expanded=true] + .faq__answer {
   opacity: 1;
   max-height: 9em;
-  transition: all 200ms linear;
+  transition: all 0.5s linear;
   will-change: opacity, max-height;
 }
 .faq .faq__accordion .faq__answer {
-  opacity: 0;
   max-height: 0;
   overflow: hidden;
-  transition: opacity 200ms linear, max-height 200ms linear;
+  transition: opacity 0.5s linear, max-height 0.5s linear;
   will-change: opacity, max-height;
 }
 .faq .faq__accordion .faq__answer p {
