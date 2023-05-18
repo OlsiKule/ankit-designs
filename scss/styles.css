@@ -867,11 +867,57 @@ p {
   display: flex;
   position: relative;
   width: 100%;
+  aspect-ratio: 1/1;
 }
-.join .join__main::before {
-  content: "";
-  display: block;
-  padding-top: 100%;
+.join .join__main img {
+  border-radius: 50%;
+  z-index: 1;
+  position: relative;
+}
+.join .join__main img.commuter1 {
+  position: absolute;
+  top: 175px;
+  left: 130px;
+}
+.join .join__main img.commuter2 {
+  position: absolute;
+  top: -110px;
+  left: 395px;
+}
+.join .join__main img.commuter3 {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+}
+.join .join__main img.commuter4 {
+  position: absolute;
+  bottom: 215px;
+  left: 130px;
+}
+.join .join__main img.commuter5 {
+  position: absolute;
+  bottom: -17px;
+  right: 228px;
+}
+.join .join__main img.whitestar {
+  position: absolute;
+  top: 345px;
+  right: 205px;
+}
+.join .join__main img.orangestar {
+  position: absolute;
+  bottom: 500px;
+  right: -15px;
+}
+.join .join__main img.blackstar {
+  position: absolute;
+  bottom: 380px;
+  left: 20px;
+}
+.join .join__main img.ondulation {
+  position: absolute;
+  bottom: 210px;
+  right: 70px;
 }
 .join .join__main .join__circle {
   position: absolute;
@@ -911,7 +957,6 @@ p {
 }
 .join .join__main .join__content {
   z-index: 1;
-  border: 2px dashed green;
   width: 70%;
   height: 550px;
   display: flex;

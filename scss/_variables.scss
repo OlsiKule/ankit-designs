@@ -4,7 +4,7 @@ $backgroundColor-orange: hsl(25, 93%, 55%);
 $backgroundColor-grey: hsl(32, 9%, 67%);
 $backgroundColor-canvas-top: hsl(25,100%,90%);
 $backgroundColor-canvas-bottom: hsl(43,75%,81%);
-$backgroundColor-circle: hsl(39,100%,50%);
+$backgroundColor-circle: hsl(39,100%,50%); // need to update rgba(255, 165, 0, 0.4); to hsl for the circle to account for opacity 0.4  see hero & join sections
 
 $boxShadow:hsl(31, 47%, 90%);
 $black:hsl(192, 17%, 11%);
