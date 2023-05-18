@@ -717,6 +717,12 @@ p {
 }
 .roadmap__main {
   margin-bottom: 160px;
+  position: relative;
+}
+.roadmap__main .blackstar {
+  position: absolute;
+  top: -30px;
+  right: 340px;
 }
 .roadmap__phases .roadmap__phase1 {
   display: flex;

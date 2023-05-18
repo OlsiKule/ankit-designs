@@ -1,8 +1,16 @@
 .roadmap{
     margin-bottom: 200px;
-       
+
     &__main {
         margin-bottom: 160px;
+        position: relative;
+
+        .blackstar {
+            position: absolute;
+            top: -30px;
+            right: 340px;
+        }
+
     }
     
     &__phases{
