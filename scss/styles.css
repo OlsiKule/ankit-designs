@@ -992,3 +992,7 @@ p {
   margin: 0 auto 40px;
   font-weight: 500;
 }
+
+.faq__title {
+  padding-left: 100px;
+}
