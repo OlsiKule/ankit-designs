@@ -1012,7 +1012,7 @@ p {
 .faq .faq__container {
   display: flex;
   min-height: 100vh;
-  margin: 0 auto;
+  margin: 0 3rem 0 auto;
   padding: 4rem;
   width: 48rem;
 }
