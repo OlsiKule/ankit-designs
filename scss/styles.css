@@ -999,7 +999,6 @@ p {
     Website: https://codepen.io/kathykato/details/MoZJom
     Description: This code was written by Katherine Cato.
   */
-  @import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
 }
 .faq__title {
   padding-left: 100px;
@@ -1010,16 +1009,9 @@ p {
 .faq *::before, .faq *::after {
   box-sizing: border-box;
 }
-.faq body {
-  margin: 0;
-  padding: 0;
-  font-family: "Hind", sans-serif;
-  background: #fff;
-  color: #4d5974;
+.faq .faq__container {
   display: flex;
   min-height: 100vh;
-}
-.faq .faq__container {
   margin: 0 auto;
   padding: 4rem;
   width: 48rem;
@@ -1047,12 +1039,14 @@ p {
   cursor: pointer;
 }
 .faq .faq__accordion button .faq__question {
-  padding: 1em 1.5em 1em 0;
+  padding: 0em 1.5em 0em 0;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 .faq .faq__accordion button .icon {
   display: inline-block;
   position: absolute;
-  top: 18px;
+  top: 25px;
   right: 0;
   width: 22px;
   height: 22px;
@@ -1098,5 +1092,5 @@ p {
 .faq .faq__accordion .faq__answer p {
   font-size: 1rem;
   font-weight: 300;
-  margin: 2em 0;
+  margin: 1rem 0;
 }
