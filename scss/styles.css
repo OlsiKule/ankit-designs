@@ -535,6 +535,22 @@ p {
 .social p {
   font-weight: 600;
   text-align: center;
+  margin-bottom: 6.625rem;
+}
+.social__icon {
+  display: flex;
+  justify-content: space-between;
+}
+.social__icon .social__link {
+  background-color: white;
+  padding: 45px 115px;
+  border-radius: 130px;
+}
+.social .footer {
+  height: 20vh;
+  padding-top: 40px;
+  text-align: center;
+  font-size: 0.875rem;
 }
 
 .hero .bgimage {
