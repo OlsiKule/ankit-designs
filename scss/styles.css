@@ -994,27 +994,41 @@ p {
 }
 
 .faq {
-  /*
-    Coder: Katherine Cato
-    Website: https://codepen.io/kathykato/details/MoZJom
-    Description: Parts of this code were written by Katherine Cato.
-  */
+  /* Coder: Katherine Cato
+  Website: https://codepen.io/kathykato/details/MoZJom
+  Description: Parts of this code were written by Katherine Cato. */
 }
-.faq__title {
+.faq .faq__title {
   padding-left: 100px;
-}
-.faq * {
-  box-sizing: border-box;
-}
-.faq *::before, .faq *::after {
-  box-sizing: border-box;
 }
 .faq .faq__container {
   display: flex;
-  min-height: 100vh;
   margin: 0 3rem 0 auto;
   padding: 4rem;
   width: 48rem;
+  position: relative;
+}
+.faq .faq__container .blackstar {
+  position: absolute;
+  left: -48%;
+  top: 19%;
+}
+.faq .faq__container .wavy {
+  position: absolute;
+  left: -74%;
+  bottom: 20%;
+}
+.faq .faq__container .orangestar {
+  position: absolute;
+  right: -13%;
+  bottom: -26%;
+  transform: scale(1.8);
+}
+.faq .faq__container * {
+  box-sizing: border-box;
+}
+.faq .faq__container *::before, .faq .faq__container *::after {
+  box-sizing: border-box;
 }
 .faq .faq__container .faq__accordion .faq__item {
   border-bottom: 1px solid hsl(192, 17%, 11%);
@@ -1027,7 +1041,7 @@ p {
   padding: 1em 1.1em 1em 0em;
   color: hsl(192, 17%, 11%);
   font-size: 1.15rem;
-  font-weight: 400;
+  font-weight: 500;
   border: none;
   background: none;
   outline: none;

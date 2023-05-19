@@ -1,128 +1,161 @@
 
 .faq {
-    &__title {
-        padding-left: 100px;
-    }
-
- 
 
 
-    /*
-  Coder: Katherine Cato
-  Website: https://codepen.io/kathykato/details/MoZJom
-  Description: Parts of this code were written by Katherine Cato.
-*/
 
-* {
-    box-sizing: border-box;
-    &::before, &::after {
-        box-sizing: border-box;
-    }
-}
 
-.faq__container {
-    display: flex;
-    min-height: 100vh;
-    margin: 0 3rem 0 auto;
-    padding: 4rem;
-    width: 48rem;
+
+        .faq__title {
+            padding-left: 100px;
+        }
+
+        /* Coder: Katherine Cato
+        Website: https://codepen.io/kathykato/details/MoZJom
+        Description: Parts of this code were written by Katherine Cato. */
+
+
+
+    .faq__container {
+        display: flex;
+        margin: 0 3rem 0 auto;
+        padding: 4rem;
+        width: 48rem;
+        position: relative;
+
+        .blackstar{
+            position: absolute;
+            left: -48%;
+            top: 19%;
+        }
+
+        .wavy{
+            position: absolute;
+            left: -74%;
+            bottom: 20%;
+        }
+
+        .orangestar{
+            position: absolute;
+            right: -13%;
+            bottom: -26%;
+            transform: scale(1.8);
+        }
+
+        * {
+            box-sizing: border-box;
+            &::before, &::after {
+                box-sizing: border-box;
+            }
+        }
+        
+        
+        .faq__accordion {
     
-    .faq__accordion {
-        .faq__item {
-            border-bottom: 1px solid $black;
-        }
+    
 
-        button {
-            position: relative;
-            display: block;
-            text-align: left;
-            width: 100%;
-            padding: 1em 1.1em 1em 0em;
-            color: $black;
-            font-size: 1.15rem;
-            font-weight: 400;
-            border: none;
-            background: none;
-            outline: none;
+            .faq__item {
+                border-bottom: 1px solid $black;
+            }
 
-            &:hover, &:focus {
-            cursor: pointer;
+            button {
+                position: relative;
+                display: block;
+                text-align: left;
+                width: 100%;
+                padding: 1em 1.1em 1em 0em;
+                color: $black;
+                font-size: 1.15rem;
+                font-weight: 500;
+                border: none;
+                background: none;
+                outline: none;
 
-                &::after {
-                    cursor: pointer;
+
+
+                &:hover, &:focus {
+                cursor: pointer;
+
+                    &::after {
+                        cursor: pointer;
+                    }
                 }
-            }
 
-            .faq__question {
-                padding: 0em 1.3em 0em 0;
-                margin-bottom: 0px;
-                margin-top: 0px;
-            }
+                .faq__question {
+                    padding: 0em 1.3em 0em 0;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                }
 
-            .icon {
-                color: $backgroundColor-orange;
-                display: inline-block;
-                position: absolute;
-                top: 25px;
-                right: 0;
-                width: 22px;
-                height: 22px;
-
-            
-                &::before {
-                    display: block;
+                .icon {
+                    color: $backgroundColor-orange;
+                    display: inline-block;
                     position: absolute;
-                    content: "";
-                    top: 9.7px;
-                    left: 4.5px;
-                    width: 12px;
-                    height: 2.5px;
-                    background: currentColor;
-                }
-                &::after {
-                    display: block;
-                    position: absolute;
-                    content: "";
-                    top: 5px;
-                    left: 9px;
-                    width: 2.5px;
-                    height: 12px;
-                    background: currentColor;
+                    top: 25px;
+                    right: 0;
+                    width: 22px;
+                    height: 22px;
+
+                
+                    &::before {
+                        display: block;
+                        position: absolute;
+                        content: "";
+                        top: 9.7px;
+                        left: 4.5px;
+                        width: 12px;
+                        height: 2.5px;
+                        background: currentColor;
+                    }
+                    &::after {
+                        display: block;
+                        position: absolute;
+                        content: "";
+                        top: 5px;
+                        left: 9px;
+                        width: 2.5px;
+                        height: 12px;
+                        background: currentColor;
+                    }
                 }
             }
-        }
-        button[aria-expanded='true'] {
-            .icon {
-                &::after {
-                    width: 0;
+            button[aria-expanded='true'] {
+                .icon {
+                    &::after {
+                        width: 0;
+                    }
+                }
+
+                + .faq__answer {
+                    opacity: 1;
+                    max-height: 9em;
+                    transition: all 0.5s linear;
+                    will-change: opacity, max-height;
                 }
             }
 
-            + .faq__answer {
-                opacity: 1;
-                max-height: 9em;
-                transition: all 0.5s linear;
+            .faq__answer {
+                max-height: 0;
+                overflow: hidden;
+                transition: opacity 0.5s linear, max-height 0.5s linear;
                 will-change: opacity, max-height;
-            }
-        }
+                // position: relative;
 
-        .faq__answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: opacity 0.5s linear, max-height 0.5s linear;
-            will-change: opacity, max-height;
             
-            p {
-                font-family: $font-type-raleway;
-                font-size: $font-sm-14px;
-                font-weight: 300;
-                line-height: 1.5;
-                opacity: 0.7;
-                margin: 1rem 0;
+                
+                p {
+
+                    font-family: $font-type-raleway;
+                    font-size: $font-sm-14px;
+                    font-weight: 300;
+                    line-height: 1.5;
+                    opacity: 0.7;
+                    margin: 1rem 0;
+
+                        
+                }
             }
+            
+
         }
     }
-
-}
-
 }
