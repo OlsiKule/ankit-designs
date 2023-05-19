@@ -189,6 +189,7 @@ p {
   border-radius: 40px;
   box-shadow: 4px 7px 0px rgb(247, 123, 33);
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .button:hover {
