@@ -1,19 +1,13 @@
-
 .faq {
     margin-bottom: 395px;
 
+    .faq__title {
+        padding-left: 100px;
+    }
 
-
-
-        .faq__title {
-            padding-left: 100px;
-        }
-
-        /* Coder: Katherine Cato
-        Website: https://codepen.io/kathykato/details/MoZJom
-        Description: Parts of this code were written by Katherine Cato. */
-
-
+    /* Coder: Katherine Cato
+    Website: https://codepen.io/kathykato/details/MoZJom
+    Description: Parts of this code were written by Katherine Cato. */
 
     .faq__container {
         display: flex;
@@ -138,9 +132,6 @@
                 overflow: hidden;
                 transition: opacity 0.5s linear, max-height 0.5s linear;
                 will-change: opacity, max-height;
-                // position: relative;
-
-            
                 
                 p {
 
@@ -154,7 +145,6 @@
                         
                 }
             }
-            
 
         }
     }
