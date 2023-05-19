@@ -1016,10 +1016,10 @@ p {
   padding: 4rem;
   width: 48rem;
 }
-.faq .faq__accordion .faq__item {
+.faq .faq__container .faq__accordion .faq__item {
   border-bottom: 1px solid hsl(192, 17%, 11%);
 }
-.faq .faq__accordion button {
+.faq .faq__container .faq__accordion button {
   position: relative;
   display: block;
   text-align: left;
@@ -1032,18 +1032,18 @@ p {
   background: none;
   outline: none;
 }
-.faq .faq__accordion button:hover, .faq .faq__accordion button:focus {
+.faq .faq__container .faq__accordion button:hover, .faq .faq__container .faq__accordion button:focus {
   cursor: pointer;
 }
-.faq .faq__accordion button:hover::after, .faq .faq__accordion button:focus::after {
+.faq .faq__container .faq__accordion button:hover::after, .faq .faq__container .faq__accordion button:focus::after {
   cursor: pointer;
 }
-.faq .faq__accordion button .faq__question {
+.faq .faq__container .faq__accordion button .faq__question {
   padding: 0em 1.3em 0em 0;
   margin-bottom: 0px;
   margin-top: 0px;
 }
-.faq .faq__accordion button .icon {
+.faq .faq__container .faq__accordion button .icon {
   color: hsl(25, 93%, 55%);
   display: inline-block;
   position: absolute;
@@ -1052,7 +1052,7 @@ p {
   width: 22px;
   height: 22px;
 }
-.faq .faq__accordion button .icon::before {
+.faq .faq__container .faq__accordion button .icon::before {
   display: block;
   position: absolute;
   content: "";
@@ -1062,7 +1062,7 @@ p {
   height: 2.5px;
   background: currentColor;
 }
-.faq .faq__accordion button .icon::after {
+.faq .faq__container .faq__accordion button .icon::after {
   display: block;
   position: absolute;
   content: "";
@@ -1072,22 +1072,22 @@ p {
   height: 12px;
   background: currentColor;
 }
-.faq .faq__accordion button[aria-expanded=true] .icon::after {
+.faq .faq__container .faq__accordion button[aria-expanded=true] .icon::after {
   width: 0;
 }
-.faq .faq__accordion button[aria-expanded=true] + .faq__answer {
+.faq .faq__container .faq__accordion button[aria-expanded=true] + .faq__answer {
   opacity: 1;
   max-height: 9em;
   transition: all 0.5s linear;
   will-change: opacity, max-height;
 }
-.faq .faq__accordion .faq__answer {
+.faq .faq__container .faq__accordion .faq__answer {
   max-height: 0;
   overflow: hidden;
   transition: opacity 0.5s linear, max-height 0.5s linear;
   will-change: opacity, max-height;
 }
-.faq .faq__accordion .faq__answer p {
+.faq .faq__container .faq__accordion .faq__answer p {
   font-family: "Raleway", sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
