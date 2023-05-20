@@ -9,13 +9,22 @@
         width: 100%; 
         margin: 0 auto;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: center;
+        // align-items: center;
         background-color: transparent;
         transition: 0.7s ease-in-out; 
         
         &.hide {
             transform: translateY(-100%);
+        }
+
+        .navbar__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin: 1rem auto;
+            max-width: 73.375rem;
         }
     }
 
