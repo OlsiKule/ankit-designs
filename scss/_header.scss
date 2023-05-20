@@ -81,6 +81,7 @@
             -webkit-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
             background-color: $black;
+
         }
 
             &.onOff {
@@ -104,13 +105,14 @@
 
     &__menu {
 
+
         .closeMenu {
             height: auto;
             width: 1.575rem;
             cursor: pointer;
             position: fixed;
-            top: 6.75rem;
-            right: 8.4375rem;
+            top: 9.8rem;
+            right: 11rem;
         }
 
         &.hide {

@@ -275,8 +275,8 @@ p {
   width: 1.575rem;
   cursor: pointer;
   position: fixed;
-  top: 6.75rem;
-  right: 8.4375rem;
+  top: 9.8rem;
+  right: 11rem;
 }
 .header__menu.hide {
   display: none;

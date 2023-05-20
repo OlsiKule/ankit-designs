@@ -31,12 +31,13 @@ window.onscroll = function () {
 const hamburger = document.querySelector('.header__toggle');
 const menu = document.querySelector('.header__menu');
 const closeMenu = document.querySelector('.closeMenu');
-// console.log(closeMenu, 'closeMenu was clicked');
 
 hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('onOff');
-  menu.classList.toggle('has-fade');
-  menu.classList.toggle('hide');
+  // setTimeout(() => {
+    hamburger.classList.toggle('onOff');
+    menu.classList.toggle('has-fade');
+    menu.classList.toggle('hide');
+  // }, 300); // Delay in milliseconds (0.3 seconds)
 });
 
 closeMenu.addEventListener('click', () => {
@@ -54,7 +55,6 @@ closeMenu.addEventListener('click', () => {
   Website: https://codepen.io/kathykato/details/MoZJom
   Description: Parts of this code were written by Katherine Cato.
 */
-
 const items = document.querySelectorAll(".faq__accordion button");
 
 function toggleAccordion() {
