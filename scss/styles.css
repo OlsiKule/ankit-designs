@@ -203,7 +203,7 @@ p {
 .header .navbar {
   position: fixed;
   top: 0;
-  padding: 5rem 8.25rem 5rem 11rem;
+  padding: 7rem 10rem 5rem 11rem;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -561,7 +561,7 @@ p {
 }
 
 .hero {
-  margin-top: 17rem;
+  margin-top: 25rem;
 }
 .hero .bgimage {
   display: flex;
