@@ -272,7 +272,7 @@ p {
   right: 8.4375rem;
 }
 .header__menu.hide {
-  opacity: 0;
+  display: none;
 }
 .header__menu.has-fade {
   width: 100%;
@@ -553,6 +553,9 @@ p {
   font-size: 0.875rem;
 }
 
+.hero {
+  margin-top: 17rem;
+}
 .hero .bgimage {
   display: flex;
   position: relative;
