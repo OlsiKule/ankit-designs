@@ -104,7 +104,7 @@
 
 
     &__menu {
-
+        overflow-y: scroll;
 
         .closeMenu {
             height: auto;
@@ -240,7 +240,7 @@
                 }
             }
         
-        &.paparazzi {
+        .paparazzi {
             position: absolute;
             right: 290px;
             top: 390px;
@@ -278,7 +278,7 @@
         }
 
 
-        &.star1{
+        .star1{
             position: absolute;
             right: 950px;
             top: 630px;
@@ -311,7 +311,7 @@
             }
         }
         
-        &.star2{
+        .star2{
             position: absolute;
             right: 630px;
             top: 345px;
@@ -342,7 +342,7 @@
             }
         }
 
-        &.star3{
+        .star3{
             position: absolute;
             right: 700px;
             top: 415px;

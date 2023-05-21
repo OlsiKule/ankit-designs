@@ -31,13 +31,19 @@ window.onscroll = function () {
 const hamburger = document.querySelector('.header__toggle');
 const menu = document.querySelector('.header__menu');
 const closeMenu = document.querySelector('.closeMenu');
+// const scroll = document.querySelector(".scroll");
+
 
 hamburger.addEventListener('click', () => {
   // setTimeout(() => {
     hamburger.classList.toggle('onOff');
     menu.classList.toggle('has-fade');
     menu.classList.toggle('hide');
+    
+    // menu.classList.toggle('scroll');
   // }, 300); // Delay in milliseconds (0.3 seconds)
+  document.body.style.overflow = "hidden";
+  document.body.style.userSelect = "none";
 });
 
 closeMenu.addEventListener('click', () => {
@@ -45,6 +51,8 @@ closeMenu.addEventListener('click', () => {
   menu.classList.toggle('hide');
   hamburger.classList.toggle('onOff');
   menu.classList.toggle('has-fade');
+  document.body.style.overflow = "auto";
+  document.body.style.userSelect = "auto";
 
 });
 
