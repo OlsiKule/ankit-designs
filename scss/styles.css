@@ -223,7 +223,7 @@ p {
   max-width: 73.375rem;
 }
 .header .navbar.active {
-  padding: 1.5rem 8.25rem 1.5em 11rem;
+  padding: 1rem 10rem 1em 11rem;
   transition: transform 0.7s;
   z-index: 2;
   background-color: hsl(32, 86%, 95%);
