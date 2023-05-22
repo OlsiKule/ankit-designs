@@ -1,5 +1,5 @@
 .faq {
-    margin-bottom: 395px;
+    margin-bottom: 150px;
 
     .faq__title {
         padding-left: 100px;
@@ -28,13 +28,6 @@
             bottom: 20%;
         }
 
-        .orangestar{
-            position: absolute;
-            right: -13%;
-            bottom: -26%;
-            transform: scale(1.8);
-        }
-
         * {
             box-sizing: border-box;
             &::before, &::after {
@@ -42,10 +35,8 @@
             }
         }
         
-        
+
         .faq__accordion {
-    
-    
 
             .faq__item {
                 border-bottom: 1px solid $black;
@@ -134,18 +125,14 @@
                 will-change: opacity, max-height;
                 
                 p {
-
                     font-family: $font-type-raleway;
                     font-size: $font-sm-14px;
                     font-weight: 300;
                     line-height: 1.5;
                     opacity: 0.7;
                     margin: 1rem 0;
-
-                        
                 }
             }
-
         }
     }
 }

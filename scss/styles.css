@@ -627,7 +627,7 @@ p {
 .hero .hero__image .circle.hero__outter .lady {
   position: absolute;
   bottom: 5px;
-  right: 100px;
+  right: 37px;
   width: 26%;
 }
 .hero .hero__image .circle.hero__outter .top-ghost {
@@ -637,8 +637,8 @@ p {
 }
 .hero .hero__image .circle.hero__outter .bottom-ghost {
   position: absolute;
-  bottom: 200px;
-  left: 170px;
+  bottom: 175px;
+  left: 165px;
 }
 .hero .hero__image .circle.hero__outter .whitestar {
   position: absolute;
@@ -656,19 +656,20 @@ p {
   right: 290px;
 }
 .hero .hero__image .circle.hero__mid {
-  height: 750px;
-  width: 750px;
+  height: 800px;
+  width: 800px;
 }
 .hero .hero__image .circle.hero__inner {
-  height: 500px;
-  width: 500px;
+  height: 550px;
+  width: 550px;
 }
 .hero .hero__paparazzi {
   position: absolute;
-  left: -375px;
-  top: 310px;
+  left: -389px;
+  top: 323px;
   width: 108%;
   z-index: -1;
+  overflow: hidden;
 }
 .hero .hero__wave {
   position: absolute;
@@ -680,6 +681,9 @@ p {
 
 .about {
   margin-bottom: 260px;
+  position: relative;
+}
+.about__content {
   position: relative;
 }
 .about__content .orangestar {
@@ -713,7 +717,7 @@ p {
 }
 .about__content .about__subsection .about__graphics .blackstar {
   position: absolute;
-  bottom: 90px;
+  bottom: 55px;
   left: -30px;
 }
 .about__content .about__subsection .about__graphics .arrow {
@@ -1031,7 +1035,7 @@ p {
 }
 
 .faq {
-  margin-bottom: 395px;
+  margin-bottom: 150px;
   /* Coder: Katherine Cato
   Website: https://codepen.io/kathykato/details/MoZJom
   Description: Parts of this code were written by Katherine Cato. */
@@ -1055,12 +1059,6 @@ p {
   position: absolute;
   left: -74%;
   bottom: 20%;
-}
-.faq .faq__container .orangestar {
-  position: absolute;
-  right: -13%;
-  bottom: -26%;
-  transform: scale(1.8);
 }
 .faq .faq__container * {
   box-sizing: border-box;

@@ -3,6 +3,7 @@
     position: relative;
     
     &__content {
+        position: relative;
         .orangestar{
             position: absolute;
             top: 10px;
@@ -40,7 +41,7 @@
 
                     .blackstar{
                         position: absolute;
-                        bottom: 90px;
+                        bottom: 55px;
                         left: -30px;
                     }
 
