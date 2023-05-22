@@ -227,7 +227,7 @@ p {
   transition: transform 0.7s;
   z-index: 2;
   background-color: hsl(32, 86%, 95%);
-  box-shadow: 0 10px 5px -5px #f2e7db;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
 }
 .header nav {
   position: relative;
