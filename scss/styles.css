@@ -1003,6 +1003,13 @@ p {
   list-style: none;
   padding: 0;
   margin: 40px 0;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 87.4375em) {
+  .collection .container .collection__nfts .lineup {
+    margin: 10px 0;
+    transition: all 0.7s ease-out;
+  }
 }
 .collection .container .collection__nfts .lineup .nft {
   display: inline;
@@ -1018,7 +1025,7 @@ p {
 }
 @media (max-width: 87.4375em) {
   .collection .container .collection__nfts .lineup .nft .icon {
-    width: 29%;
+    width: 26%;
     transition: all 0.7s ease-out;
   }
 }
