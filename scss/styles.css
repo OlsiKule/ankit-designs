@@ -755,7 +755,6 @@ p {
   .hero .hero__image {
     order: 2;
     width: 33%;
-    border: 1px solid red;
   }
 }
 @media (max-width: 63.9375em) {
