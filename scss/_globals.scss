@@ -65,12 +65,25 @@ h2{
     text-transform: uppercase;
     font-size: $font-xxlg-93px;
     line-height: 1;
+    transition: all 0.7s ease-out;
+
+    @include breakpoint-down (large){
+        font-size: $font-xlg-75px;
+        transition: all 0.7s ease-out;
+    }
 }
 
 p{
     font-family: $font-type-raleway;
     line-height: 1.5;
     font-size: $font-minilg-24px;
+    transition: all 0.7s ease-out;
+
+    @include breakpoint-down (large){
+        font-size: $font-lg-20px;
+        transition: all 0.7s ease-out;
+    }
+
     // Note: for smaller fants enter them on individual files
 }
 
@@ -83,6 +96,13 @@ p{
     line-height: 1;
     color: $backgroundColor-orange;
     margin-bottom: 10px;
+    transition: all 0.7s ease-out;
+    
+    @include breakpoint-down (large) {
+        font-size: $font-minilg-24px;
+        margin-bottom: 2rem;
+        transition: all 0.7s ease-out;
+    }
 
     .dash {
         position: relative;

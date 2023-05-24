@@ -1,5 +1,11 @@
 .faq {
     margin-bottom: 150px;
+    transition: all 0.7s ease-out;
+        
+    @include breakpoint-down (large) {
+        margin-left: 4rem;
+        transition: all 0.7s ease-out;
+    }
 
     .faq__title {
         padding-left: 100px;
@@ -15,6 +21,13 @@
         padding: 4rem;
         width: 48rem;
         position: relative;
+        transition: all 0.7s ease-out;
+        
+        @include breakpoint-down (large) {
+            margin: 0 5rem 0 auto;
+            width: 39rem;
+            transition: all 0.7s ease-out;
+        }
 
         .blackstar{
             position: absolute;
@@ -26,6 +39,12 @@
             position: absolute;
             left: -74%;
             bottom: 20%;
+            transition: all 0.7s ease-out;
+            
+            @include breakpoint-down (large) {
+                left: -52%;
+                transition: all 0.7s ease-out;
+            }
         }
 
         * {

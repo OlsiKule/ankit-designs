@@ -1,5 +1,11 @@
 .roadmap{
     margin-bottom: 200px;
+    transition: all 0.7s ease-out;
+        
+    @include breakpoint-down (large) {
+        margin-left: 4rem;
+        transition: all 0.7s ease-out;
+    }
 
     &__main {
         margin-bottom: 160px;

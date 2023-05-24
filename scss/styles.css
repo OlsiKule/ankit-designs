@@ -147,12 +147,26 @@ h2 {
   text-transform: uppercase;
   font-size: 5.78125rem;
   line-height: 1;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 87.4375em) {
+  h2 {
+    font-size: 4.6875rem;
+    transition: all 0.7s ease-out;
+  }
 }
 
 p {
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
   font-size: 1.5rem;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 87.4375em) {
+  p {
+    font-size: 1.25rem;
+    transition: all 0.7s ease-out;
+  }
 }
 
 .headline {
@@ -163,6 +177,14 @@ p {
   line-height: 1;
   color: hsl(25, 93%, 55%);
   margin-bottom: 10px;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 87.4375em) {
+  .headline {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    transition: all 0.7s ease-out;
+  }
 }
 .headline .dash {
   position: relative;
@@ -597,17 +619,41 @@ p {
 .social__icon {
   display: flex;
   justify-content: space-between;
+  transition: all 0.7s ease-out;
 }
-.social__icon .social__link {
+@media (max-width: 87.4375em) {
+  .social__icon {
+    margin: 0 3.5rem;
+    transition: all 0.7s ease-out;
+  }
+}
+.social .social__link {
   background-color: white;
   padding: 45px 115px;
   border-radius: 130px;
+  transition: all 0.7s ease-out;
 }
-.social .footer {
+@media (max-width: 87.4375em) {
+  .social .social__link {
+    padding: 35px 75px;
+    border-radius: 145px;
+    transition: all 0.7s ease-out;
+  }
+}
+
+.footer {
   height: 20vh;
   padding-top: 40px;
   text-align: center;
   font-size: 0.875rem;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 87.4375em) {
+  .footer {
+    font-size: 0.75rem;
+    height: 4vh;
+    transition: all 0.7s ease-out;
+  }
 }
 
 .hero {
@@ -871,17 +917,39 @@ p {
 .about {
   margin-bottom: 260px;
   position: relative;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 87.4375em) {
+  .about {
+    margin-top: 24rem;
+    transition: all 0.7s ease-out;
+  }
 }
 .about__content {
   position: relative;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 87.4375em) {
+  .about__content {
+    margin-left: 4rem;
+    transition: all 0.7s ease-out;
+  }
 }
 .about__content .orangestar {
   position: absolute;
   top: 10px;
   right: 440px;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 87.4375em) {
+  .about__content .orangestar {
+    top: -20px;
+    right: 240px;
+    transition: all 0.7s ease-out;
+  }
 }
 .about__content .about__title {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 .about__content .about__subsection {
   display: flex;
@@ -917,6 +985,13 @@ p {
 
 .collection {
   margin-bottom: 130px;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 87.4375em) {
+  .collection {
+    margin-left: 4rem;
+    transition: all 0.7s ease-out;
+  }
 }
 .collection .container .collection__title h2 {
   margin-bottom: 160px;
@@ -940,10 +1015,24 @@ p {
   width: 33%;
   height: auto;
   object-fit: cover;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 87.4375em) {
+  .collection .container .collection__nfts .lineup .nft .icon {
+    width: 29%;
+    transition: all 0.7s ease-out;
+  }
 }
 
 .roadmap {
   margin-bottom: 200px;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 87.4375em) {
+  .roadmap {
+    margin-left: 4rem;
+    transition: all 0.7s ease-out;
+  }
 }
 .roadmap__main {
   margin-bottom: 160px;
@@ -1225,9 +1314,16 @@ p {
 
 .faq {
   margin-bottom: 150px;
+  transition: all 0.7s ease-out;
   /* Coder: Katherine Cato
   Website: https://codepen.io/kathykato/details/MoZJom
   Description: Parts of this code were written by Katherine Cato. */
+}
+@media (max-width: 87.4375em) {
+  .faq {
+    margin-left: 4rem;
+    transition: all 0.7s ease-out;
+  }
 }
 .faq .faq__title {
   padding-left: 100px;
@@ -1238,6 +1334,14 @@ p {
   padding: 4rem;
   width: 48rem;
   position: relative;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 87.4375em) {
+  .faq .faq__container {
+    margin: 0 5rem 0 auto;
+    width: 39rem;
+    transition: all 0.7s ease-out;
+  }
 }
 .faq .faq__container .blackstar {
   position: absolute;
@@ -1248,6 +1352,13 @@ p {
   position: absolute;
   left: -74%;
   bottom: 20%;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 87.4375em) {
+  .faq .faq__container .wavy {
+    left: -52%;
+    transition: all 0.7s ease-out;
+  }
 }
 .faq .faq__container * {
   box-sizing: border-box;

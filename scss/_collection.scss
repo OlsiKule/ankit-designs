@@ -1,5 +1,11 @@
 .collection {
     margin-bottom: 130px;
+    transition: all 0.7s ease-out;
+        
+    @include breakpoint-down (large) {
+        margin-left: 4rem;
+        transition: all 0.7s ease-out;
+    }
 
     .container{
 
@@ -28,7 +34,14 @@
                         margin-right: 30px;
                         width: 33%;
                         height: auto;
-                        object-fit: cover;
+                        object-fit: cover;    
+                        transition: all 0.7s ease-out;
+        
+                        @include breakpoint-down (large) {
+                            width: 29%;
+                            transition: all 0.7s ease-out;
+                        }
+
                     }
                 } 
             }
