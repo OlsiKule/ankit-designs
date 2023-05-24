@@ -93,9 +93,13 @@
         height: auto;
         position: relative;
         
+        @include breakpoint-down (large) {
+          order: 2;
+          width: 33%;
+          border: 1px solid red;
+        }
         @include breakpoint-down (medium) {
           order: 2;
-          // width: 100%;
         }
 
         .circle {
@@ -120,12 +124,21 @@
               width: 900px;
               transition: all 0.7s ease-out;
             }
-
+            
             .lady {
               position: absolute;
               bottom: 5px;
               right: 37px;
               width: 26%;
+              transition: all 0.7s ease-out;
+              
+              @include breakpoint-down (large){
+                right: 175px;
+                bottom: 25px;
+                width: 22%;
+                transition: all 0.7s ease-out;
+                
+              }
             }
 
             .top-ghost {

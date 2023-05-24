@@ -705,6 +705,13 @@ p {
   height: auto;
   position: relative;
 }
+@media (max-width: 87.4375em) {
+  .hero .hero__image {
+    order: 2;
+    width: 33%;
+    border: 1px solid red;
+  }
+}
 @media (max-width: 63.9375em) {
   .hero .hero__image {
     order: 2;
@@ -739,6 +746,15 @@ p {
   bottom: 5px;
   right: 37px;
   width: 26%;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 87.4375em) {
+  .hero .hero__image .circle.hero__outter .lady {
+    right: 175px;
+    bottom: 25px;
+    width: 22%;
+    transition: all 0.7s ease-out;
+  }
 }
 .hero .hero__image .circle.hero__outter .top-ghost {
   position: absolute;
