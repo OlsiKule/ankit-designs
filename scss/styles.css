@@ -218,6 +218,18 @@ p {
   background-color: transparent;
   transition: 0.7s ease-in-out;
 }
+@media (max-width: 63.9375em) {
+  .header .navbar {
+    padding: 4.3rem 3.5rem 1rem 3rem;
+    transition: 0.7s ease-in-out;
+  }
+}
+@media (max-width: 47.875em) {
+  .header .navbar {
+    padding: 1rem 3.5rem 1rem 3rem;
+    transition: 0.7s ease-in-out;
+  }
+}
 .header .navbar.hide {
   transform: translateY(-100%);
 }
@@ -235,6 +247,19 @@ p {
   z-index: 2;
   background-color: hsl(32, 86%, 95%);
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
+  transition: 0.7s ease-in-out;
+}
+@media (max-width: 63.9375em) {
+  .header .navbar.active {
+    padding: 1.5rem 3.5rem 1rem 3rem;
+    transition: 0.7s ease-in-out;
+  }
+}
+@media (max-width: 47.875em) {
+  .header .navbar.active {
+    padding: 1rem 3.5rem 1rem 3rem;
+    transition: 0.7s ease-in-out;
+  }
 }
 .header nav {
   position: relative;
@@ -250,6 +275,14 @@ p {
 .header img {
   height: 5rem;
   width: 11.5625rem;
+  transition: 0.7s ease-in-out;
+}
+@media (max-width: 47.875em) {
+  .header img {
+    height: 3.5rem;
+    width: 8.5625rem;
+    transition: 0.7s ease-in-out;
+  }
 }
 .header a {
   color: hsl(32, 9%, 67%);
@@ -572,6 +605,13 @@ p {
 
 .hero {
   margin-top: 25rem;
+  transition: 0.7s ease-in-out;
+}
+@media (max-width: 63.9375em) {
+  .hero {
+    margin-top: 15rem;
+    transition: 0.7s ease-in-out;
+  }
 }
 .hero .bgimage {
   display: flex;
@@ -632,7 +672,6 @@ p {
 @media (max-width: 63.9375em) {
   .hero .hero__image {
     order: 2;
-    width: 100%;
   }
 }
 .hero .hero__image .circle {
@@ -770,6 +809,11 @@ p {
   top: -44px;
   width: 108%;
   z-index: -1;
+}
+@media (max-width: 63.9375em) {
+  .hero .hero__wave {
+    display: none;
+  }
 }
 
 .about {

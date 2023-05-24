@@ -13,6 +13,16 @@
         background-color: transparent;
         transition: 0.7s ease-in-out; 
         
+        @include breakpoint-down (medium) {
+            padding: 4.3rem 3.5rem 1rem 3rem;
+            transition: 0.7s ease-in-out; 
+        }
+
+        @include breakpoint-down (intermediate) {
+            padding: 1rem 3.5rem 1rem 3rem;
+            transition: 0.7s ease-in-out; 
+        }
+        
         &.hide {
             transform: translateY(-100%);
         }
@@ -34,6 +44,17 @@
         z-index: 2;
         background-color: $backgroundColor;
         box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
+        transition: 0.7s ease-in-out; 
+
+        @include breakpoint-down (medium) {
+            padding: 1.5rem 3.5rem 1rem 3rem;
+            transition: 0.7s ease-in-out; 
+        }
+
+        @include breakpoint-down (intermediate) {
+            padding: 1rem 3.5rem 1rem 3rem;
+            transition: 0.7s ease-in-out; 
+        }
     }
 
 
@@ -55,9 +76,15 @@
 
 // logo
     img{
-
         height: 5rem;
         width: 11.5625rem;
+        transition: 0.7s ease-in-out; 
+        
+        @include breakpoint-down (intermediate) {
+            height: 3.5rem;
+            width: 8.5625rem;
+            transition: 0.7s ease-in-out; 
+        }
     }
 
     a {

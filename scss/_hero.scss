@@ -1,5 +1,11 @@
 .hero {
   margin-top: 25rem;
+  transition: 0.7s ease-in-out; 
+
+  @include breakpoint-down (medium) {
+    margin-top: 15rem;
+    transition: 0.7s ease-in-out; 
+}
 
     .bgimage {
       display: flex;
@@ -64,7 +70,7 @@
         
         @include breakpoint-down (medium) {
           order: 2;
-          width: 100%;
+          // width: 100%;
         }
 
         .circle {
@@ -208,6 +214,10 @@
         top: -44px;
         width: 108%;
         z-index: -1;
+
+        @include breakpoint-down (medium) {
+          display: none;
+      }
     }   
 }
   
