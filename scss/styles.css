@@ -134,6 +134,13 @@ h1 {
     transition: all 0.7s ease-out;
   }
 }
+@media (max-width: 47.875em) {
+  h1 {
+    line-height: 0.9;
+    font-size: 3.75rem;
+    transition: all 0.7s ease-out;
+  }
+}
 
 h2 {
   font-family: "Righteous", cursive;
@@ -613,6 +620,12 @@ p {
     transition: 0.7s ease-in-out;
   }
 }
+@media (max-width: 47.875em) {
+  .hero {
+    margin-top: 8rem;
+    transition: 0.7s ease-in-out;
+  }
+}
 .hero .bgimage {
   display: flex;
   position: relative;
@@ -631,6 +644,11 @@ p {
   order: 1;
   z-index: 1;
 }
+@media (max-width: 47.875em) {
+  .hero .bgimage .hero__text {
+    margin-left: 3rem;
+  }
+}
 .hero .bgimage .hero__text .hero__subtitle {
   font-weight: normal;
   font-size: 1.95rem;
@@ -643,6 +661,12 @@ p {
     transition: all 0.7s ease-out;
   }
 }
+@media (max-width: 47.875em) {
+  .hero .bgimage .hero__text .hero__subtitle {
+    font-size: 1.25rem;
+    transition: 0.7s ease-in-out;
+  }
+}
 .hero .bgimage .hero__title {
   position: relative;
   display: flex;
@@ -653,6 +677,11 @@ p {
 .hero .bgimage .hero__title .second-word {
   margin-left: 140px;
 }
+@media (max-width: 47.875em) {
+  .hero .bgimage .hero__title .second-word {
+    margin-left: 65px;
+  }
+}
 .hero .bgimage .hero__title .second-word::before {
   content: "";
   position: absolute;
@@ -662,6 +691,13 @@ p {
   width: 108px;
   background-color: hsl(25, 93%, 55%);
   transform: translateY(-50%);
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 47.875em) {
+  .hero .bgimage .hero__title .second-word::before {
+    width: 50px;
+    transition: all 0.7s ease-out;
+  }
 }
 .hero .hero__image {
   width: 65%;

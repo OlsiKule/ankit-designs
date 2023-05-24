@@ -5,13 +5,19 @@
   @include breakpoint-down (medium) {
     margin-top: 15rem;
     transition: 0.7s ease-in-out; 
-}
+  }
+
+  @include breakpoint-down (intermediate) {
+    margin-top: 8rem;
+    transition: 0.7s ease-in-out; 
+  }
 
     .bgimage {
       display: flex;
       position: relative;
       margin-bottom: 240px;
       padding-bottom: 40px;
+
         @include breakpoint-down (medium){
             display: flex;
             flex-direction: column;
@@ -23,6 +29,10 @@
             order: 1;
             z-index: 1;
 
+            @include breakpoint-down (intermediate){
+              margin-left: 3rem;
+            }
+
           .hero__subtitle{
               font-weight: normal;
               font-size:$font-smlg-31px;
@@ -32,6 +42,11 @@
               @include breakpoint-down (large){
                 font-size: $font-minilg-24px;  
                 transition: all 0.7s ease-out;
+              }
+              
+              @include breakpoint-down (intermediate) {
+                font-size: $font-lg-20px;  
+                transition: 0.7s ease-in-out; 
               }
 
             }
@@ -47,6 +62,10 @@
             .second-word{
                 margin-left: 140px;
 
+                @include breakpoint-down (intermediate) {
+                  margin-left: 65px;
+                }
+
                 &::before {
                     content: "";
                     position: absolute;
@@ -56,6 +75,12 @@
                     width: 108px;
                     background-color: $backgroundColor-orange;
                     transform: translateY(-50%);
+                    transition: all 0.7s ease-out;
+                    
+                    @include breakpoint-down (intermediate) {
+                      width: 50px;
+                      transition: all 0.7s ease-out;
+                  }
                 }
             }
               
