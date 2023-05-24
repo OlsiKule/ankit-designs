@@ -46,6 +46,16 @@ h1{
     text-transform: uppercase;
     font-size: $font-xxxlg-134px;
     line-height: 1;
+    transition: all 0.7s ease-out;
+
+    @include breakpoint-down (large){
+        font-size: $font-xxlg-93px;
+        transition: all 0.7s ease-out;
+    }
+
+      // @include breakpoint-down (medium) {
+    //     font-size: $font-xxlg-93px;
+    // }
 }
 
 h2{

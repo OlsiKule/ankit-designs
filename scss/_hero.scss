@@ -6,17 +6,29 @@
       position: relative;
       margin-bottom: 240px;
       padding-bottom: 40px;
+        @include breakpoint-down (medium){
+            display: flex;
+            flex-direction: column;
+        }
 
-      .hero__text {
-        width: auto;
-        order: 1;
-        z-index: 1;
+        .hero__text {
+            margin-left: 4rem;
+            width: auto;
+            order: 1;
+            z-index: 1;
 
-        .hero__subtitle{
-            font-weight: normal;
-            font-size:$font-smlg-31px;
-            margin-bottom: 0.5rem;
-          }
+          .hero__subtitle{
+              font-weight: normal;
+              font-size:$font-smlg-31px;
+              margin-bottom: 0.5rem;
+              transition: all 0.7s ease-out;
+
+              @include breakpoint-down (large){
+                font-size: $font-minilg-24px;  
+                transition: all 0.7s ease-out;
+              }
+
+            }
         }
 
         .hero__title{
@@ -25,7 +37,7 @@
             flex-direction: column;
             align-items: flex-start;
             margin-bottom: 3.3rem;
-            
+
             .second-word{
                 margin-left: 140px;
 
@@ -49,6 +61,11 @@
         order: 2;
         height: auto;
         position: relative;
+        
+        @include breakpoint-down (medium) {
+          order: 2;
+          width: 100%;
+        }
 
         .circle {
           display: flex;
@@ -65,6 +82,13 @@
             top: 0;
             right: 0;
             transform: translate(30%, -20%);
+            transition: all 0.7s ease-out;
+
+            @include breakpoint-down(large){
+              height: 900px;
+              width: 900px;
+              transition: all 0.7s ease-out;
+            }
 
             .lady {
               position: absolute;
@@ -77,41 +101,94 @@
               position: absolute;
               top: 50px;
               left: 90px;
+              transition: all 0.7s ease-out;
+
+                @include breakpoint-down (large){
+                  top: 135px;
+                  left: 21px;
+                  width: 10%;
+                  height: auto;
+                  transition: all 0.7s ease-out;
+                }
             }
 
             .bottom-ghost {
               position: absolute;
               bottom: 175px;
               left: 165px;
+              transition: all 0.7s ease-out;
+
+              @include breakpoint-down (large){
+                bottom: 175px;
+                left: 165px;
+                width: 15%;
+                transition: all 0.7s ease-out;
+              }
             }
 
             .whitestar{
                 position: absolute;
                 top: 350px;
                 right: 420px;
-            }
-
-            .blackstar{
+                transition: all 0.7s ease-out;
+                
+                @include breakpoint-down(large){
+                  top: 305px;
+                  right: 340px;
+                  transition: all 0.7s ease-out;
+                }
+              }
+              
+              
+              
+              .blackstar{
                 position: absolute;
                 left: 320px;
                 bottom: 100px;
+                transition: all 0.7s ease-out;
+                @include breakpoint-down (large){
+                  left: 250px;
+                  bottom: 100px;
+                  transition: all 0.7s ease-out;
+              }
             }
             
             .orangestar{
                 position: absolute;
                 top: 290px;
                 right: 290px;
+                transition: all 0.7s ease-out;
+
+                @include breakpoint-down(large){
+                  top: 250px;
+                  right: 245px;
+                  transition: all 0.7s ease-out;
+                }
+
             }
           }
 
           &.hero__mid {
             height: 800px;
             width: 800px;
-          }
+            transition: all 0.7s ease-out;
 
+            @include breakpoint-down(large){
+              height: 600px;
+              width: 600px;
+              transition: all 0.7s ease-out;
+            }
+          }
+          
           &.hero__inner {
             height: 550px;
             width: 550px;
+            transition: all 0.7s ease-out;
+            
+            @include breakpoint-down(large){
+              transform: scale(0.7);
+              transition: all 0.7s ease-out;
+            }
           }
         }
     }
@@ -132,7 +209,5 @@
         width: 108%;
         z-index: -1;
     }   
-
-    
-  }
+}
   
