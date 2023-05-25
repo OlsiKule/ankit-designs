@@ -48,7 +48,7 @@
                 transition: all 0.7s ease-out;
 
                 @include breakpoint-down (medium) {
-                    right: 125px;
+                    right: 75px;
                     scale: 0.5;
                     transition: all 0.7s ease-out;
                 }
@@ -63,7 +63,7 @@
                 scale: 0.8;
 
                 @include breakpoint-down (medium) {
-                    right: 39px;
+                    right: 25px;
                     scale: 0.7;
                     top: 0px;
                 }
@@ -125,7 +125,8 @@
                 transition: all 0.7s ease-out;
 
                 @include breakpoint-down (medium) {
-                    padding-right: 0rem;
+                    padding-right: 2rem;
+                    width: 40%;
                     transition: all 0.7s ease-out;
                 }
     
@@ -183,6 +184,14 @@
                 top: 90px;
                 left: 461px;
                 z-index: 1;
+                transition: all 0.7s ease-out;
+
+                @include breakpoint-down (medium) {
+                    bottom: -40px;
+                    left: 230px;
+                    width: 5%;
+                    transition: all 0.7s ease-out;
+                }
             }
 
             .orangestar {
@@ -191,6 +200,14 @@
                 left: 586px;
                 z-index: 1;
                 scale: 0.8;
+                transition: all 0.7s ease-out;
+
+                @include breakpoint-down (medium) {
+                    top: 0px;
+                    left: 340px;
+                    scale: 0.8;
+                    transition: all 0.7s ease-out;
+                }
             }
 
             .wavy {
@@ -208,18 +225,42 @@
                 order: 1;
                 display: flex;
                 justify-content: left;
+                transition: all 0.7s ease-out;
+
+                @include breakpoint-down (medium) {
+                    width: 50%;
+                    transition: all 0.7s ease-out;
+                }
                 
                 .roadmap__canvas{
                     border-radius: 90px;
-                    width: 560px;
+                    width: 570px;
                     height: 570px;
                     background-color:$backgroundColor-canvas-bottom;
                     position: relative;
+                    transition: all 0.7s ease-out;
+
+                    @include breakpoint-down (medium) {
+                        border-radius: 40px;
+                        width: 315px;
+                        height: 315px;
+                        transition: all 0.7s ease-out;
+                    }
                     
                     .student{
                         position: absolute;
                         bottom: -45px;
                         left: 100px;
+                        transition: all 0.7s ease-out;
+
+                        @include breakpoint-down (medium) {
+                            bottom: -40px;
+                            left: 60px;
+                            width: 64%;
+                            height: auto;
+                            transition: all 0.7s ease-out;
+                        }
+                        
                     }
                 }
                 
@@ -232,6 +273,14 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                transition: all 0.7s ease-out;
+                
+                @include breakpoint-down (medium) {
+                    width: 40%;
+                    padding-left: 3rem;
+                    padding-right:0;
+                    transition: all 0.7s ease-out;
+                }
     
                 .roadmap__pretitle {
                     font-family: $font-type-raleway;
@@ -240,6 +289,12 @@
                     line-height: 1;
                     color: $backgroundColor-orange;
                     margin-bottom: 25px;
+                    transition: all 0.7s ease-out;
+                    
+                    @include breakpoint-down (medium) {
+                        font-size: $font-lg-20px;
+                        transition: all 0.7s ease-out;
+                    }
                 }
                 
                 .roadmap__title{
@@ -247,6 +302,12 @@
                     font-size: $font-xlg-60px;
                     font-weight: 500;
                     margin-bottom: 25px;
+                    transition: all 0.7s ease-out;
+
+                    @include breakpoint-down (medium) {
+                        font-size: $font-mlg-45px;
+                        transition: all 0.7s ease-out;
+                    }
                     
                 }
                 
@@ -255,6 +316,12 @@
                     font-size: $font-sm-14px;
                     font-weight: 500;
                     line-height: 1.5;
+                    transition: all 0.7s ease-out;
+
+                    @include breakpoint-down (medium) {
+                        font-size: $font-mini-12px;
+                        transition: all 0.7s ease-out;
+                    }
     
                 }
             }
