@@ -1712,6 +1712,13 @@ p {
 }
 .faq .faq__title {
   padding-left: 100px;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 63.9375em) {
+  .faq .faq__title {
+    padding-left: 0px;
+    transition: all 0.7s ease-out;
+  }
 }
 .faq .faq__container {
   display: flex;
@@ -1728,10 +1735,24 @@ p {
     transition: all 0.7s ease-out;
   }
 }
+@media (max-width: 63.9375em) {
+  .faq .faq__container {
+    margin: 0 5rem 0 0;
+    transition: all 0.7s ease-out;
+  }
+}
 .faq .faq__container .blackstar {
   position: absolute;
   left: -48%;
   top: 19%;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 63.9375em) {
+  .faq .faq__container .blackstar {
+    left: 95%;
+    top: -65%;
+    transition: all 0.7s ease-out;
+  }
 }
 .faq .faq__container .wavy {
   position: absolute;
@@ -1766,6 +1787,13 @@ p {
   border: none;
   background: none;
   outline: none;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 63.9375em) {
+  .faq .faq__container .faq__accordion button {
+    font-size: 0.875rem;
+    transition: all 0.7s ease-out;
+  }
 }
 .faq .faq__container .faq__accordion button:hover, .faq .faq__container .faq__accordion button:focus {
   cursor: pointer;
@@ -1829,4 +1857,11 @@ p {
   line-height: 1.5;
   opacity: 0.7;
   margin: 1rem 0;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 63.9375em) {
+  .faq .faq__container .faq__accordion .faq__answer p {
+    font-size: 0.75rem;
+    transition: all 0.7s ease-out;
+  }
 }
