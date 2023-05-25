@@ -30,6 +30,14 @@
                 position: absolute;
                 top: -80px;
                 left: 205px;
+                transition: all 0.7s ease-out;
+
+                @include breakpoint-down (medium) {
+                    top: -130px;
+                    left: 165px;
+                    scale: 0.7;
+                    transition: all 0.7s ease-out;
+                }
             }
 
             .whitestar {
@@ -37,6 +45,13 @@
                 top: 90px;
                 right: 20px;
                 z-index: 1;
+                transition: all 0.7s ease-out;
+
+                @include breakpoint-down (medium) {
+                    right: 125px;
+                    scale: 0.5;
+                    transition: all 0.7s ease-out;
+                }
 
             }
 
@@ -46,6 +61,12 @@
                 right: -39px;
                 z-index: 1;
                 scale: 0.8;
+
+                @include breakpoint-down (medium) {
+                    right: 39px;
+                    scale: 0.7;
+                    top: 0px;
+                }
             }
 
 
@@ -55,9 +76,10 @@
                 order: 3;
                 display: flex;
                 justify-content: right;
-                border: 2px dashed rebeccapurple;
-                @include breakpoint-down (large) {
-                    width: 58%;
+                transition: all 0.7s ease-out;
+
+                @include breakpoint-down (medium) {
+                    width: 50%;
                     transition: all 0.7s ease-out;
                 }
                 
@@ -81,6 +103,7 @@
                         position: absolute;
                         bottom: -45px;
                         left: 20px;
+                        transition: all 0.7s ease-out;
 
                         @include breakpoint-down (medium) {
                             width: 100%;
@@ -99,6 +122,12 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                transition: all 0.7s ease-out;
+
+                @include breakpoint-down (medium) {
+                    padding-right: 0rem;
+                    transition: all 0.7s ease-out;
+                }
     
                 .roadmap__pretitle {
                     font-family: $font-type-raleway;
@@ -107,6 +136,12 @@
                     line-height: 1;
                     color: $backgroundColor-orange;
                     margin-bottom: 25px;
+                    transition: all 0.7s ease-out;
+                    
+                    @include breakpoint-down (medium) {
+                        font-size: $font-lg-20px;
+                        transition: all 0.7s ease-out;
+                    }
                 }
                 
                 .roadmap__title{
@@ -114,6 +149,12 @@
                     font-size: $font-xlg-60px;
                     font-weight: 500;
                     margin-bottom: 25px;
+                    transition: all 0.7s ease-out;
+
+                    @include breakpoint-down (medium) {
+                        font-size: $font-mlg-45px;
+                        transition: all 0.7s ease-out;
+                    }
                     
                 }
                 
@@ -122,7 +163,12 @@
                     font-size: $font-sm-14px;
                     font-weight: 500;
                     line-height: 1.5;
-    
+                    transition: all 0.7s ease-out;
+
+                    @include breakpoint-down (medium) {
+                        font-size: $font-mini-12px;
+                        transition: all 0.7s ease-out;
+                    }
                 }
             }
         }
@@ -152,6 +198,9 @@
                 bottom: -25px;
                 right: -209px;
                 z-index: 1;
+                transition: all 0.7s ease-out;
+
+ 
             }
 
             .roadmap__graphics{
