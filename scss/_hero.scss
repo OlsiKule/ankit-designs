@@ -95,10 +95,9 @@
         
         @include breakpoint-down (large) {
           order: 2;
-          width: 33%;
         }
         @include breakpoint-down (medium) {
-          order: 2;
+          margin-bottom: 25rem;
         }
 
         .circle {
@@ -108,6 +107,11 @@
           border-radius: 50%;
           border: 1px solid rgba(255, 165, 0, 0.4);
           z-index: -1;
+          @include breakpoint-down(medium){
+            height: 900px;
+            width: 900px;
+            transition: all 0.7s ease-out;
+          }
 
           &.hero__outter {
             height: 1100px;
@@ -132,9 +136,9 @@
               transition: all 0.7s ease-out;
               
               @include breakpoint-down (large){
-                right: 175px;
-                bottom: 25px;
-                width: 22%;
+                right: 30px;
+                bottom: 115px;
+                width: 18%;
                 transition: all 0.7s ease-out;
                 
               }
@@ -217,8 +221,8 @@
             transition: all 0.7s ease-out;
 
             @include breakpoint-down(large){
-              height: 600px;
-              width: 600px;
+              height: 650px;
+              width: 650px;
               transition: all 0.7s ease-out;
             }
           }

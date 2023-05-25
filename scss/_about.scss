@@ -28,19 +28,19 @@
                 right: 240px;
                 transition: all 0.7s ease-out;
             }
+            
         }
 
         .about__title {
         margin-bottom: 0;
-        // transition: all 0.7s ease-out;
 
-        //     @include breakpoint-down (large) {
-        //         transition: all 0.7s ease-out;
-        //     }
         }
 
         .about__subsection { 
-        display: flex;
+            display: flex;
+            @include breakpoint-down (large) {
+                flex-direction: column;
+            }
     
             .about__text {
                 width: 65%;
@@ -48,6 +48,15 @@
                 height: auto;
                 padding-right: 100px;
                 font-weight: 600;
+                @include breakpoint-down (large) {
+                    height: auto;
+                    padding-right: 0;
+                    order: 0;
+                    width: 90%;
+                    font-weight: 600;
+                    font-size: $font-sm-14px!;
+                }
+
 
             }
 
@@ -57,24 +66,41 @@
                 order: 1;
                 height: auto;
                 position: relative; 
+                @include breakpoint-down (large) {
+                    height: auto;
+                    position: relative;
+                }
+
+      
 
                     .whitestar{
                         position: absolute;
                         top: 55px;
                         left: 15px;
+                        @include breakpoint-down (large) {
+                            display: none;
+                        }
                     }
 
                     .blackstar{
                         position: absolute;
                         bottom: 55px;
                         left: -30px;
+                        @include breakpoint-down (large) {
+                            display: none;
+                        }
                     }
 
                     .arrow {
                         position: absolute;
                         bottom: -20px;
                         right: 160px;
+                        @include breakpoint-down (large) {
+                            bottom: -135px;
+                            right: 215px;
+                            transform: scale(0.7);
                         }
+                    }
             }
         }
     }
