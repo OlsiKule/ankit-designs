@@ -1443,26 +1443,70 @@ p {
   position: absolute;
   top: 175px;
   left: 130px;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 63.9375em) {
+  .join .join__main img.commuter1 {
+    scale: 0.7;
+    top: 145px;
+    left: 95px;
+    transition: all 0.7s ease-out;
+  }
 }
 .join .join__main img.commuter2 {
   position: absolute;
   top: -110px;
   left: 395px;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 63.9375em) {
+  .join .join__main img.commuter2 {
+    scale: 0.7;
+    top: -5px;
+    left: 240px;
+    transition: all 0.7s ease-out;
+  }
 }
 .join .join__main img.commuter3 {
   position: absolute;
   top: 20px;
   right: 100px;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 63.9375em) {
+  .join .join__main img.commuter3 {
+    scale: 0.7;
+    top: 35px;
+    transition: all 0.7s ease-out;
+  }
 }
 .join .join__main img.commuter4 {
   position: absolute;
   bottom: 215px;
   left: 130px;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 63.9375em) {
+  .join .join__main img.commuter4 {
+    scale: 0.7;
+    bottom: 160px;
+    left: 100px;
+    transition: all 0.7s ease-out;
+  }
 }
 .join .join__main img.commuter5 {
   position: absolute;
   bottom: -17px;
   right: 228px;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 63.9375em) {
+  .join .join__main img.commuter5 {
+    scale: 0.7;
+    bottom: 45px;
+    right: 160px;
+    transition: all 0.7s ease-out;
+  }
 }
 .join .join__main img.whitestar {
   position: absolute;
@@ -1482,16 +1526,43 @@ p {
   position: absolute;
   bottom: 500px;
   right: -15px;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 63.9375em) {
+  .join .join__main img.orangestar {
+    bottom: 335px;
+    right: 40px;
+    scale: 0.6;
+    transition: all 0.7s ease-out;
+  }
 }
 .join .join__main img.blackstar {
   position: absolute;
   bottom: 380px;
   left: 20px;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 63.9375em) {
+  .join .join__main img.blackstar {
+    bottom: 260px;
+    left: 70px;
+    scale: 0.6;
+    transition: all 0.7s ease-out;
+  }
 }
 .join .join__main img.ondulation {
   position: absolute;
   bottom: 210px;
   right: 70px;
+  transition: all 0.7s ease-out;
+}
+@media (max-width: 63.9375em) {
+  .join .join__main img.ondulation {
+    bottom: 176px;
+    right: 33px;
+    scale: 0.4;
+    transition: all 0.7s ease-out;
+  }
 }
 .join .join__main .join__circle {
   position: absolute;
