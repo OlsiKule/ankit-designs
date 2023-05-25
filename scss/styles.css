@@ -1048,7 +1048,7 @@ p {
 }
 @media (max-width: 63.9375em) {
   .collection .container .collection__title h2 {
-    margin-bottom: 0;
+    margin-bottom: 5rem;
     transition: all 0.7s ease-out;
   }
 }
