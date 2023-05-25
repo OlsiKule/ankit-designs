@@ -152,7 +152,7 @@ p{
 .button {
     font-family: $font-type-raleway;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: $font-minilg-24px;
     font-weight: bold;
     padding: 20px 60px;
     background-color: white;
@@ -162,9 +162,17 @@ p{
     box-shadow: 4px 7px 0px rgb(247, 123, 33);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
+    @include breakpoint-down (medium) {
+        scale: 0.8;
+        transition: all 0.7s ease-out;
+    }
   }
   
   .button:hover {
     transform: translate3d(3px, 3px, 3px);
     box-shadow: 2px 2px 0px rgba(247, 123, 33, 0.9);
+    @include breakpoint-down (medium) {
+        scale: 0.8;
+        transition: all 0.7s ease-out;
+    }
   } 
