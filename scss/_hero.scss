@@ -3,7 +3,7 @@
   transition: 0.7s ease-in-out; 
 
   @include breakpoint-down (medium) {
-    margin-top: 15rem;
+    margin-top: 10rem;
     transition: 0.7s ease-in-out; 
   }
 
@@ -29,7 +29,7 @@
             order: 1;
             z-index: 1;
 
-            @include breakpoint-down (intermediate){
+            @include breakpoint-down (medium){
               margin-left: 3rem;
             }
 
@@ -44,7 +44,8 @@
                 transition: all 0.7s ease-out;
               }
               
-              @include breakpoint-down (intermediate) {
+              @include breakpoint-down (medium) {
+                font-weight: 500;
                 font-size: $font-lg-20px;  
                 transition: 0.7s ease-in-out; 
               }

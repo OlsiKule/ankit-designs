@@ -55,6 +55,13 @@
                 position: absolute;
                 top: 345px;
                 right: 205px;
+                transition: all 0.7s ease-out;
+                @include breakpoint-down (medium) {
+                    top: 240px;
+                    right: 160px;
+                    scale: 0.5;
+                    transition: all 0.7s ease-out;
+                }
             }
 
             &.orangestar{
@@ -98,24 +105,48 @@
                 width: calc(100% + 160px);
                 height: calc(100% + 160px);
                 border-color:  rgba(255, 165, 0, 0.4);
+                transition: all 0.7s ease-out;
+                @include breakpoint-down (medium) {
+                    width: calc(100% - 30px);
+                    height: calc(100% - 30px);
+                    transition: all 0.7s ease-out;
+                }
             }
      
             &.circle1 {
                 width: calc(100% - 110px);
                 height: calc(100% - 110px);
                 border-color:  rgba(255, 165, 0, 0.4);
+                transition: all 0.7s ease-out;
+                @include breakpoint-down (medium) {
+                    width: calc(100% - 160px);
+                    height: calc(100% - 160px);
+                    transition: all 0.7s ease-out;
+                }
             }
             
             &.circle2 {
                 width: calc(100% - 380px);
                 height: calc(100% - 380px);
                 border-color:  rgba(255, 165, 0, 0.4);
+                transition: all 0.7s ease-out;
+                @include breakpoint-down (medium) {
+                    width: calc(100% - 300px);
+                    height: calc(100% - 300px);
+                    transition: all 0.7s ease-out;
+                }
             }
             
             &.circle3 {
                 width: calc(100% - 650px);
                 height: calc(100% - 650px);
                 border-color: rgba(255, 165, 0, 0.2);
+                transition: all 0.7s ease-out;
+                @include breakpoint-down (medium) {
+                    width: calc(100% - 450px);
+                    height: calc(100% - 450px);
+                    transition: all 0.7s ease-out;
+                }
             }
             
     
@@ -128,6 +159,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            transition: all 0.7s ease-out;
+            @include breakpoint-down (medium) {
+                height: 360px;
+                transition: all 0.7s ease-out;
+            }
+
 
             .join__pretitle {
                 font-family: $font-type-raleway;
@@ -135,7 +172,7 @@
                 font-weight: 500;
                 line-height: 1;
                 color: $backgroundColor-orange;
-                margin-bottom: 25px;
+                margin-bottom: 1.5rem;
             }
 
             .join__subtitle {
@@ -147,13 +184,23 @@
                 text-align: center;
                 display: flex;
                 flex-direction: column;
-                margin-bottom: 25px;
+                margin-bottom: 1.5rem;
+                transition: all 0.7s ease-out;
+                @include breakpoint-down (medium) {
+                    margin-bottom: 1rem;
+                    transition: all 0.7s ease-out;
+                }
             }
             
             .join__text{
                 text-align: center;
                 margin: 0 auto 40px;
                 font-weight: 500;
+                transition: all 0.7s ease-out;
+                @include breakpoint-down (medium) {
+                    margin: 0 auto 15px;
+                    transition: all 0.7s ease-out;
+                }
             }
             
         }

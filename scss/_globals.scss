@@ -53,9 +53,9 @@ h1{
         transition: all 0.7s ease-out;
     }
     
-    @include breakpoint-down (intermediate) {
+    @include breakpoint-down (medium) {
         line-height: 0.9;
-        font-size: $font-xlg-60px;
+        font-size: $font-xlg-75px;
         transition: all 0.7s ease-out;
     }
 }
@@ -71,6 +71,10 @@ h2{
         font-size: $font-xlg-75px;
         transition: all 0.7s ease-out;
     }
+    @include breakpoint-down (medium){
+        font-size: $font-xlg-60px;
+        transition: all 0.7s ease-out;
+    }
 }
 
 p{
@@ -81,6 +85,10 @@ p{
 
     @include breakpoint-down (large){
         font-size: $font-lg-20px;
+        transition: all 0.7s ease-out;
+    }
+    @include breakpoint-down (medium){
+        font-size: $font-sm-14px;
         transition: all 0.7s ease-out;
     }
 
@@ -101,6 +109,11 @@ p{
     @include breakpoint-down (large) {
         font-size: $font-minilg-24px;
         margin-bottom: 2rem;
+        transition: all 0.7s ease-out;
+    }
+    @include breakpoint-down (medium) {
+        font-size: $font-lg-20px;
+        margin-bottom: 1rem;
         transition: all 0.7s ease-out;
     }
 

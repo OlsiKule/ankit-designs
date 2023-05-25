@@ -57,6 +57,12 @@
                     font-size: $font-sm-14px;
                 }
 
+                p {
+                    @include breakpoint-down (large) {
+                        font-size: $font-med-18px;
+                    }
+                }
+
 
             }
 
