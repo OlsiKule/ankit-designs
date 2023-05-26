@@ -8,7 +8,7 @@
   }
 
   @include breakpoint-down (intermediate) {
-    margin-top: 8rem;
+    margin-top: 4rem;
     transition: 0.7s ease-in-out; 
   }
 
@@ -32,6 +32,11 @@
             @include breakpoint-down (medium){
               margin-left: 3rem;
             }
+
+            @include breakpoint-down (intermediate) {
+              margin-left: 1rem;
+              transition: all 0.7s ease-out;
+          }
 
           .hero__subtitle{
               font-weight: normal;
