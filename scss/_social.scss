@@ -21,6 +21,11 @@
                 margin: 0 3.5rem;
                 transition: all 0.7s ease-out;
             }
+
+            @include breakpoint-down (medium) {
+                margin: 0px 40px 0px;
+                transition: all 0.7s ease-out;
+            }
         }
 
         .social__link {
@@ -33,6 +38,20 @@
                 padding: 35px 75px;
                 border-radius: 145px;
                 transition: all 0.7s ease-out;
+            }
+
+            @include breakpoint-down (medium) {
+                padding: 15px 45px;
+                scale: 0.8;
+                border-radius: 85px;
+                transition: all 0.7s ease-out;
+            }
+
+            img {
+                @include breakpoint-down (medium) {
+                    scale: 0.7;
+                    transition: all 0.7s ease-out;
+                }
             }
         }
 }

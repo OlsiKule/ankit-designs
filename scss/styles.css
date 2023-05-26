@@ -658,6 +658,12 @@ p {
     transition: all 0.7s ease-out;
   }
 }
+@media (max-width: 63.9375em) {
+  .social__icon {
+    margin: 0px 40px 0px;
+    transition: all 0.7s ease-out;
+  }
+}
 .social .social__link {
   background-color: white;
   padding: 45px 115px;
@@ -668,6 +674,20 @@ p {
   .social .social__link {
     padding: 35px 75px;
     border-radius: 145px;
+    transition: all 0.7s ease-out;
+  }
+}
+@media (max-width: 63.9375em) {
+  .social .social__link {
+    padding: 15px 45px;
+    scale: 0.8;
+    border-radius: 85px;
+    transition: all 0.7s ease-out;
+  }
+}
+@media (max-width: 63.9375em) {
+  .social .social__link img {
+    scale: 0.7;
     transition: all 0.7s ease-out;
   }
 }
