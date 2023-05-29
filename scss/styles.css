@@ -862,6 +862,13 @@ p {
     transition: all 0.7s ease-out;
   }
 }
+@media (max-width: 47.875em) {
+  .hero .hero__image .circle.hero__outter {
+    height: 650px;
+    width: 650px;
+    transition: all 0.7s ease-out;
+  }
+}
 .hero .hero__image .circle.hero__outter .lady {
   position: absolute;
   bottom: 5px;

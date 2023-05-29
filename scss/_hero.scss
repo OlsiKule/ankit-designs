@@ -133,6 +133,12 @@
               width: 900px;
               transition: all 0.7s ease-out;
             }
+
+            @include breakpoint-down(intermediate){
+              height: 650px;
+              width: 650px;
+              transition: all 0.7s ease-out;
+            }
             
             .lady {
               position: absolute;
