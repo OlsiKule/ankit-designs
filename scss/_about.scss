@@ -7,6 +7,10 @@
         margin-top: 24rem;
         transition: all 0.7s ease-out;
     }
+    @include breakpoint-down (intermediate) {
+        margin-top: 26rem;
+        transition: all 0.7s ease-out;
+    }
     
     &__content {
         position: relative;
@@ -14,6 +18,10 @@
         
         @include breakpoint-down (large) {
             margin-left: 4rem;
+            transition: all 0.7s ease-out;
+        }
+        @include breakpoint-down (intermediate) {
+            margin-left: 2rem;
             transition: all 0.7s ease-out;
         }
         
@@ -26,6 +34,12 @@
             @include breakpoint-down (large) {
                 top: -20px;
                 right: 240px;
+                transition: all 0.7s ease-out;
+            }
+            @include breakpoint-down (intermediate) {
+                transform: scale(0.6);
+                top: -20px;
+                right: 45px;
                 transition: all 0.7s ease-out;
             }
             
@@ -61,6 +75,16 @@
                     @include breakpoint-down (large) {
                         font-size: $font-med-18px;
                     }
+                    @include breakpoint-down (intermediate) {
+                        font-size: $font-sm-14px;
+                    }
+                }
+                
+                .about__paragr-2 {
+                    @include breakpoint-down (intermediate) {
+                        margin-top: 2rem;
+                    }
+
                 }
 
 
@@ -86,6 +110,15 @@
                         @include breakpoint-down (large) {
                             display: none;
                         }
+                        @include breakpoint-down (intermediate) {
+                            top: -325px;
+                            left: 265px;
+                            position: absolute;
+                            display: block;
+                            width: 25%;
+                            height: auto;
+                            transition: all 0.7s ease-out;
+                        }
                     }
 
                     .blackstar{
@@ -105,6 +138,11 @@
                             bottom: -135px;
                             right: 215px;
                             transform: scale(0.7);
+                        }
+                        @include breakpoint-down (intermediate) {
+                            bottom: -125px;
+                            right: 35px;
+                            transform: scale(0.5);
                         }
                     }
             }

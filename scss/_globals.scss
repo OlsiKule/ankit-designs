@@ -81,6 +81,10 @@ h2{
         font-size: $font-xlg-60px;
         transition: all 0.7s ease-out;
     }
+    @include breakpoint-down (intermediate){
+        font-size: $font-mlg-45px;
+        transition: all 0.7s ease-out;
+    }
 }
 
 p{
@@ -136,6 +140,11 @@ p{
             width: 140px;
             background-color: hsl(25, 93%, 55%);
             transform: translateY(-50%);
+            
+            @include breakpoint-down (intermediate) {
+                width: 75px;
+                transition: all 0.7s ease-out;
+            }
         }
     }
 
@@ -152,6 +161,10 @@ p{
 .container {
     max-width: 73.375rem;
     margin: 0 auto;
+    // @include breakpoint-down (large) {
+    //     margin-left: 4rem;
+    //     transition: all 0.7s ease-out;
+    // }
 }
 
 /*  3D Button*/

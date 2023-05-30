@@ -168,6 +168,12 @@ h2 {
     transition: all 0.7s ease-out;
   }
 }
+@media (max-width: 47.875em) {
+  h2 {
+    font-size: 2.8125rem;
+    transition: all 0.7s ease-out;
+  }
+}
 
 p {
   font-family: "Raleway", sans-serif;
@@ -224,6 +230,12 @@ p {
   width: 140px;
   background-color: hsl(25, 93%, 55%);
   transform: translateY(-50%);
+}
+@media (max-width: 47.875em) {
+  .headline .dash::before {
+    width: 75px;
+    transition: all 0.7s ease-out;
+  }
 }
 
 .header__logo {
@@ -1071,6 +1083,12 @@ p {
     transition: all 0.7s ease-out;
   }
 }
+@media (max-width: 47.875em) {
+  .about {
+    margin-top: 26rem;
+    transition: all 0.7s ease-out;
+  }
+}
 .about__content {
   position: relative;
   transition: all 0.7s ease-out;
@@ -1078,6 +1096,12 @@ p {
 @media (max-width: 87.4375em) {
   .about__content {
     margin-left: 4rem;
+    transition: all 0.7s ease-out;
+  }
+}
+@media (max-width: 47.875em) {
+  .about__content {
+    margin-left: 2rem;
     transition: all 0.7s ease-out;
   }
 }
@@ -1091,6 +1115,14 @@ p {
   .about__content .orangestar {
     top: -20px;
     right: 240px;
+    transition: all 0.7s ease-out;
+  }
+}
+@media (max-width: 47.875em) {
+  .about__content .orangestar {
+    transform: scale(0.6);
+    top: -20px;
+    right: 45px;
     transition: all 0.7s ease-out;
   }
 }
@@ -1127,6 +1159,16 @@ p {
     font-size: 1.125rem;
   }
 }
+@media (max-width: 47.875em) {
+  .about__content .about__subsection .about__text p {
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 47.875em) {
+  .about__content .about__subsection .about__text .about__paragr-2 {
+    margin-top: 2rem;
+  }
+}
 .about__content .about__subsection .about__graphics {
   width: 35%;
   order: 1;
@@ -1149,6 +1191,17 @@ p {
     display: none;
   }
 }
+@media (max-width: 47.875em) {
+  .about__content .about__subsection .about__graphics .whitestar {
+    top: -325px;
+    left: 265px;
+    position: absolute;
+    display: block;
+    width: 25%;
+    height: auto;
+    transition: all 0.7s ease-out;
+  }
+}
 .about__content .about__subsection .about__graphics .blackstar {
   position: absolute;
   bottom: 55px;
@@ -1169,6 +1222,13 @@ p {
     bottom: -135px;
     right: 215px;
     transform: scale(0.7);
+  }
+}
+@media (max-width: 47.875em) {
+  .about__content .about__subsection .about__graphics .arrow {
+    bottom: -125px;
+    right: 35px;
+    transform: scale(0.5);
   }
 }
 
