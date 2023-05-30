@@ -2,11 +2,6 @@
     margin-bottom: 150px;
     transition: all 0.7s ease-out;
         
-    @include breakpoint-down (large) {
-        margin-left: 4rem;
-        transition: all 0.7s ease-out;
-    }
-
     .faq__title {
         padding-left: 100px;
         transition: all 0.7s ease-out;

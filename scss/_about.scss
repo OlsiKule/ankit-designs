@@ -15,11 +15,7 @@
     &__content {
         position: relative;
         transition: all 0.7s ease-out;
-        
-        @include breakpoint-down (large) {
-            margin-left: 4rem;
-            transition: all 0.7s ease-out;
-        }
+  
         @include breakpoint-down (intermediate) {
             margin-left: 2rem;
             transition: all 0.7s ease-out;

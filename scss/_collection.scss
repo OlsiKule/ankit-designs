@@ -2,11 +2,6 @@
     margin-bottom: 130px;
     transition: all 0.7s ease-out;
     
-    @include breakpoint-down (large) {
-        margin-left: 4rem;
-        transition: all 0.7s ease-out;
-    }
-
     .container{
         .collection__title{
             h2{

@@ -161,10 +161,10 @@ p{
 .container {
     max-width: 73.375rem;
     margin: 0 auto;
-    // @include breakpoint-down (large) {
-    //     margin-left: 4rem;
-    //     transition: all 0.7s ease-out;
-    // }
+    @include breakpoint-down (large) {
+        margin-left: 4rem;
+        transition: all 0.7s ease-out;
+    }
 }
 
 /*  3D Button*/

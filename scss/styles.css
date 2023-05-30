@@ -249,6 +249,12 @@ p {
   max-width: 73.375rem;
   margin: 0 auto;
 }
+@media (max-width: 87.4375em) {
+  .container {
+    margin-left: 4rem;
+    transition: all 0.7s ease-out;
+  }
+}
 
 /*  3D Button*/
 .button {
@@ -656,6 +662,9 @@ p {
 
 .social {
   height: 5vh;
+}
+.social .container {
+  margin-left: 0;
 }
 .social__title {
   text-align: center;
@@ -1093,12 +1102,6 @@ p {
   position: relative;
   transition: all 0.7s ease-out;
 }
-@media (max-width: 87.4375em) {
-  .about__content {
-    margin-left: 4rem;
-    transition: all 0.7s ease-out;
-  }
-}
 @media (max-width: 47.875em) {
   .about__content {
     margin-left: 2rem;
@@ -1236,12 +1239,6 @@ p {
   margin-bottom: 130px;
   transition: all 0.7s ease-out;
 }
-@media (max-width: 87.4375em) {
-  .collection {
-    margin-left: 4rem;
-    transition: all 0.7s ease-out;
-  }
-}
 .collection .container .collection__title h2 {
   margin-bottom: 160px;
   transition: all 0.7s ease-out;
@@ -1296,12 +1293,6 @@ p {
 .roadmap {
   margin-bottom: 200px;
   transition: all 0.7s ease-out;
-}
-@media (max-width: 87.4375em) {
-  .roadmap {
-    margin-left: 4rem;
-    transition: all 0.7s ease-out;
-  }
 }
 .roadmap__main {
   margin-bottom: 160px;
@@ -1614,6 +1605,7 @@ p {
   position: relative;
   width: 100%;
   aspect-ratio: 1/1;
+  margin-left: 0;
 }
 .join .join__main img {
   border-radius: 50%;
@@ -1872,12 +1864,6 @@ p {
   /* Coder: Katherine Cato
   Website: https://codepen.io/kathykato/details/MoZJom
   Description: Parts of this code were written by Katherine Cato. */
-}
-@media (max-width: 87.4375em) {
-  .faq {
-    margin-left: 4rem;
-    transition: all 0.7s ease-out;
-  }
 }
 .faq .faq__title {
   padding-left: 100px;

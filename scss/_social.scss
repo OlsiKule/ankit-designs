@@ -1,62 +1,68 @@
 .social {
     height: 5vh;
+    
+    .container {
+        margin-left: 0;
+    }
 
-        &__title{
-            text-align: center;
-            margin-bottom: 10px;
+    &__title{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    p{
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 6.625rem;
+        @include breakpoint-down (medium) {
+            font-size: $font-med-18px;
         }
-        
-        p{
-            font-weight: 600;
-            text-align: center;
-            margin-bottom: 6.625rem;
-            @include breakpoint-down (medium) {
-                font-size: $font-med-18px;
-            }
-        }
+    }
 
-        &__icon{
-            display: flex;
-            justify-content: space-between;
+    &__icon{
+        display: flex;
+        justify-content: space-between;
+        transition: all 0.7s ease-out;
+    
+        @include breakpoint-down (large) {
+            margin: 0 3.5rem;
             transition: all 0.7s ease-out;
-        
-            @include breakpoint-down (large) {
-                margin: 0 3.5rem;
-                transition: all 0.7s ease-out;
-            }
-
-            @include breakpoint-down (medium) {
-                margin: 0px 40px 0px;
-                transition: all 0.7s ease-out;
-            }
         }
 
-        .social__link {
-            background-color: white;
-            padding: 45px 115px;
-            border-radius: 130px;
+        @include breakpoint-down (medium) {
+            margin: 0px 40px 0px;
             transition: all 0.7s ease-out;
-        
-            @include breakpoint-down (large) {
-                padding: 35px 75px;
-                border-radius: 145px;
-                transition: all 0.7s ease-out;
-            }
+        }
+    }
 
+    .social__link {
+        background-color: white;
+        padding: 45px 115px;
+        border-radius: 130px;
+        transition: all 0.7s ease-out;
+    
+        @include breakpoint-down (large) {
+            padding: 35px 75px;
+            border-radius: 145px;
+            transition: all 0.7s ease-out;
+        }
+
+        @include breakpoint-down (medium) {
+            padding: 15px 45px;
+            scale: 0.8;
+            border-radius: 85px;
+            transition: all 0.7s ease-out;
+        }
+
+        img {
             @include breakpoint-down (medium) {
-                padding: 15px 45px;
-                scale: 0.8;
-                border-radius: 85px;
+                scale: 0.7;
                 transition: all 0.7s ease-out;
-            }
-
-            img {
-                @include breakpoint-down (medium) {
-                    scale: 0.7;
-                    transition: all 0.7s ease-out;
-                }
             }
         }
+    }
+  
+
 }
 
 
