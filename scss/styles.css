@@ -1325,6 +1325,11 @@ p {
   margin-bottom: 200px;
   transition: all 0.7s ease-out;
 }
+@media (max-width: 47.875em) {
+  .roadmap {
+    margin-bottom: 10px;
+  }
+}
 .roadmap__main {
   margin-bottom: 160px;
   position: relative;
@@ -1382,7 +1387,7 @@ p {
     transition: all 0.7s ease-out;
   }
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 47.875em) {
   .roadmap__phases .roadmap__phase1 .arrow {
     display: none;
   }
@@ -1535,6 +1540,12 @@ p {
     transition: all 0.7s ease-out;
   }
 }
+@media (max-width: 63.9375em) {
+  .roadmap__phases .roadmap__phase1 .roadmap__content .roadmap__title {
+    margin-bottom: 0;
+    transition: all 0.7s ease-out;
+  }
+}
 .roadmap__phases .roadmap__phase1 .roadmap__content .roadmap__text {
   font-family: "Raleway", sans-serif;
   font-size: 0.875rem;
@@ -1548,9 +1559,20 @@ p {
     transition: all 0.7s ease-out;
   }
 }
+@media (max-width: 47.875em) {
+  .roadmap__phases .roadmap__phase1 .roadmap__content .roadmap__text {
+    font-size: 0.875rem;
+    transition: all 0.7s ease-out;
+  }
+}
 .roadmap__phases .roadmap__phase2 {
   display: flex;
   position: relative;
+}
+@media (max-width: 47.875em) {
+  .roadmap__phases .roadmap__phase2 {
+    flex-direction: column;
+  }
 }
 .roadmap__phases .roadmap__phase2 .whitestar {
   position: absolute;
@@ -1603,6 +1625,13 @@ p {
     transition: all 0.7s ease-out;
   }
 }
+@media (max-width: 47.875em) {
+  .roadmap__phases .roadmap__phase2 .roadmap__graphics {
+    order: 1;
+    width: 80%;
+    transition: all 0.7s ease-out;
+  }
+}
 .roadmap__phases .roadmap__phase2 .roadmap__graphics .roadmap__canvas {
   border-radius: 90px;
   width: 570px;
@@ -1634,6 +1663,12 @@ p {
     transition: all 0.7s ease-out;
   }
 }
+@media (max-width: 47.875em) {
+  .roadmap__phases .roadmap__phase2 .roadmap__graphics .roadmap__canvas .student {
+    bottom: -20px;
+    transition: all 0.7s ease-out;
+  }
+}
 .roadmap__phases .roadmap__phase2 .roadmap__content {
   width: 35%;
   padding-right: 5rem;
@@ -1653,10 +1688,9 @@ p {
 }
 @media (max-width: 47.875em) {
   .roadmap__phases .roadmap__phase2 .roadmap__content {
-    order: 1;
-    width: 40%;
-    padding-left: 3rem;
-    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+    margin-top: 2rem;
     transition: all 0.7s ease-out;
   }
 }
@@ -1688,6 +1722,12 @@ p {
     transition: all 0.7s ease-out;
   }
 }
+@media (max-width: 63.9375em) {
+  .roadmap__phases .roadmap__phase2 .roadmap__content .roadmap__title {
+    margin-bottom: 0;
+    transition: all 0.7s ease-out;
+  }
+}
 .roadmap__phases .roadmap__phase2 .roadmap__content .roadmap__text {
   font-family: "Raleway", sans-serif;
   font-size: 0.875rem;
@@ -1698,6 +1738,13 @@ p {
 @media (max-width: 63.9375em) {
   .roadmap__phases .roadmap__phase2 .roadmap__content .roadmap__text {
     font-size: 0.75rem;
+    transition: all 0.7s ease-out;
+  }
+}
+@media (max-width: 47.875em) {
+  .roadmap__phases .roadmap__phase2 .roadmap__content .roadmap__text {
+    padding-right: 30px;
+    font-size: 0.875rem;
     transition: all 0.7s ease-out;
   }
 }

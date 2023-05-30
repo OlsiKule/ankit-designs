@@ -1,6 +1,10 @@
 .roadmap{
     margin-bottom: 200px;
     transition: all 0.7s ease-out;
+    @include breakpoint-down (intermediate) {
+        margin-bottom: 10px;
+    }
+
         
     &__main {
         margin-bottom: 160px;
@@ -55,7 +59,7 @@
                     scale: 0.7;
                     transition: all 0.7s ease-out;
                 }
-                @include breakpoint-down (medium) {
+                @include breakpoint-down (intermediate) {
                     display: none;
                 }
             }
@@ -202,6 +206,10 @@
                         font-size: $font-mlg-45px;
                         transition: all 0.7s ease-out;
                     }
+                    @include breakpoint-down (medium) {
+                        margin-bottom: 0;
+                        transition: all 0.7s ease-out;
+                    }
                     
                 }
                 
@@ -216,6 +224,10 @@
                         font-size: $font-mini-12px;
                         transition: all 0.7s ease-out;
                     }
+                    @include breakpoint-down (intermediate) {
+                        font-size: $font-sm-14px;
+                        transition: all 0.7s ease-out;
+                    }
                 }
             }
         }
@@ -224,6 +236,10 @@
         .roadmap__phase2 {
             display: flex;
             position: relative;
+
+            @include breakpoint-down (intermediate) {
+                flex-direction: column;
+            }
 
             .whitestar {
                 position: absolute;
@@ -277,6 +293,11 @@
                     width: 50%;
                     transition: all 0.7s ease-out;
                 }
+                @include breakpoint-down (intermediate) {
+                    order: 1;
+                    width: 80%;
+                    transition: all 0.7s ease-out;
+                }
                 
                 .roadmap__canvas{
                     border-radius: 90px;
@@ -306,6 +327,10 @@
                             height: auto;
                             transition: all 0.7s ease-out;
                         }
+                        @include breakpoint-down (intermediate) {
+                            bottom: -20px;
+                            transition: all 0.7s ease-out;
+                        }
                         
                     }
                 }
@@ -327,11 +352,11 @@
                     padding-right:0;
                     transition: all 0.7s ease-out;
                 }
+  
                 @include breakpoint-down (intermediate) {
-                    order: 1;
-                    width: 40%;
-                    padding-left: 3rem;
-                    padding-right:0;
+                    padding-left: 0;
+                    width: 100%;
+                    margin-top: 2rem;
                     transition: all 0.7s ease-out;
                 }
     
@@ -361,7 +386,10 @@
                         font-size: $font-mlg-45px;
                         transition: all 0.7s ease-out;
                     }
-                    
+                    @include breakpoint-down (medium) {
+                        margin-bottom: 0;
+                        transition: all 0.7s ease-out;
+                    }
                 }
                 
                 .roadmap__text{
@@ -375,7 +403,11 @@
                         font-size: $font-mini-12px;
                         transition: all 0.7s ease-out;
                     }
-    
+                    @include breakpoint-down (intermediate) {
+                        padding-right: 30px;
+                        font-size: $font-sm-14px;
+                        transition: all 0.7s ease-out;
+                    }
                 }
             }
         }
