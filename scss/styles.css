@@ -255,6 +255,12 @@ p {
     transition: all 0.7s ease-out;
   }
 }
+@media (max-width: 47.875em) {
+  .container {
+    margin-left: 2rem;
+    transition: all 0.7s ease-out;
+  }
+}
 
 /*  3D Button*/
 .button {
@@ -1278,6 +1284,12 @@ p {
     transition: all 0.7s ease-out;
   }
 }
+@media (max-width: 47.875em) {
+  .collection .container .collection__nfts .lineup {
+    margin: 25px 0;
+    transition: all 0.7s ease-out;
+  }
+}
 .collection .container .collection__nfts .lineup .nft {
   display: inline;
   width: 100%;
@@ -1293,6 +1305,12 @@ p {
 @media (max-width: 87.4375em) {
   .collection .container .collection__nfts .lineup .nft .icon {
     width: 26%;
+    transition: all 0.7s ease-out;
+  }
+}
+@media (max-width: 47.875em) {
+  .collection .container .collection__nfts .lineup .nft .icon {
+    width: 56%;
     transition: all 0.7s ease-out;
   }
 }
