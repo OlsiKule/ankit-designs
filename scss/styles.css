@@ -831,6 +831,11 @@ p {
     margin-bottom: 25rem;
   }
 }
+@media (max-width: 47.875em) {
+  .hero .hero__image {
+    position: absolute;
+  }
+}
 .hero .hero__image .circle {
   display: flex;
   justify-content: center;
@@ -864,9 +869,12 @@ p {
 }
 @media (max-width: 47.875em) {
   .hero .hero__image .circle.hero__outter {
-    height: 650px;
-    width: 650px;
+    height: 700px;
+    width: 700px;
     transition: all 0.7s ease-out;
+    position: relative;
+    top: 220px;
+    left: -350px;
   }
 }
 .hero .hero__image .circle.hero__outter .lady {
@@ -961,6 +969,13 @@ p {
   .hero .hero__image .circle.hero__mid {
     height: 650px;
     width: 650px;
+    transition: all 0.7s ease-out;
+  }
+}
+@media (max-width: 47.875em) {
+  .hero .hero__image .circle.hero__mid {
+    height: 550px;
+    width: 550px;
     transition: all 0.7s ease-out;
   }
 }

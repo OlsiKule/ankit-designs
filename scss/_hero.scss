@@ -105,6 +105,9 @@
         @include breakpoint-down (medium) {
           margin-bottom: 25rem;
         }
+        @include breakpoint-down (intermediate) {
+          position:absolute;
+        }
 
         .circle {
           display: flex;
@@ -135,9 +138,12 @@
             }
 
             @include breakpoint-down(intermediate){
-              height: 650px;
-              width: 650px;
+              height: 700px;
+              width: 700px;
               transition: all 0.7s ease-out;
+              position: relative;
+              top: 220px;
+              left: -350px;
             }
             
             .lady {
@@ -237,6 +243,13 @@
               width: 650px;
               transition: all 0.7s ease-out;
             }
+            @include breakpoint-down(intermediate){
+              height: 550px;
+              width: 550px;
+              transition: all 0.7s ease-out;
+            }
+
+            
           }
           
           &.hero__inner {
