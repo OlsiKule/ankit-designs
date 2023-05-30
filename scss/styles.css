@@ -762,6 +762,12 @@ p {
   margin-bottom: 240px;
   padding-bottom: 40px;
 }
+@media (max-width: 47.875em) {
+  .hero .bgimage {
+    margin-left: 0;
+    transition: 0.7s ease-in-out;
+  }
+}
 @media (max-width: 63.9375em) {
   .hero .bgimage {
     display: flex;
@@ -1095,6 +1101,7 @@ p {
 @media (max-width: 47.875em) {
   .about {
     margin-top: 26rem;
+    margin-bottom: 8.75rem;
     transition: all 0.7s ease-out;
   }
 }

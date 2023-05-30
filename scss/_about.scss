@@ -9,6 +9,7 @@
     }
     @include breakpoint-down (intermediate) {
         margin-top: 26rem;
+        margin-bottom: 8.75rem;
         transition: all 0.7s ease-out;
     }
     
