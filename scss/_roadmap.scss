@@ -72,20 +72,30 @@
                     scale: 0.5;
                     transition: all 0.7s ease-out;
                 }
-
+                @include breakpoint-down (intermediate) {
+                    top: 20px;
+                    right: 35px;
+                    transition: all 0.7s ease-out;
+                }
+                
             }
-
+            
             .blackstar {
                 position: absolute;
                 top: -10px;
                 right: -39px;
                 z-index: 1;
                 scale: 0.8;
-
+                
                 @include breakpoint-down (medium) {
                     right: 25px;
                     scale: 0.7;
                     top: 0px;
+                    transition: all 0.7s ease-out;
+                }
+                @include breakpoint-down (intermediate) {
+                    right: -10px;
+                    transition: all 0.7s ease-out;
                 }
  
             }

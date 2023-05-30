@@ -1401,6 +1401,13 @@ p {
     transition: all 0.7s ease-out;
   }
 }
+@media (max-width: 47.875em) {
+  .roadmap__phases .roadmap__phase1 .whitestar {
+    top: 20px;
+    right: 35px;
+    transition: all 0.7s ease-out;
+  }
+}
 .roadmap__phases .roadmap__phase1 .blackstar {
   position: absolute;
   top: -10px;
@@ -1413,6 +1420,13 @@ p {
     right: 25px;
     scale: 0.7;
     top: 0px;
+    transition: all 0.7s ease-out;
+  }
+}
+@media (max-width: 47.875em) {
+  .roadmap__phases .roadmap__phase1 .blackstar {
+    right: -10px;
+    transition: all 0.7s ease-out;
   }
 }
 .roadmap__phases .roadmap__phase1 .roadmap__graphics {
