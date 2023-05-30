@@ -42,8 +42,9 @@
             height: auto;
             position: relative;
             margin-bottom: 150px;
-
+            
             @include breakpoint-down (intermediate) {
+                margin-bottom: 6.25rem;
                 flex-direction: column;
             }
 
@@ -206,7 +207,7 @@
                         font-size: $font-mlg-45px;
                         transition: all 0.7s ease-out;
                     }
-                    @include breakpoint-down (medium) {
+                    @include breakpoint-down (intermediate) {
                         margin-bottom: 0;
                         transition: all 0.7s ease-out;
                     }
@@ -254,6 +255,12 @@
                     width: 5%;
                     transition: all 0.7s ease-out;
                 }
+                @include breakpoint-down (intermediate) {
+                    top: 20px;
+                    left: 240px;
+                    width: 10%;
+                    transition: all 0.7s ease-out;
+                }
             }
 
             .orangestar {
@@ -268,6 +275,11 @@
                     top: 0px;
                     left: 340px;
                     scale: 0.8;
+                    transition: all 0.7s ease-out;
+                }
+                @include breakpoint-down (intermediate) {
+                    top: -30px;
+                    left: 290px;
                     transition: all 0.7s ease-out;
                 }
             }
