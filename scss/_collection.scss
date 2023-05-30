@@ -1,6 +1,10 @@
 .collection {
     margin-bottom: 130px;
     transition: all 0.7s ease-out;
+    @include breakpoint-down (intermediate) {
+        margin-bottom: 6rem;
+        transition: all 0.7s ease-out;
+    }
     
     .container{
         .collection__title{

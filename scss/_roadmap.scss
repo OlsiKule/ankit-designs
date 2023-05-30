@@ -5,13 +5,31 @@
     &__main {
         margin-bottom: 160px;
         position: relative;
+        @include breakpoint-down (intermediate) {
+            margin-bottom: 7rem;
+        }
 
         .blackstar {
             position: absolute;
             top: -30px;
             right: 340px;
+
+            @include breakpoint-down (intermediate) {
+                right: 65px;
+                transform: scale(0.6);
+            }
         }
 
+        h2 {
+            @include breakpoint-down (large){
+                max-width: 660px;
+                transition: all 0.7s ease-out;
+            }
+            @include breakpoint-down (medium){
+                max-width: 550px;
+                transition: all 0.7s ease-out;
+            }
+        }
     }
     
     &__phases{
@@ -20,6 +38,10 @@
             height: auto;
             position: relative;
             margin-bottom: 150px;
+
+            @include breakpoint-down (intermediate) {
+                flex-direction: column;
+            }
 
             .arrow {
                 position: absolute;
@@ -32,6 +54,9 @@
                     left: 165px;
                     scale: 0.7;
                     transition: all 0.7s ease-out;
+                }
+                @include breakpoint-down (medium) {
+                    display: none;
                 }
             }
 
@@ -62,6 +87,7 @@
                     scale: 0.7;
                     top: 0px;
                 }
+ 
             }
 
 
@@ -75,6 +101,12 @@
 
                 @include breakpoint-down (medium) {
                     width: 50%;
+                    transition: all 0.7s ease-out;
+                }
+                
+                @include breakpoint-down (intermediate) {
+                    order: 1;
+                    width: 80%;
                     transition: all 0.7s ease-out;
                 }
                 
@@ -105,6 +137,10 @@
                             height: auto;
                             transition: all 0.7s ease-out;
                         }
+                        @include breakpoint-down (intermediate) {
+                            bottom: -15px;
+                            transition: all 0.7s ease-out;
+                        }
                     }
                 }
                 
@@ -122,6 +158,11 @@
                 @include breakpoint-down (medium) {
                     padding-right: 2rem;
                     width: 40%;
+                    transition: all 0.7s ease-out;
+                }
+                @include breakpoint-down (intermediate) {
+                    width: 100%;
+                    margin-top: 2rem;
                     transition: all 0.7s ease-out;
                 }
     
@@ -271,6 +312,13 @@
                 transition: all 0.7s ease-out;
                 
                 @include breakpoint-down (medium) {
+                    width: 40%;
+                    padding-left: 3rem;
+                    padding-right:0;
+                    transition: all 0.7s ease-out;
+                }
+                @include breakpoint-down (intermediate) {
+                    order: 1;
                     width: 40%;
                     padding-left: 3rem;
                     padding-right:0;
