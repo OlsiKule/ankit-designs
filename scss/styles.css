@@ -892,6 +892,14 @@ p {
     transition: all 0.7s ease-out;
   }
 }
+@media (max-width: 47.875em) {
+  .hero .hero__image .circle.hero__outter .lady {
+    right: 165px;
+    bottom: 40px;
+    width: 18%;
+    transition: all 0.7s ease-out;
+  }
+}
 .hero .hero__image .circle.hero__outter .top-ghost {
   position: absolute;
   top: 50px;
@@ -902,6 +910,15 @@ p {
   .hero .hero__image .circle.hero__outter .top-ghost {
     top: 135px;
     left: 21px;
+    width: 10%;
+    height: auto;
+    transition: all 0.7s ease-out;
+  }
+}
+@media (max-width: 87.4375em) {
+  .hero .hero__image .circle.hero__outter .top-ghost {
+    top: 305px;
+    left: 155px;
     width: 10%;
     height: auto;
     transition: all 0.7s ease-out;
@@ -921,6 +938,11 @@ p {
     transition: all 0.7s ease-out;
   }
 }
+@media (max-width: 47.875em) {
+  .hero .hero__image .circle.hero__outter .bottom-ghost {
+    display: none;
+  }
+}
 .hero .hero__image .circle.hero__outter .whitestar {
   position: absolute;
   top: 350px;
@@ -931,6 +953,13 @@ p {
   .hero .hero__image .circle.hero__outter .whitestar {
     top: 305px;
     right: 340px;
+    transition: all 0.7s ease-out;
+  }
+}
+@media (max-width: 47.875em) {
+  .hero .hero__image .circle.hero__outter .whitestar {
+    top: 215px;
+    right: 255px;
     transition: all 0.7s ease-out;
   }
 }
@@ -947,6 +976,13 @@ p {
     transition: all 0.7s ease-out;
   }
 }
+@media (max-width: 47.875em) {
+  .hero .hero__image .circle.hero__outter .blackstar {
+    left: 170px;
+    bottom: 200px;
+    transition: all 0.7s ease-out;
+  }
+}
 .hero .hero__image .circle.hero__outter .orangestar {
   position: absolute;
   top: 290px;
@@ -957,6 +993,13 @@ p {
   .hero .hero__image .circle.hero__outter .orangestar {
     top: 250px;
     right: 245px;
+    transition: all 0.7s ease-out;
+  }
+}
+@media (max-width: 47.875em) {
+  .hero .hero__image .circle.hero__outter .orangestar {
+    top: 165px;
+    right: 200px;
     transition: all 0.7s ease-out;
   }
 }
@@ -974,8 +1017,8 @@ p {
 }
 @media (max-width: 47.875em) {
   .hero .hero__image .circle.hero__mid {
-    height: 550px;
-    width: 550px;
+    height: 500px;
+    width: 500px;
     transition: all 0.7s ease-out;
   }
 }
@@ -987,6 +1030,12 @@ p {
 @media (max-width: 87.4375em) {
   .hero .hero__image .circle.hero__inner {
     transform: scale(0.7);
+    transition: all 0.7s ease-out;
+  }
+}
+@media (max-width: 47.875em) {
+  .hero .hero__image .circle.hero__inner {
+    transform: scale(0.6);
     transition: all 0.7s ease-out;
   }
 }

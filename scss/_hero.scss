@@ -158,7 +158,12 @@
                 bottom: 115px;
                 width: 18%;
                 transition: all 0.7s ease-out;
-                
+              }
+              @include breakpoint-down (intermediate){
+                right: 165px;
+                bottom: 40px;
+                width: 18%;
+                transition: all 0.7s ease-out;
               }
             }
 
@@ -171,6 +176,13 @@
                 @include breakpoint-down (large){
                   top: 135px;
                   left: 21px;
+                  width: 10%;
+                  height: auto;
+                  transition: all 0.7s ease-out;
+                }
+                @include breakpoint-down (large){
+                  top: 305px;
+                  left: 155px;
                   width: 10%;
                   height: auto;
                   transition: all 0.7s ease-out;
@@ -189,6 +201,9 @@
                 width: 15%;
                 transition: all 0.7s ease-out;
               }
+              @include breakpoint-down (intermediate){
+                display: none;
+              }
             }
 
             .whitestar{
@@ -200,6 +215,11 @@
                 @include breakpoint-down(large){
                   top: 305px;
                   right: 340px;
+                  transition: all 0.7s ease-out;
+                }
+                @include breakpoint-down(intermediate){
+                  top: 215px;
+                  right: 255px;
                   transition: all 0.7s ease-out;
                 }
               }
@@ -216,6 +236,11 @@
                   bottom: 100px;
                   transition: all 0.7s ease-out;
               }
+                @include breakpoint-down (intermediate){
+                  left: 170px;
+                  bottom: 200px;
+                  transition: all 0.7s ease-out;
+              }
             }
             
             .orangestar{
@@ -227,6 +252,11 @@
                 @include breakpoint-down(large){
                   top: 250px;
                   right: 245px;
+                  transition: all 0.7s ease-out;
+                }
+                @include breakpoint-down(intermediate){
+                  top: 165px;
+                  right: 200px;
                   transition: all 0.7s ease-out;
                 }
 
@@ -244,8 +274,8 @@
               transition: all 0.7s ease-out;
             }
             @include breakpoint-down(intermediate){
-              height: 550px;
-              width: 550px;
+              height: 500px;
+              width: 500px;
               transition: all 0.7s ease-out;
             }
 
@@ -259,6 +289,10 @@
             
             @include breakpoint-down(large){
               transform: scale(0.7);
+              transition: all 0.7s ease-out;
+            }
+            @include breakpoint-down(intermediate){
+              transform: scale(0.6);
               transition: all 0.7s ease-out;
             }
           }
