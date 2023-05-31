@@ -24,7 +24,13 @@
                     scale: 0.7; 
                     top: 145px;
                     left: 95px;
-                    transition: all 0.7s ease-out;
+                    // transition: all 0.7s ease-out;
+                }
+                @include breakpoint-down (intermediate) {
+                    scale: 0.6;
+                    top: -75px;
+                    left: 25px;
+                    // transition: all 0.7s ease-out;
                 }
             }
 
@@ -39,6 +45,9 @@
                     left: 240px;
                     transition: all 0.7s ease-out;
                 }
+                @include breakpoint-down (intermediate) {
+                    display: none;
+                }
             }
 
             &.commuter3{
@@ -51,7 +60,11 @@
                     top: 35px;
                     transition: all 0.7s ease-out;
                 }
-
+                @include breakpoint-down (intermediate) {
+                    top: 260px;
+                    right: -10px;
+                    scale: 0.4;
+                }
             }
 
             &.commuter4{
@@ -64,6 +77,11 @@
                     bottom: 160px;
                     left: 100px;
                     transition: all 0.7s ease-out;
+                }
+                @include breakpoint-down (intermediate) {
+                    bottom: -10px;
+                    left: 60px;
+                    scale: 0.6;
                 }
             }
 
@@ -78,6 +96,9 @@
                     right: 160px;
                     transition: all 0.7s ease-out;
                 }
+                @include breakpoint-down (intermediate) {
+                    display: none;
+                }
             }
 
             &.whitestar {
@@ -90,6 +111,10 @@
                     right: 160px;
                     scale: 0.5;
                     transition: all 0.7s ease-out;
+                }
+                @include breakpoint-down (intermediate) {
+                    top: 360px;
+                    right: 10px;
                 }
             }
 
@@ -104,6 +129,9 @@
                     scale: 0.6;
                     transition: all 0.7s ease-out;
                 }
+                @include breakpoint-down (intermediate) {
+                    bottom: 90%;
+                }
             }
 
             &.blackstar{
@@ -117,6 +145,10 @@
                     scale: 0.6;
                     transition: all 0.7s ease-out;
                 }
+                @include breakpoint-down (intermediate) {
+                    bottom: -70px;
+                    left: 30px;
+                }
             }
 
             &.ondulation {
@@ -129,6 +161,10 @@
                     right: 33px;
                     scale: 0.4;
                     transition: all 0.7s ease-out;
+                }
+                @include breakpoint-down (intermediate) {
+                    bottom: 315px;
+                    right: -70px;
                 }
                 
             }
@@ -161,6 +197,11 @@
                     height: calc(100% - 30px);
                     transition: all 0.7s ease-out;
                 }
+                @include breakpoint-down (intermediate) {
+                    width: calc(100% + 130px);
+                    height: calc(100% + 130px);
+                    transition: all 0.7s ease-out;
+                }
             }
      
             &.circle1 {
@@ -173,6 +214,11 @@
                     height: calc(100% - 160px);
                     transition: all 0.7s ease-out;
                 }
+                @include breakpoint-down (intermediate) {
+                    width: calc(100% - 0px);
+                    height: calc(100% - 0px);
+                    transition: all 0.7s ease-out;
+                }
             }
             
             &.circle2 {
@@ -183,6 +229,11 @@
                 @include breakpoint-down (medium) {
                     width: calc(100% - 300px);
                     height: calc(100% - 300px);
+                    transition: all 0.7s ease-out;
+                }
+                @include breakpoint-down (intermediate) {
+                    width: calc(100% - 120px);
+                    height: calc(100% - 120px);
                     transition: all 0.7s ease-out;
                 }
             }
@@ -214,6 +265,7 @@
                 height: 360px;
                 transition: all 0.7s ease-out;
             }
+
 
 
             .join__pretitle {
@@ -250,6 +302,9 @@
                 @include breakpoint-down (medium) {
                     margin: 0 auto 15px;
                     transition: all 0.7s ease-out;
+                }
+                @include breakpoint-down (intermediate) {
+                    display: none;
                 }
             }
             
