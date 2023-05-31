@@ -140,7 +140,13 @@
             position: fixed;
             top: 9.8rem;
             right: 11rem;
+
+            @include breakpoint-down(intermediate){
+                top: 3rem;
+                right: 2.1rem;
+            }
         }
+
 
         &.hide {
             display: none;
@@ -171,7 +177,7 @@
             transition: all 0.7s ease-out;
 
             @include breakpoint-down (intermediate){
-                margin-top: 9rem;
+                margin-top: 3rem;
                 margin-left: -3rem;
                 transition: all 0.7s ease-out;
             }
@@ -315,25 +321,20 @@
                 top: 520px;
                 transition: all 0.7s ease-out;
             }
-
             @include breakpoint-down (medium) {
                 right: 420px;
                 top: 425px;
                 transition: all 0.7s ease-out;
             }
-        
             @include breakpoint-down (intermediate) {
-                right: 130px;
-                top: 430px;
+                right: 90px;
+                top: 340px;
                 transition: all 0.7s ease-out;
             }
 
-
-        
-
             .blackstar{
                 width: 100%;
-                height: 20px;
+                height: 13px;
                 object-fit: cover;
             }
         }
@@ -342,6 +343,7 @@
             position: absolute;
             right: 630px;
             top: 345px;
+            transition: all 0.7s ease-out;
             
             @include breakpoint-down (large) {
                 right: 610px;
@@ -356,16 +358,18 @@
             }
 
             @include breakpoint-down (intermediate) {
-                right: 110px;
-                top: 220px;
-                transition: all 0.7s ease-out;
+                right: 80px;
+                top: 130px;
             }
-
+            
             .orangestar{
                 width: 100%;
                 height: 20px;
                 object-fit: cover;
 
+                @include breakpoint-down (intermediate) {
+                    height: 15px;
+                }
             }
         }
 
@@ -373,6 +377,7 @@
             position: absolute;
             right: 700px;
             top: 415px;
+            transition: all 0.7s ease-out;
 
             @include breakpoint-down (large) {
                 right: 670px;
@@ -387,9 +392,8 @@
             }
             
             @include breakpoint-down (intermediate) {
-                right: 150px;
-                top: 250px;
-                transition: all 0.7s ease-out;
+                right: 115px;
+                top: 160px;
             }
 
             .whitestar{
@@ -399,7 +403,7 @@
                 
                 @include breakpoint-down (intermediate) {
                     width: 100%;
-                    height: 60px;
+                    height: 40px;
                     // transition: all 0.7s ease-out;
 
                 }
