@@ -9,6 +9,11 @@
             padding-left: 0px;
             transition: all 0.7s ease-out;
         }
+        @include breakpoint-down (intermediate) {
+            max-width: 100%;
+            padding: 0 2rem 0 0rem;
+            margin: 0 0 0 0;
+        }
     }
 
     /* Coder: Katherine Cato
@@ -33,6 +38,12 @@
             margin: 0 5rem 0 0;
             transition: all 0.7s ease-out;
         }
+        @include breakpoint-down (medium) {
+            max-width: 85%;
+            margin: 0;
+            padding: 0;
+
+        }
 
         .blackstar{
             position: absolute;
@@ -43,6 +54,11 @@
                 left: 95%;
                 top: -65%;
                 transition: all 0.7s ease-out;
+            }
+            @include breakpoint-down (intermediate) {
+                left: 85%;
+                top: -40%;
+                width: 5%;
             }
         }
 
@@ -55,6 +71,9 @@
             @include breakpoint-down (large) {
                 left: -52%;
                 transition: all 0.7s ease-out;
+            }
+            @include breakpoint-down (intermediate) {
+                display: none;
             }
         }
 
@@ -105,6 +124,10 @@
                     padding: 0em 1.3em 0em 0;
                     margin-bottom: 0px;
                     margin-top: 0px;
+                    @include breakpoint-down (intermediate){
+                        font-size: $font-med-18px;
+                        transition: all 0.7s ease-out;
+                    }
             
                 }
 
@@ -149,9 +172,10 @@
 
                 + .faq__answer {
                     opacity: 1;
-                    max-height: 9em;
+                    max-height: 12rem;
                     transition: all 0.5s linear;
                     will-change: opacity, max-height;
+       
                 }
             }
 
@@ -173,7 +197,11 @@
                         font-size: $font-mini-12px;
                         transition: all 0.7s ease-out;
                     }
-                    
+                    @include breakpoint-down (intermediate){
+                        font-size: $font-sm-14px;
+                        margin: 0.5rem 0;
+                        // transition: all 0.7s ease-out;
+                    }
                 }
             }
         }

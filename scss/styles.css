@@ -2124,6 +2124,13 @@ p {
     transition: all 0.7s ease-out;
   }
 }
+@media (max-width: 47.875em) {
+  .faq .faq__title {
+    max-width: 100%;
+    padding: 0 2rem 0 0rem;
+    margin: 0 0 0 0;
+  }
+}
 .faq .faq__container {
   display: flex;
   margin: 0 3rem 0 auto;
@@ -2145,6 +2152,13 @@ p {
     transition: all 0.7s ease-out;
   }
 }
+@media (max-width: 63.9375em) {
+  .faq .faq__container {
+    max-width: 85%;
+    margin: 0;
+    padding: 0;
+  }
+}
 .faq .faq__container .blackstar {
   position: absolute;
   left: -48%;
@@ -2158,6 +2172,13 @@ p {
     transition: all 0.7s ease-out;
   }
 }
+@media (max-width: 47.875em) {
+  .faq .faq__container .blackstar {
+    left: 85%;
+    top: -40%;
+    width: 5%;
+  }
+}
 .faq .faq__container .wavy {
   position: absolute;
   left: -74%;
@@ -2168,6 +2189,11 @@ p {
   .faq .faq__container .wavy {
     left: -52%;
     transition: all 0.7s ease-out;
+  }
+}
+@media (max-width: 47.875em) {
+  .faq .faq__container .wavy {
+    display: none;
   }
 }
 .faq .faq__container * {
@@ -2210,6 +2236,12 @@ p {
   margin-bottom: 0px;
   margin-top: 0px;
 }
+@media (max-width: 47.875em) {
+  .faq .faq__container .faq__accordion button .faq__question {
+    font-size: 1.125rem;
+    transition: all 0.7s ease-out;
+  }
+}
 .faq .faq__container .faq__accordion button .icon {
   color: hsl(25, 93%, 55%);
   display: inline-block;
@@ -2244,7 +2276,7 @@ p {
 }
 .faq .faq__container .faq__accordion button[aria-expanded=true] + .faq__answer {
   opacity: 1;
-  max-height: 9em;
+  max-height: 12rem;
   transition: all 0.5s linear;
   will-change: opacity, max-height;
 }
@@ -2267,5 +2299,11 @@ p {
   .faq .faq__container .faq__accordion .faq__answer p {
     font-size: 0.75rem;
     transition: all 0.7s ease-out;
+  }
+}
+@media (max-width: 47.875em) {
+  .faq .faq__container .faq__accordion .faq__answer p {
+    font-size: 0.875rem;
+    margin: 0.5rem 0;
   }
 }
