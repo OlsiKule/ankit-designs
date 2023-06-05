@@ -7,10 +7,10 @@
     transition: all 0.3s;
     &.delayed {
         animation-delay: 0.5s; /* add a delay of 0.5s */
-      }
+    }
     &.delayed1 {
         animation-delay: 0.8s; /* add a delay of 0.8s */
-      }
+    }
 }
 
 @keyframes infiniteupdown {
@@ -36,11 +36,11 @@
         
         &.delayed {
             animation-delay: 0.5s; 
-          }
+        }
 
         &.delayed1 {
             animation-delay: 0.8s; 
-          }
+        }
     }
 
     @keyframes infinitebigsmall {
@@ -65,7 +65,6 @@
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     transition: all 0.3s;
-    
 }
 
 @keyframes sideways {

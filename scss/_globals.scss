@@ -162,6 +162,7 @@ p{
 .container {
     max-width: 73.375rem;
     margin: 0 auto;
+
     @include breakpoint-down (large) {
         margin-left: 4rem;
         transition: all 0.7s ease-out;
@@ -186,6 +187,7 @@ p{
     box-shadow: 4px 7px 0px rgb(247, 123, 33);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
+
     @include breakpoint-down (medium) {
         scale: 0.8;
         transition: all 0.7s ease-out;
@@ -195,6 +197,7 @@ p{
   .button:hover {
     transform: translate3d(3px, 3px, 3px);
     box-shadow: 2px 2px 0px rgba(247, 123, 33, 0.9);
+    
     @include breakpoint-down (medium) {
         scale: 0.8;
         transition: all 0.7s ease-out;
