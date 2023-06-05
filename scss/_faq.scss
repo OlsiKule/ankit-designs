@@ -5,6 +5,7 @@
     .faq__title {
         padding-left: 100px;
         transition: all 0.7s ease-out;
+
         @include breakpoint-down (medium) {
             padding-left: 0px;
             transition: all 0.7s ease-out;
@@ -50,11 +51,13 @@
             left: -48%;
             top: 19%;
             transition: all 0.7s ease-out;
+
             @include breakpoint-down (medium) {
                 left: 95%;
                 top: -65%;
                 transition: all 0.7s ease-out;
             }
+
             @include breakpoint-down (intermediate) {
                 left: 85%;
                 top: -40%;
@@ -124,6 +127,7 @@
                     padding: 0em 1.3em 0em 0;
                     margin-bottom: 0px;
                     margin-top: 0px;
+
                     @include breakpoint-down (intermediate){
                         font-size: $font-med-18px;
                         transition: all 0.7s ease-out;
@@ -151,6 +155,7 @@
                         height: 2.5px;
                         background: currentColor;
                     }
+
                     &::after {
                         display: block;
                         position: absolute;
@@ -163,6 +168,7 @@
                     }
                 }
             }
+
             button[aria-expanded='true'] {
                 .icon {
                     &::after {
@@ -193,10 +199,12 @@
                     opacity: 0.7;
                     margin: 1rem 0;
                     transition: all 0.7s ease-out;
+
                     @include breakpoint-down (medium) {
                         font-size: $font-mini-12px;
                         transition: all 0.7s ease-out;
                     }
+                    
                     @include breakpoint-down (intermediate){
                         font-size: $font-sm-14px;
                         margin: 0.5rem 0;

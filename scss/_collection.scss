@@ -42,11 +42,10 @@
                 }
             
                 .nft{
-                // display: inline-block;
-                display: inline;
-                width: 100%;
+                    display: inline;
+                    width: 100%;
 
-                .icon {
+                    .icon {
                         border-radius: 40px;
                         margin-right: 30px;
                         width: 33%;
@@ -68,5 +67,4 @@
             }
         }
     }
-     
 }
