@@ -37,7 +37,6 @@
         }
     }
 
-
     .navbar.active {
         padding: 1rem 10rem 1em 11rem;
         transition: transform 0.7s; 
@@ -153,7 +152,6 @@
         }
 
         &.has-fade{
-
             width: 100%;
             height: 104%;
             position: fixed;
@@ -166,7 +164,6 @@
             padding: 70px;
             transition: ease-in-out;
         }
-
 
         &.wrapper {
             display: flex;
