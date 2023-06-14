@@ -57,22 +57,27 @@ closeMenu.addEventListener('click', () => {
 // close menu on any item click
 menuItems.forEach((menuItem) => {
   menuItem.addEventListener('click', (event) => {
+    setTimeout(()=>{
+
     event.preventDefault(); // Prevent default link behavior
-    const targetSectionId = menuItem.getAttribute('href'); // Get the target section ID from the href attribute
-    const targetSection = document.querySelector(targetSectionId); // Find the target section in the document
+      const targetSectionId = menuItem.getAttribute('href'); // Get the target section ID from the href attribute
+      const targetSection = document.querySelector(targetSectionId); // Find the target section in the document
 
-    if (targetSection) {
-      // Close the menu
-      closeMenu.classList.toggle('open');
-      menu.classList.toggle('hide');
-      hamburger.classList.toggle('onOff');
-      menu.classList.toggle('has-fade');
-      document.body.style.overflow = "auto";
-      document.body.style.userSelect = "auto";
+      if (targetSection) {
+        // Close the menu
+        closeMenu.classList.toggle('open');
+        menu.classList.toggle('hide');
+        hamburger.classList.toggle('onOff');
+        menu.classList.toggle('has-fade');
+        document.body.style.overflow = "auto";
+        document.body.style.userSelect = "auto";
 
-      // Scroll to the target section
-      targetSection.scrollIntoView({ behavior: 'smooth' });
-    }
+        // Scroll to the target section
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      }
+
+    }, 100); // Delay in milliseconds to prevent the scrolling effect
+    
   });
 });
 
