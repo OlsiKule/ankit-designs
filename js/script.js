@@ -31,7 +31,7 @@ window.onscroll = function () {
 const hamburger = document.querySelector('.header__toggle');
 const menu = document.querySelector('.header__menu');
 const closeMenu = document.querySelector('.closeMenu');
-// const scroll = document.querySelector(".scroll");
+const menuItems = document.querySelectorAll('.header__link');
 
 
 hamburger.addEventListener('click', () => {
@@ -40,7 +40,6 @@ hamburger.addEventListener('click', () => {
     menu.classList.toggle('has-fade');
     menu.classList.toggle('hide');
     
-    // menu.classList.toggle('scroll');
   // }, 300); // Delay in milliseconds (0.3 seconds)
   document.body.style.overflow = "hidden";
   document.body.style.userSelect = "none";
@@ -53,9 +52,29 @@ closeMenu.addEventListener('click', () => {
   menu.classList.toggle('has-fade');
   document.body.style.overflow = "auto";
   document.body.style.userSelect = "auto";
-
 });
 
+// close menu on any item click
+menuItems.forEach((menuItem) => {
+  menuItem.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent default link behavior
+    const targetSectionId = menuItem.getAttribute('href'); // Get the target section ID from the href attribute
+    const targetSection = document.querySelector(targetSectionId); // Find the target section in the document
+
+    if (targetSection) {
+      // Close the menu
+      closeMenu.classList.toggle('open');
+      menu.classList.toggle('hide');
+      hamburger.classList.toggle('onOff');
+      menu.classList.toggle('has-fade');
+      document.body.style.overflow = "auto";
+      document.body.style.userSelect = "auto";
+
+      // Scroll to the target section
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
 
 // FAQ's
 /*
