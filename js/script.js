@@ -35,12 +35,9 @@ const menuItems = document.querySelectorAll('.header__link');
 
 
 hamburger.addEventListener('click', () => {
-  // setTimeout(() => {
     hamburger.classList.toggle('onOff');
     menu.classList.toggle('has-fade');
     menu.classList.toggle('hide');
-    
-  // }, 300); // Delay in milliseconds (0.3 seconds)
   document.body.style.overflow = "hidden";
   document.body.style.userSelect = "none";
 });
