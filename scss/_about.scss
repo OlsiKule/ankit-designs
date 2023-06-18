@@ -39,12 +39,10 @@
                 right: 45px;
                 transition: all 0.7s ease-out;
             }
-            
         }
 
         .about__title {
             margin-bottom: 0;
-
         }
 
         .about__subsection { 
@@ -83,10 +81,7 @@
                     @include breakpoint-down (intermediate) {
                         margin-top: 2rem;
                     }
-
                 }
-
-
             }
 
 
