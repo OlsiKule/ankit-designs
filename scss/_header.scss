@@ -61,7 +61,6 @@
         position: relative;
         padding-top: 1.0625rem;
         padding-bottom: 1.0625rem;
-        // temps
         transition: transform 0.7s ease-in-out; 
     }
 
@@ -74,7 +73,7 @@
 
 
 // logo
-    img{
+    img {
         height: 5rem;
         width: 11.5625rem;
         transition: 0.7s ease-in-out; 
@@ -92,8 +91,8 @@
         transition: color 0.3s ease-in-out;
         &:hover{
             color:$black;
-            }
         }
+    }
 
 
 // Hamburger Menu
@@ -107,25 +106,22 @@
             -webkit-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
             background-color: $black;
-
         }
 
-            &.onOff {
+        &.onOff {
 
-                :first-child{
-                    transform: translateY(10px) rotate(45deg);
-                }
-
-                :nth-child(2){
-                    opacity: 0;
-                }
-
-                :last-child{
-                    transform: translateY(-10px) rotate(-45deg);
-                }
-                
+            :first-child{
+                transform: translateY(10px) rotate(45deg);
             }
 
+            :nth-child(2){
+                opacity: 0;
+            }
+
+            :last-child{
+                transform: translateY(-10px) rotate(-45deg);
+            }
+        }
     }
 
 
@@ -206,70 +202,69 @@
 
 
 
-                .dot{
-                    display: none;
-                }
+            .dot{
+                display: none;
+            }
 
-                &::before{
+            &::before{
+                position: absolute;
+                content: "";
+                left: -100px; 
+                top: 50%;
+                height: 3px;
+                width: 100px; 
+                background-color: $backgroundColor-orange; 
+                transform: translateY(-50%);
+
+                @include breakpoint-down (medium){
                     position: absolute;
                     content: "";
-                    left: -100px; 
                     top: 50%;
                     height: 3px;
                     width: 100px; 
-                    background-color: $backgroundColor-orange; 
-                    transform: translateY(-50%);
-
-                    @include breakpoint-down (medium){
-                        position: absolute;
-                        content: "";
-                        top: 50%;
-                        height: 3px;
-                        width: 100px; 
-                    }
-                    
                 }
+                
+            }
 
-                &:hover {
-                transform: translateX(90px);
+            &:hover {
+            transform: translateX(90px);
 
-                @include breakpoint-down (medium) {
-                        transform: translateX(40px);
-                    }
-            
-                .dot{
-                    display: inline;
-                    }
+            @include breakpoint-down (medium) {
+                    transform: translateX(40px);
                 }
+        
+            .dot{
+                display: inline;
+                }
+            }
 
         }
     
         &.social{
-                height: 10vh;
-                margin-top: 40px;
-                display: flex;
-                align-items: center;
-                
-                .header__socials{
-                    transition: all 0.7s ease-out;
-                    margin-right: 50px;
-                    i{
-                        margin: 0 30px;
-                        transform: scale(4);
-                        @include breakpoint-down (medium) {
-                            transform: scale(3);
-                            margin: 0px 15px;
-                            transition: all 0.7s ease-out;
-                        }
-                        @include breakpoint-down (intermediate) {
-                            transform: scale(2.8);
-                            transition: all 0.7s ease-out;
-                            margin-right: -18px;
-                        }
+            height: 10vh;
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            
+            .header__socials{
+                transition: all 0.7s ease-out;
+                margin-right: 50px;
+                i{
+                    margin: 0 30px;
+                    transform: scale(4);
+                    @include breakpoint-down (medium) {
+                        transform: scale(3);
+                        margin: 0px 15px;
+                        transition: all 0.7s ease-out;
                     }
-                    
+                    @include breakpoint-down (intermediate) {
+                        transform: scale(2.8);
+                        transition: all 0.7s ease-out;
+                        margin-right: -18px;
+                    }
                 }
             }
+        }
         
         .paparazzi {
             position: absolute;
@@ -290,7 +285,6 @@
                 top: 250px;
                 transition: all 0.7s ease-out;
             }
-
         }
         
         .photographer {
@@ -403,11 +397,9 @@
                     width: 100%;
                     height: 40px;
                     // transition: all 0.7s ease-out;
-
                 }
             }
         }
-
     }
 }
 
