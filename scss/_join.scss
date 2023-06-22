@@ -20,12 +20,14 @@
                 top: 175px;
                 left: 130px;
                 transition: all 0.7s ease-out;
+
                 @include breakpoint-down (medium) {
                     scale: 0.7; 
                     top: 145px;
                     left: 95px;
                     // transition: all 0.7s ease-out;
                 }
+
                 @include breakpoint-down (intermediate) {
                     scale: 0.6;
                     top: -75px;
@@ -39,12 +41,14 @@
                 top: -110px;
                 left: 395px;
                 transition: all 0.7s ease-out;
+
                 @include breakpoint-down (medium) {
                     scale: 0.7; 
                     top: -5px;
                     left: 240px;
                     transition: all 0.7s ease-out;
                 }
+
                 @include breakpoint-down (intermediate) {
                     display: none;
                 }
@@ -166,7 +170,6 @@
                     bottom: 315px;
                     right: -70px;
                 }
-                
             }
         }
 
@@ -307,12 +310,6 @@
                     display: none;
                 }
             }
-            
         }
-      
-      
     }
-   
-      
-
 }
