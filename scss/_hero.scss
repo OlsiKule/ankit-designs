@@ -58,7 +58,6 @@
               font-size: $font-lg-20px;  
               transition: 0.7s ease-in-out; 
             }
-
          }
       }
 
@@ -93,7 +92,6 @@
                   }
                 }
             }
-              
         }
     }
 
@@ -248,22 +246,21 @@
             }
             
             .orangestar{
-                position: absolute;
-                top: 290px;
-                right: 290px;
+              position: absolute;
+              top: 290px;
+              right: 290px;
+              transition: all 0.7s ease-out;
+
+              @include breakpoint-down(large){
+                top: 250px;
+                right: 245px;
                 transition: all 0.7s ease-out;
-
-                @include breakpoint-down(large){
-                  top: 250px;
-                  right: 245px;
-                  transition: all 0.7s ease-out;
-                }
-                @include breakpoint-down(intermediate){
-                  top: 165px;
-                  right: 200px;
-                  transition: all 0.7s ease-out;
-                }
-
+              }
+              @include breakpoint-down(intermediate){
+                top: 165px;
+                right: 200px;
+                transition: all 0.7s ease-out;
+              }
             }
           }
 
@@ -321,7 +318,7 @@
 
         @include breakpoint-down (medium) {
           display: none;
-      }
+        }
     }   
 }
   
